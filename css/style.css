@@ -6,20 +6,20 @@
 
 /* ---------- CSS Custom Properties ---------- */
 :root {
-  /* Brand palette - matched to ADO report document */
-  --clr-primary: #0E2841;
-  --clr-primary-dark: #091C30;
-  --clr-primary-light: #153D63;
-  --clr-primary-subtle: #EDF2F7;
+  /* Brand palette - dark navy from ADO reports */
+  --clr-primary: #1a2332;
+  --clr-primary-dark: #111820;
+  --clr-primary-light: #2a3a4e;
+  --clr-primary-subtle: #f0f4f8;
 
-  /* Accent - report blue for CTAs and interactive elements */
-  --clr-accent: #156082;
-  --clr-accent-hover: #0F4761;
-  --clr-accent-light: #E0EFF6;
+  /* Accent - warm teal for CTAs and interactive elements */
+  --clr-accent: #1a8a7d;
+  --clr-accent-hover: #147a6e;
+  --clr-accent-light: #e6f5f3;
 
-  /* Secondary - for section backgrounds */
-  --clr-secondary: #0E2841;
-  --clr-secondary-light: #153D63;
+  /* Secondary - charcoal for section backgrounds */
+  --clr-secondary: #1a2332;
+  --clr-secondary-light: #2a3a4e;
 
   /* Neutrals */
   --clr-white: #FFFFFF;
@@ -491,12 +491,12 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
   gap: var(--space-sm);
   font-size: var(--fs-sm);
   font-weight: var(--fw-medium);
-  color: var(--clr-accent);
+  color: #FFFFFF;
   margin-bottom: var(--space-xl);
-  background: rgba(200, 164, 86, 0.1);
+  background: rgba(255, 255, 255, 0.12);
   padding: var(--space-sm) var(--space-lg);
   border-radius: var(--radius-full);
-  border: 1px solid rgba(200, 164, 86, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .hero__badge-dot {
