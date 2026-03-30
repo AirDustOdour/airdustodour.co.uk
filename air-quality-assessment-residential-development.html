@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Air quality assessments for residential development across the UK. Expert support for housebuilders, developers and planning consultants from screening to detailed modelling.">
+  <meta property="og:title" content="Air Quality Assessment for Residential Development | Air Dust Odour">
+  <meta property="og:description" content="Air quality assessments for residential development across the UK. Expert support for housebuilders, developers and planning consultants from screening to detailed modelling.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://airdustodour.co.uk/air-quality-assessment-residential-development">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Air Quality Assessment for Residential Development | Air Dust Odour</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "When does a residential development need an air quality assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A residential development is likely to require an air quality assessment if it is located within or near an Air Quality Management Area, close to a busy road or motorway, within Greater London (where the London Plan requires Air Quality Neutral assessment), on a large site generating significant traffic movements, or where there are existing sources of air pollution nearby such as industrial operations or waste facilities. A screening assessment can quickly determine whether a detailed study is needed — and we recommend commissioning this early to avoid surprises later in the programme."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is an AQMA and does my site need assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An Air Quality Management Area (AQMA) is a zone designated by a local authority where air quality objectives — primarily for nitrogen dioxide and fine particulate matter — are not being met. Most planning authorities require an air quality assessment for any development within or adjacent to an AQMA. Even sites outside an AQMA may need assessment if they are near busy roads, will generate significant traffic or introduce sensitive receptors such as residential dwellings near a pollution source."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Air Quality Neutral and does it apply to my scheme?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Air Quality Neutral is a requirement of the London Plan that applies to all development in Greater London. It requires developers to demonstrate that the scheme will not worsen air quality by exceeding benchmark emissions for both transport (based on trip generation) and building energy systems (based on combustion). If benchmarks are exceeded, mitigation such as low-emission heating systems, EV charging or financial contributions may be required. We prepare Air Quality Neutral assessments as a standard component of our London residential development service."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does an air quality assessment take for a housing development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A screening assessment can typically be completed within 5 to 10 working days. If a detailed assessment with dispersion modelling is required, this usually takes 3 to 5 weeks depending on site complexity, the availability of traffic data and whether background monitoring data needs to be sourced. Where real-time baseline monitoring is required as a planning condition, this can add several months to the programme — which is why commissioning early is so important."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does an air quality assessment cost for residential development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Screening assessments for residential development start from around £500 to £800. Detailed assessments with dispersion modelling typically range from £1,500 to £5,000 depending on site complexity, number of receptors and modelling requirements. London schemes requiring Air Quality Neutral Assessment are priced accordingly. We provide fixed-fee proposals so you always know what you are paying before we start work."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <style>
+    .nav-item--dropdown { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      z-index: 200;
+      padding: 8px 0;
+    }
+    .nav-item--dropdown:hover .nav-dropdown,
+    .nav-item--dropdown:focus-within .nav-dropdown { display: block; }
+    .nav-dropdown a {
+      display: block;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      color: var(--clr-text, #1f2937);
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-dropdown a:hover { background: #f3f4f6; color: var(--clr-primary, #2563eb); }
+    .header__nav-link--dropdown::after { content: ' ▾'; font-size: 0.7em; }
+
+    .service-page__intro-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .service-page__intro-grid { grid-template-columns: 1fr; }
+    }
+    .service-page__intro-grid p {
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .quick-contact {
+      background: #f8fafc;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .quick-contact h3 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--clr-heading, #111827); }
+    .quick-contact p { font-size: 0.875rem; color: var(--clr-text-light, #6b7280); margin-bottom: 1.5rem; line-height: 1.6; }
+    .quick-contact .btn { width: 100%; justify-content: center; margin-bottom: 1rem; }
+    .quick-contact__tel {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--clr-heading, #111827);
+      text-decoration: none;
+      justify-content: center;
+    }
+    .quick-contact__tel:hover { color: var(--clr-primary, #2563eb); }
+    .quick-contact__divider { border: none; border-top: 1px solid var(--clr-border, #e5e7eb); margin: 1.25rem 0; }
+    .quick-contact__badge { font-size: 0.75rem; color: var(--clr-text-light, #6b7280); text-align: center; margin-top: 1rem; }
+
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) { .offerings-grid { grid-template-columns: 1fr; } }
+    .offering-card {
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 10px;
+      padding: 1.75rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .offering-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .offering-card__icon {
+      width: 48px;
+      height: 48px;
+      background: #eff6ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .offering-card__icon svg { width: 22px; height: 22px; color: var(--clr-primary, #2563eb); }
+    .offering-card h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--clr-primary, #2563eb); }
+    .offering-card p { font-size: 0.875rem; color: var(--clr-text-light, #6b7280); line-height: 1.7; margin: 0; }
+
+    .area-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem 2rem;
+    }
+    @media (max-width: 600px) { .area-list { grid-template-columns: 1fr; } }
+    .area-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--clr-text, #1f2937);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--clr-border, #e5e7eb);
+    }
+    .area-list li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--clr-primary, #2563eb);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .faq-section { max-width: 800px; margin: 2.5rem auto 0; }
+
+    .cta-banner__actions .btn--outline {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.6);
+      color: rgba(255,255,255,0.9);
+    }
+    .cta-banner__actions .btn--outline:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: #fff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li class="nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown active">Services</a>
+            <div class="nav-dropdown">
+              <a href="services-air.html">Air Quality</a>
+              <a href="services-dust.html">Dust</a>
+              <a href="services-odour.html">Odour</a>
+              <a href="services-noise.html">Noise</a>
+            </div>
+          </li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="get-a-quote.html" class="btn btn--nav">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">Air Quality Assessment for Residential Development</h1>
+      <p class="page-hero__subtitle">
+        From screening to detailed dispersion modelling, we provide the air quality expertise that housebuilders, developers and planning consultants need to secure planning consent and keep their projects moving.
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro Grid -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="service-page__intro-grid">
+        <div class="service-page__intro-content">
+          <h2>Air Quality Assessments That Work for Your Development</h2>
+          <p>
+            Air quality is now a material consideration in the vast majority of residential planning applications. Whether your site is near a busy road, within or adjacent to an Air Quality Management Area, in Greater London, or simply large enough to generate significant traffic, the local planning authority will want to see a competent air quality assessment before they grant consent.
+          </p>
+          <p>
+            At Air Dust Odour, we take a pragmatic, two-stage approach. We start with a screening assessment to quickly establish whether your site has any air quality constraints and what level of assessment the LPA is likely to require. If a detailed study is needed, we carry it out efficiently — using industry-standard dispersion modelling, the latest background data and receptor analysis — to produce a technically robust report that planning officers and environmental health teams accept with confidence.
+          </p>
+          <p>
+            We work closely with housebuilders, developers and their planning consultants to make sure air quality never becomes the thing that holds up the programme. Our reports are written clearly, scoped proportionately, and delivered on time. When planning authorities come back with queries, we respond promptly and at no extra cost.
+          </p>
+        </div>
+        <aside class="quick-contact">
+          <h3>Speak to an Expert</h3>
+          <p>Tell us about your site and we'll explain what assessment is likely to be needed and what it will cost — no jargon, no commitment.</p>
+          <a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote</a>
+          <hr class="quick-contact__divider">
+          <a href="tel:+442080503003" class="quick-contact__tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            020 8050 3003
+          </a>
+          <p class="quick-contact__badge">MIAQM | CEnv accredited &bull; Nationwide coverage</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">What We Provide</span>
+      <h2 class="section-title">Our Residential Development Air Quality Services</h2>
+      <p class="section-subtitle" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
+        A complete service from initial screening through to detailed assessment, modelling and mitigation — everything you need to satisfy the planning authority.
+      </p>
+      <div class="offerings-grid">
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>Screening Assessment</h3>
+          <p>A rapid, cost-effective review of your site's air quality context — road proximity, AQMA designation, pollution sources, receptor sensitivity and likely LPA requirements. The screening assessment tells you what detailed work is needed (if any) before you commit to it. It is the most valuable £500 you can spend on a residential planning application.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/></svg>
+          </div>
+          <h3>Detailed Air Quality Assessment</h3>
+          <p>A full assessment of air quality impacts at your development, including review of baseline conditions, traffic-related pollutant concentrations, cumulative effects of other development and impact on existing receptors. Prepared in accordance with EPUK/IAQM guidance and local authority requirements, presenting findings clearly against the relevant air quality objectives.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Dispersion Modelling</h3>
+          <p>Advanced atmospheric dispersion modelling using ADMS-Roads or DMRB-compliant tools to predict pollutant concentrations at receptor locations. We present results clearly, with contour plots and tabulated comparisons against air quality objectives, giving planning officers the evidence they need to be satisfied that future residents will not be exposed to unacceptable air quality.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </div>
+          <h3>Ventilation &amp; Mitigation Advice</h3>
+          <p>Where air quality is a concern for road-facing properties, we advise on appropriate ventilation strategies — mechanical ventilation with heat recovery (MVHR), air filtration systems, building orientation and site layout — to protect future residents and satisfy LPA requirements. For London schemes, we prepare full Air Quality Neutral and Air Quality Positive assessments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Types of development -->
+  <section class="section fade-in">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <span class="section-label">Scheme Types</span>
+          <h2 style="font-size:1.75rem;margin-bottom:1rem;">Types of Residential Development We Cover</h2>
+          <p style="color:var(--clr-text-light);line-height:1.8;margin-bottom:1.5rem;">
+            We support residential development projects of all scales — from a single self-build plot to large urban extensions and estate regeneration schemes. Our assessments are scoped to match the complexity of your project, ensuring you never pay for more than you need.
+          </p>
+          <p style="color:var(--clr-text-light);line-height:1.8;">
+            We understand the commercial pressures of residential development and the importance of proportionate, programme-friendly environmental input. Our job is to give you clear advice, quickly, so you can make informed decisions and keep your project on track.
+          </p>
+        </div>
+        <div>
+          <ul class="area-list">
+            <li>New build housing</li>
+            <li>Flatted developments</li>
+            <li>Student accommodation</li>
+            <li>Care homes</li>
+            <li>Mixed-use schemes</li>
+            <li>PRS / build-to-rent</li>
+            <li>Estate regeneration</li>
+            <li>Urban extensions</li>
+            <li>Brownfield conversion</li>
+            <li>Permitted development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standards -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">Technical Standards</span>
+      <h2 class="section-title" style="text-align:center;">Standards &amp; Guidance We Follow</h2>
+      <p class="section-subtitle" style="max-width:700px;margin-left:auto;margin-right:auto;text-align:center;">
+        Our assessments are prepared in accordance with the latest national guidance and regulatory requirements, ensuring they are technically defensible and accepted by planning authorities.
+      </p>
+      <div class="service-page__standards" style="margin-top:2.5rem;">
+        <div class="service-page__standard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>EPUK/IAQM Air Quality and Planning Guidance</strong><span>The principal guidance document for air quality assessment in the planning system, setting out the methodology for screening, assessment and significance determination.</span></div>
+        </div>
+        <div class="service-page__standard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>London Plan Air Quality Neutral</strong><span>GLA policy requiring all London development to demonstrate Air Quality Neutral status for both transport and building sources, with Air Quality Positive as the aspiration for major schemes.</span></div>
+        </div>
+        <div class="service-page__standard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>DMRB / ADMS-Roads Modelling</strong><span>Industry-standard dispersion modelling tools for predicting road traffic pollutant concentrations at sensitive receptors, accepted by local planning authorities and the Planning Inspectorate.</span></div>
+        </div>
+        <div class="service-page__standard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>UK Air Quality Objectives (LAQM)</strong><span>National air quality objectives for key pollutants including NO₂, PM₁₀ and PM₂.₅, set out in the Environment Act and Local Air Quality Management framework.</span></div>
+        </div>
+        <div class="service-page__standard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>Building Regulations Part F</strong><span>Ventilation requirements for new dwellings, with relevance to the specification of mechanical ventilation systems for residential properties in areas of elevated road traffic pollution.</span></div>
+        </div>
+        <div class="service-page__standard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>IAQM Construction Dust Guidance</strong><span>Methodology for assessing and mitigating dust impacts during the construction phase of residential development, typically required alongside the air quality assessment.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section fade-in">
+    <div class="container">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <details class="faq-item">
+          <summary class="faq-item__question">When does a residential development need an air quality assessment?</summary>
+          <div class="faq-item__answer">
+            <p>A residential development is likely to require an air quality assessment if it is located within or near an Air Quality Management Area, close to a busy road or motorway, within Greater London (where the London Plan requires Air Quality Neutral assessment), on a large site generating significant traffic, or where there are existing sources of air pollution nearby. A screening assessment can quickly establish whether a detailed study is needed — we recommend commissioning one early to avoid surprises later in the programme.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What is an AQMA and does my site need assessment?</summary>
+          <div class="faq-item__answer">
+            <p>An Air Quality Management Area (AQMA) is a zone designated by a local authority where national air quality objectives for pollutants such as nitrogen dioxide or fine particulate matter are not being met. Most planning authorities require an air quality assessment for any development within or adjacent to an AQMA. Even sites outside an AQMA may need assessment if they are near busy roads, generate significant traffic or introduce sensitive residential receptors near a pollution source.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What is Air Quality Neutral and does it apply to my scheme?</summary>
+          <div class="faq-item__answer">
+            <p>Air Quality Neutral is a London Plan requirement that applies to all development in Greater London. It requires developers to demonstrate that the scheme will not worsen air quality, by staying within benchmark emissions for both transport (based on trip generation) and building energy systems (based on combustion). If benchmarks are exceeded, mitigation such as low-emission heating, EV charging infrastructure or financial contributions may be required. We prepare Air Quality Neutral assessments as standard for all our London residential development projects.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">How long does an air quality assessment take for a housing development?</summary>
+          <div class="faq-item__answer">
+            <p>A screening assessment can typically be completed within 5 to 10 working days. If a detailed assessment with dispersion modelling is required, this usually takes 3 to 5 weeks, depending on site complexity, traffic data availability and whether background monitoring data needs to be sourced. Where real-time baseline monitoring is required as a planning condition, this can add several months to the programme — which is why commissioning environmental work early is so important.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">How much does an air quality assessment cost for residential development?</summary>
+          <div class="faq-item__answer">
+            <p>Screening assessments for residential development start from around &pound;500 to &pound;800. Detailed assessments with dispersion modelling typically range from &pound;1,500 to &pound;5,000 depending on site complexity, the number of receptors and the extent of modelling required. London schemes requiring Air Quality Neutral Assessment are priced accordingly. We provide fixed-fee proposals so you always know what you are paying before work begins.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Get Air Quality Sorted Early</h2>
+      <p class="cta-banner__text">
+        Contact us now for a free, no-obligation consultation. We'll tell you exactly what your site needs — and what it will cost.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--primary btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--outline btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="40" height="40">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered environmental consultants providing specialist air quality, dust and odour assessments across the United Kingdom. MIAQM | CEnv.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust</a></li>
+            <li><a href="services-odour.html">Odour</a></li>
+            <li><a href="services-noise.html">Noise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span>MIAQM</span>
+          <span>CEnv</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

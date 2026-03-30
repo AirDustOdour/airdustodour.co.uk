@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Odour impact assessments for industrial, waste, agricultural and food processing developments across the UK. IAQM and EA guidance. Planning and permit support.">
+  <meta property="og:title" content="Odour Impact Assessment | Air Dust Odour">
+  <meta property="og:description" content="Odour impact assessments for industrial, waste, agricultural and food processing developments across the UK. IAQM and EA guidance. Planning and permit support.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://airdustodour.co.uk/odour-impact-assessment">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Odour Impact Assessment | Air Dust Odour</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "When do I need an odour impact assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An odour impact assessment is required in three main situations: when applying for planning permission for a development that generates significant odour emissions (such as waste management, food processing, composting or intensive farming); when applying for or varying an environmental permit where odour is a key emission; or when investigating an existing odour problem in response to complaints or regulatory enforcement. The assessment demonstrates whether odour from the operation is likely to cause an unacceptable impact at nearby sensitive receptors, and identifies appropriate mitigation measures."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between an IAQM and Environment Agency odour assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The IAQM Guidance on the Assessment of Odour for Planning is the primary framework for odour assessments submitted as part of a planning application. It focuses on whether the proposed development will cause an unacceptable odour impact on nearby sensitive receptors and applies qualitative and semi-quantitative methods to determine significance. The Environment Agency's H4 guidance on horizontal odour management is used for permit applications and compliance assessments at regulated facilities. H4 sets out how to characterise odour sources, assess impacts, develop odour management plans and demonstrate compliance with permit conditions. Both frameworks can be relevant to a single site — for example, a new composting facility will need a planning odour assessment at the application stage and will be regulated by H4 at the operational stage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does an odour dispersion model involve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Odour dispersion modelling uses specialist software — typically ADMS — to simulate the atmospheric dispersion of odour from a source and predict concentrations at surrounding receptor locations. The model takes into account meteorological data (wind speed, direction, atmospheric stability), terrain, source characteristics (emission rate, height, temperature, velocity) and receptor positions. The outputs are odour concentration contour plots and exceedance statistics, which are compared against the relevant odour benchmarks to determine the significance of the impact. Modelling is most commonly required for large or complex industrial odour sources where a quantitative assessment is needed to satisfy the Environment Agency or the planning authority."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is odour measured and characterised?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Odour can be measured and characterised in several ways. Dynamic olfactometry (EN 13725) involves presenting diluted odour samples to a trained human panel to determine the odour concentration in European Odour Units per cubic metre (ouE/m³). Field olfactometry involves trained assessors using a portable dilution device at the site boundary to quantify odour intensity. Sniff testing (olfactory surveys) involve trained assessors making multiple site visits to characterise the frequency, intensity, duration, offensiveness and character of odour at receptor locations. Chemical analysis can identify specific odorous compounds and their concentrations. The appropriate method depends on the purpose of the assessment, the nature of the source and the regulatory framework."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does an odour impact assessment cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost of an odour impact assessment depends significantly on the complexity of the source, the number and sensitivity of receptors, and the methodology required. Desktop assessments for lower-risk planning applications start from around £1,000 to £1,500. Assessments involving dispersion modelling typically start from £2,500 to £4,000. Sniff testing programmes, olfactometry and combined planning and permit assessments are priced on a project-specific basis. We provide a clear, fixed-fee proposal after a brief conversation about your project."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <style>
+    .nav-item--dropdown { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      z-index: 200;
+      padding: 8px 0;
+    }
+    .nav-item--dropdown:hover .nav-dropdown,
+    .nav-item--dropdown:focus-within .nav-dropdown { display: block; }
+    .nav-dropdown a {
+      display: block; padding: 10px 20px;
+      font-size: 0.875rem; color: var(--clr-text, #1f2937);
+      text-decoration: none; font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-dropdown a:hover { background: #f3f4f6; color: var(--clr-primary, #2563eb); }
+    .header__nav-link--dropdown::after { content: ' ▾'; font-size: 0.7em; }
+
+    .service-page__intro-grid {
+      display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: start;
+    }
+    @media (max-width: 900px) { .service-page__intro-grid { grid-template-columns: 1fr; } }
+    .service-page__intro-grid p { color: var(--clr-text-light, #6b7280); line-height: 1.8; margin-bottom: 1rem; }
+
+    .quick-contact {
+      background: #f8fafc; border: 1px solid var(--clr-border, #e5e7eb); border-radius: 12px; padding: 2rem;
+    }
+    .quick-contact h3 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--clr-heading, #111827); }
+    .quick-contact p { font-size: 0.875rem; color: var(--clr-text-light, #6b7280); margin-bottom: 1.5rem; line-height: 1.6; }
+    .quick-contact .btn { width: 100%; justify-content: center; margin-bottom: 1rem; }
+    .quick-contact__tel {
+      display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600;
+      color: var(--clr-heading, #111827); text-decoration: none; justify-content: center;
+    }
+    .quick-contact__tel:hover { color: var(--clr-primary, #2563eb); }
+    .quick-contact__divider { border: none; border-top: 1px solid var(--clr-border, #e5e7eb); margin: 1.25rem 0; }
+    .quick-contact__badge { font-size: 0.75rem; color: var(--clr-text-light, #6b7280); text-align: center; margin-top: 1rem; }
+
+    .offerings-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) { .offerings-grid { grid-template-columns: 1fr; } }
+    .offering-card {
+      background: #fff; border: 1px solid var(--clr-border, #e5e7eb); border-radius: 10px;
+      padding: 1.75rem; transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .offering-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .offering-card__icon {
+      width: 48px; height: 48px; background: #eff6ff; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;
+    }
+    .offering-card__icon svg { width: 22px; height: 22px; color: var(--clr-primary, #2563eb); }
+    .offering-card h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--clr-primary, #2563eb); }
+    .offering-card p { font-size: 0.875rem; color: var(--clr-text-light, #6b7280); line-height: 1.7; margin: 0; }
+
+    .area-list {
+      list-style: none; padding: 0; margin: 0;
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem 2rem;
+    }
+    @media (max-width: 600px) { .area-list { grid-template-columns: 1fr; } }
+    .area-list li {
+      display: flex; align-items: center; gap: 10px; font-size: 0.9rem;
+      color: var(--clr-text, #1f2937); padding: 0.5rem 0; border-bottom: 1px solid var(--clr-border, #e5e7eb);
+    }
+    .area-list li::before {
+      content: ''; width: 8px; height: 8px;
+      background: var(--clr-primary, #2563eb); border-radius: 50%; flex-shrink: 0;
+    }
+
+    .faq-section { max-width: 800px; margin: 2.5rem auto 0; }
+
+    .cta-banner__actions .btn--outline {
+      background: transparent; border: 2px solid rgba(255,255,255,0.6); color: rgba(255,255,255,0.9);
+    }
+    .cta-banner__actions .btn--outline:hover {
+      background: rgba(255,255,255,0.15); border-color: #fff; color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li class="nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown active">Services</a>
+            <div class="nav-dropdown">
+              <a href="services-air.html">Air Quality</a>
+              <a href="services-dust.html">Dust</a>
+              <a href="services-odour.html">Odour</a>
+              <a href="services-noise.html">Noise</a>
+            </div>
+          </li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="get-a-quote.html" class="btn btn--nav">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">Odour Impact Assessment</h1>
+      <p class="page-hero__subtitle">
+        Expert odour impact assessments for planning applications and environmental permits across the UK. Industrial, waste, agricultural and food processing operations — assessed to IAQM and Environment Agency standards.
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro Grid -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="service-page__intro-grid">
+        <div class="service-page__intro-content">
+          <h2>Specialist Odour Assessment for Complex Operations</h2>
+          <p>
+            Odour is one of the most emotive and legally significant environmental issues facing industrial operators, waste companies, food processors and farmers. A poorly managed or inadequately assessed odour impact can result in planning refusals, permit conditions, enforcement action or community opposition that brings an operation to a standstill. Conversely, a well-prepared odour impact assessment — one that honestly characterises the source, rigorously assesses the impact and identifies proportionate mitigation — can unlock planning consent, secure a permit variation, or demonstrate compliance to a sceptical regulator.
+          </p>
+          <p>
+            At Air Dust Odour, we prepare odour impact assessments for a wide range of industrial, waste, agricultural and food processing operations. Our approach is rigorous, transparent and aligned with the IAQM and Environment Agency guidance frameworks. We combine desktop analysis, site characterisation, sniff testing and, where necessary, advanced dispersion modelling to produce assessments that are technically credible and proportionate to the risk.
+          </p>
+          <p>
+            We are equally at home preparing a planning odour assessment for a new anaerobic digestion plant or an environmental permit odour assessment for an existing waste transfer station under EA scrutiny. Whatever your regulatory context, we have the expertise to prepare an assessment that addresses the right questions in the right framework.
+          </p>
+        </div>
+        <aside class="quick-contact">
+          <h3>Get a Free Quote</h3>
+          <p>Tell us about your operation, the regulatory context and the timescale — we'll confirm the scope and fee quickly and without obligation.</p>
+          <a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote</a>
+          <hr class="quick-contact__divider">
+          <a href="tel:+442080503003" class="quick-contact__tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            020 8050 3003
+          </a>
+          <p class="quick-contact__badge">IAQM &bull; EA H4 &bull; Planning &amp; permit support</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">What We Provide</span>
+      <h2 class="section-title">Our Odour Impact Assessment Services</h2>
+      <p class="section-subtitle" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
+        From planning applications to environmental permits and complaints investigations, we provide the full range of odour impact assessment services.
+      </p>
+      <div class="offerings-grid">
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h3>Planning Odour Assessment</h3>
+          <p>Odour impact assessments prepared in accordance with the IAQM Guidance on the Assessment of Odour for Planning for inclusion in planning applications and Environmental Statements. We assess odour significance using a structured source-pathway-receptor framework, characterise the sensitivity of surrounding receptors, and identify proportionate mitigation measures — all presented in a clear, LPA-ready report.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Environmental Permit Odour Assessment</h3>
+          <p>Odour assessments for new environmental permit applications, permit variations and compliance demonstrations, prepared in accordance with Environment Agency H4 horizontal guidance. We characterise odour sources, assess off-site impacts, prepare Odour Management Plans (OMPs), and assist operators with EA pre-application discussions and information requests.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Odour Dispersion Modelling</h3>
+          <p>Advanced atmospheric dispersion modelling using ADMS to predict odour concentrations at sensitive receptors from point, area and volume sources. We present results as contour plots and exceedance statistics, comparing predicted concentrations against relevant odour benchmarks (ouE/m³ at defined percentiles) to support both planning and permit applications with quantitative evidence.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <h3>Odour Survey &amp; Sniff Testing</h3>
+          <p>Olfactory surveys (sniff testing) carried out by trained assessors to characterise the frequency, intensity, duration, offensiveness and hedonic tone of odour at receptor locations. Surveys are conducted across multiple site visits on different days and weather conditions, providing qualitative evidence to complement modelling or to support complaints investigations and enforcement responses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Operation types -->
+  <section class="section fade-in">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <span class="section-label">Who We Work With</span>
+          <h2 style="font-size:1.75rem;margin-bottom:1rem;">Operations Requiring Odour Assessment</h2>
+          <p style="color:var(--clr-text-light);line-height:1.8;margin-bottom:1.5rem;">
+            We have prepared odour impact assessments for a wide range of industrial, waste and food processing operations across the UK. The common thread is that all involve significant odour-generating processes and require a credible, independently prepared assessment to satisfy the planning authority or environmental regulator.
+          </p>
+          <p style="color:var(--clr-text-light);line-height:1.8;">
+            If your operation generates odour and you need to demonstrate that it is properly managed and assessed — whether for a new application, a permit renewal, a complaint investigation or an enforcement response — we have the expertise to help.
+          </p>
+        </div>
+        <div>
+          <ul class="area-list">
+            <li>Waste transfer stations</li>
+            <li>Composting facilities</li>
+            <li>Anaerobic digestion</li>
+            <li>Food manufacturing</li>
+            <li>Rendering plants</li>
+            <li>Sewage treatment works</li>
+            <li>Intensive livestock farming</li>
+            <li>Landfill gas operations</li>
+            <li>Industrial processes</li>
+            <li>Commercial kitchens</li>
+            <li>Fish processing</li>
+            <li>Malting &amp; brewing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standards -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">Technical Standards</span>
+      <h2 class="section-title" style="text-align:center;">Standards &amp; Guidance We Follow</h2>
+      <p class="section-subtitle" style="max-width:700px;margin-left:auto;margin-right:auto;text-align:center;">
+        Our odour impact assessments are grounded in the current regulatory and technical frameworks, ensuring they are accepted by both planning authorities and the Environment Agency.
+      </p>
+      <div class="service-page__standards" style="margin-top:2.5rem;">
+        <div class="service-page__standard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>IAQM Guidance on the Assessment of Odour for Planning</strong><span>The principal framework for odour assessments in the planning system — providing a structured, receptor-led methodology for determining the significance of odour effects from development proposals.</span></div>
+        </div>
+        <div class="service-page__standard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>Environment Agency H4 Odour Management</strong><span>EA horizontal guidance for odour assessment and management at permitted facilities — covering source characterisation, impact assessment, Odour Management Plans and monitoring.</span></div>
+        </div>
+        <div class="service-page__standard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>EN 13725 Dynamic Olfactometry</strong><span>The European standard for measuring odour concentration using trained human panels — providing quantitative odour emission data for use in dispersion modelling.</span></div>
+        </div>
+        <div class="service-page__standard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>ADMS Dispersion Modelling</strong><span>Industry-standard Gaussian plume modelling software accepted by the Environment Agency and planning authorities for predicting odour concentrations at receptor locations.</span></div>
+        </div>
+        <div class="service-page__standard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>EMAQ+ Methodology</strong><span>The industry-standard framework for assessing odour from commercial kitchen extract systems — applied to restaurant, takeaway and food premises planning applications.</span></div>
+        </div>
+        <div class="service-page__standard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <div><strong>Environmental Protection Act 1990</strong><span>Statutory nuisance provisions and the duty not to cause a nuisance — the legal basis for local authority enforcement action in respect of odour from industrial and commercial operations.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section fade-in">
+    <div class="container">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <details class="faq-item">
+          <summary class="faq-item__question">When do I need an odour impact assessment?</summary>
+          <div class="faq-item__answer">
+            <p>An odour impact assessment is required in three main situations: when applying for planning permission for a development that generates significant odour emissions; when applying for or varying an environmental permit where odour is a key emission; or when investigating an existing odour problem in response to complaints or regulatory enforcement. The assessment demonstrates whether odour from the operation is likely to cause an unacceptable impact at nearby sensitive receptors and identifies appropriate mitigation measures.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What is the difference between an IAQM and Environment Agency odour assessment?</summary>
+          <div class="faq-item__answer">
+            <p>The IAQM Guidance on the Assessment of Odour for Planning is the primary framework for odour assessments submitted as part of a planning application — focusing on significance to nearby receptors. The Environment Agency's H4 guidance is used for permit applications and compliance assessments at regulated facilities, covering source characterisation, Odour Management Plans and monitoring. Both frameworks can be relevant to a single site — for example, a new composting facility will need a planning assessment at application stage and will be regulated by H4 operationally.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What does an odour dispersion model involve?</summary>
+          <div class="faq-item__answer">
+            <p>Odour dispersion modelling uses specialist software — typically ADMS — to simulate the atmospheric dispersion of odour from a source and predict concentrations at surrounding receptors. The model accounts for meteorological data, terrain, and source characteristics such as emission rate, height, temperature and velocity. Outputs are odour concentration contour plots and exceedance statistics compared against relevant benchmarks, providing the quantitative evidence needed by the Environment Agency or planning authority.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">How is odour measured and characterised?</summary>
+          <div class="faq-item__answer">
+            <p>Odour can be measured in several ways. Dynamic olfactometry (EN 13725) uses a trained human panel to determine odour concentration in European Odour Units per cubic metre. Field olfactometry uses a portable dilution device at the site boundary. Sniff testing involves trained assessors making multiple visits to characterise the frequency, intensity, duration, offensiveness and character of odour at receptor locations. Chemical analysis can identify specific odorous compounds. The appropriate method depends on the purpose of the assessment and the regulatory framework.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">How much does an odour impact assessment cost?</summary>
+          <div class="faq-item__answer">
+            <p>The cost depends on the complexity of the source, the number and sensitivity of receptors, and the methodology required. Desktop assessments for lower-risk planning applications start from around &pound;1,000 to &pound;1,500. Assessments involving dispersion modelling typically start from &pound;2,500 to &pound;4,000. Sniff testing programmes, olfactometry and combined planning and permit assessments are priced on a project-specific basis. We provide a clear, fixed-fee proposal after a brief conversation about your project.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Need an Odour Impact Assessment?</h2>
+      <p class="cta-banner__text">
+        Get in touch for a free, no-obligation consultation. We'll clarify the methodology needed and give you a fixed-fee quote, quickly.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--primary btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--outline btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="40" height="40">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered environmental consultants providing specialist air quality, dust and odour assessments across the United Kingdom. MIAQM | CEnv.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust</a></li>
+            <li><a href="services-odour.html">Odour</a></li>
+            <li><a href="services-noise.html">Noise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span>MIAQM</span>
+          <span>CEnv</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

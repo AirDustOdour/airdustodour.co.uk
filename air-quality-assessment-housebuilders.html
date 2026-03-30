@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Specialist air quality, dust and odour assessments for housebuilders across the UK. From land acquisition screening to detailed assessment and planning condition discharge.">
+  <meta property="og:title" content="Air Quality Assessments for Housebuilders | Air Dust Odour">
+  <meta property="og:description" content="Specialist air quality, dust and odour assessments for housebuilders across the UK. From land acquisition screening to detailed assessment and planning condition discharge.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://airdustodour.co.uk/air-quality-assessment-housebuilders">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Air Quality Assessments for Housebuilders | Air Dust Odour</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "At what stage should a housebuilder commission an air quality assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The earlier the better. Ideally, a desktop air quality screening should be commissioned at the land acquisition or due diligence stage, before you commit to a site. This quickly establishes whether there are any air quality constraints — proximity to AQMAs, busy roads, industrial sources — and what level of assessment will be required at the planning stage. Identifying issues early means they can be designed out or budgeted for, rather than discovered at application stage when options are limited and programme pressure is real."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the most common air quality constraints for housebuilders?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most common constraints are proximity to Air Quality Management Areas, sites adjacent to or within 200 metres of a motorway or busy A-road, sites in Greater London (where Air Quality Neutral assessment is mandatory under the London Plan), brownfield sites with potential contaminated dust issues, and sites near existing industrial or waste operations that generate odour or dust. In London, almost every residential site requires some level of air quality assessment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do we need a separate assessment for each phase of a large site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not necessarily. For outline planning applications, a single air quality assessment covering the whole site is typically sufficient, with phasing addressed through the construction dust management plan. For reserved matters applications, you may need to update or supplement the original assessment to reflect the detailed layout. For large multi-phase sites, we can agree a phased assessment strategy with you at the outset that minimises duplication and cost while satisfying LPA requirements at each stage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Air Quality Neutral apply to our London sites?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Air Quality Neutral (AQN) is a London Plan policy requirement that applies to all residential development in Greater London. It requires the developer to demonstrate that the scheme will not contribute to worsening air quality by exceeding benchmark emissions for both transport (based on trip generation) and building energy systems (based on combustion from boilers and other plant). For residential schemes, the building benchmark relates primarily to the heating system — a scheme with gas boilers is likely to exceed the benchmark, making a heat pump or district heating connection the preferred solution. We prepare AQN assessments as standard for all our London housebuilder clients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you work with our planning consultants?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely — and we strongly encourage it. Air quality is most effectively managed when it is integrated into the planning strategy from the outset, not bolted on at the last minute. We work closely with planning consultants, pre-empting the questions they and the LPA will ask and ensuring our assessments are consistent with the wider planning strategy for the site. We are experienced subconsultants who understand our role and are committed to making the planning consultant's job easier, not harder."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <style>
+    .nav-item--dropdown { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      z-index: 200;
+      padding: 8px 0;
+    }
+    .nav-item--dropdown:hover .nav-dropdown,
+    .nav-item--dropdown:focus-within .nav-dropdown { display: block; }
+    .nav-dropdown a {
+      display: block; padding: 10px 20px;
+      font-size: 0.875rem; color: var(--clr-text, #1f2937);
+      text-decoration: none; font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-dropdown a:hover { background: #f3f4f6; color: var(--clr-primary, #2563eb); }
+    .header__nav-link--dropdown::after { content: ' ▾'; font-size: 0.7em; }
+
+    .service-page__intro-grid {
+      display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: start;
+    }
+    @media (max-width: 900px) { .service-page__intro-grid { grid-template-columns: 1fr; } }
+    .service-page__intro-grid p { color: var(--clr-text-light, #6b7280); line-height: 1.8; margin-bottom: 1rem; }
+
+    .quick-contact {
+      background: #f8fafc; border: 1px solid var(--clr-border, #e5e7eb); border-radius: 12px; padding: 2rem;
+    }
+    .quick-contact h3 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--clr-heading, #111827); }
+    .quick-contact p { font-size: 0.875rem; color: var(--clr-text-light, #6b7280); margin-bottom: 1.5rem; line-height: 1.6; }
+    .quick-contact .btn { width: 100%; justify-content: center; margin-bottom: 1rem; }
+    .quick-contact__tel {
+      display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600;
+      color: var(--clr-heading, #111827); text-decoration: none; justify-content: center;
+    }
+    .quick-contact__tel:hover { color: var(--clr-primary, #2563eb); }
+    .quick-contact__divider { border: none; border-top: 1px solid var(--clr-border, #e5e7eb); margin: 1.25rem 0; }
+    .quick-contact__badge { font-size: 0.75rem; color: var(--clr-text-light, #6b7280); text-align: center; margin-top: 1rem; }
+
+    .offerings-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) { .offerings-grid { grid-template-columns: 1fr; } }
+    .offering-card {
+      background: #fff; border: 1px solid var(--clr-border, #e5e7eb); border-radius: 10px;
+      padding: 1.75rem; transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .offering-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .offering-card__icon {
+      width: 48px; height: 48px; background: #eff6ff; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;
+    }
+    .offering-card__icon svg { width: 22px; height: 22px; color: var(--clr-primary, #2563eb); }
+    .offering-card h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--clr-primary, #2563eb); }
+    .offering-card p { font-size: 0.875rem; color: var(--clr-text-light, #6b7280); line-height: 1.7; margin: 0; }
+
+    .area-list {
+      list-style: none; padding: 0; margin: 0;
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem 2rem;
+    }
+    @media (max-width: 600px) { .area-list { grid-template-columns: 1fr; } }
+    .area-list li {
+      display: flex; align-items: center; gap: 10px; font-size: 0.9rem;
+      color: var(--clr-text, #1f2937); padding: 0.5rem 0; border-bottom: 1px solid var(--clr-border, #e5e7eb);
+    }
+    .area-list li::before {
+      content: ''; width: 8px; height: 8px;
+      background: var(--clr-primary, #2563eb); border-radius: 50%; flex-shrink: 0;
+    }
+
+    .faq-section { max-width: 800px; margin: 2.5rem auto 0; }
+
+    .cta-banner__actions .btn--outline {
+      background: transparent; border: 2px solid rgba(255,255,255,0.6); color: rgba(255,255,255,0.9);
+    }
+    .cta-banner__actions .btn--outline:hover {
+      background: rgba(255,255,255,0.15); border-color: #fff; color: #fff;
+    }
+
+    /* Lifecycle timeline */
+    .lifecycle {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+      counter-reset: lifecycle-step;
+    }
+    @media (max-width: 900px) { .lifecycle { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 500px) { .lifecycle { grid-template-columns: 1fr; } }
+    .lifecycle__step {
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 10px;
+      padding: 1.5rem;
+      position: relative;
+      counter-increment: lifecycle-step;
+    }
+    .lifecycle__step::before {
+      content: counter(lifecycle-step);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--clr-primary, #2563eb);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.875rem;
+      border-radius: 50%;
+      margin-bottom: 0.75rem;
+    }
+    .lifecycle__step h4 { font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--clr-heading, #111827); }
+    .lifecycle__step p { font-size: 0.825rem; color: var(--clr-text-light, #6b7280); line-height: 1.6; margin: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li class="nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown active">Services</a>
+            <div class="nav-dropdown">
+              <a href="services-air.html">Air Quality</a>
+              <a href="services-dust.html">Dust</a>
+              <a href="services-odour.html">Odour</a>
+              <a href="services-noise.html">Noise</a>
+            </div>
+          </li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="get-a-quote.html" class="btn btn--nav">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">Air Quality Assessments for Housebuilders</h1>
+      <p class="page-hero__subtitle">
+        Supporting volume and SME housebuilders throughout the development lifecycle — from land acquisition screening to planning condition discharge. Getting air quality right early saves time and cost later.
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro Grid -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="service-page__intro-grid">
+        <div class="service-page__intro-content">
+          <h2>Air Quality Support Across the Housebuilder Development Lifecycle</h2>
+          <p>
+            For housebuilders, air quality is not a single event — it is a thread that runs through the entire development lifecycle, from the first due diligence check on a potential acquisition to the discharge of construction dust conditions on the eve of a site start. Managed proactively, it adds minimal cost and zero delay. Managed reactively — or ignored until the planning authority demands it — it can derail programmes, inflate costs and create conditions that restrict what you can build.
+          </p>
+          <p>
+            Air Dust Odour provides housebuilders with a complete air quality service that covers every stage of the process. We work with land buyers, technical directors, planning managers and site teams, providing the right level of input at the right moment. Our screening assessments give land buyers a rapid read on whether a site has any air quality issues before exchange. Our planning assessments give the planning team what they need for a clean application. Our CEMPs give site managers a practical, approvable construction dust management framework.
+          </p>
+          <p>
+            We understand the commercial reality of housebuilding — that every week of delay costs money, that proportionate advice matters as much as technically correct advice, and that our job is to solve problems, not create them. We are experienced working within the housebuilder supply chain alongside planning consultants, architects and transport engineers, and we integrate seamlessly into your project team.
+          </p>
+        </div>
+        <aside class="quick-contact">
+          <h3>Discuss Your Site</h3>
+          <p>Whether you're at land bid stage or about to submit a planning application, we can give you a quick read on what's needed and what it will cost.</p>
+          <a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote</a>
+          <hr class="quick-contact__divider">
+          <a href="tel:+442080503003" class="quick-contact__tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            020 8050 3003
+          </a>
+          <p class="quick-contact__badge">Volume &amp; SME housebuilders &bull; Nationwide &bull; Fixed fees</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Development lifecycle -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">The Development Lifecycle</span>
+      <h2 class="section-title">Air Quality at Every Stage</h2>
+      <p class="section-subtitle" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
+        The earlier air quality is considered, the less it costs and the less it disrupts your programme. Here is how we support housebuilders at each stage.
+      </p>
+      <div class="lifecycle">
+        <div class="lifecycle__step">
+          <h4>Land Acquisition</h4>
+          <p>A rapid desktop screening identifies any air quality constraints before you commit to the site — proximity to AQMAs, roads, industrial sources, odour constraints. Flags issues early so they can be priced into the bid or designed out.</p>
+        </div>
+        <div class="lifecycle__step">
+          <h4>Pre-Application</h4>
+          <p>Scoping what assessment will be required and engaging with the LPA early to agree the methodology. Avoids wasted work and ensures the application stage assessment is properly scoped from the outset.</p>
+        </div>
+        <div class="lifecycle__step">
+          <h4>Planning Application</h4>
+          <p>The full air quality assessment, dust risk assessment and any odour assessment required for the application. Written to satisfy the LPA, with query responses included as standard within the agreed fee.</p>
+        </div>
+        <div class="lifecycle__step">
+          <h4>Condition Discharge</h4>
+          <p>CEMPs and monitoring plans to discharge pre-commencement conditions, enabling the site start to proceed. Prepared quickly, written to be approvable, and practical enough for your site team to actually use on the ground.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings -->
+  <section class="section fade-in">
+    <div class="container">
+      <span class="section-label">What We Provide</span>
+      <h2 class="section-title">Our Housebuilder Services</h2>
+      <p class="section-subtitle" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
+        A complete air quality, dust and odour service for housebuilders — scoped to match your project stage and delivered to your programme.
+      </p>
+      <div class="offerings-grid">
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>Land Acquisition Screening</h3>
+          <p>A fast, fixed-fee desktop screening for use at the land acquisition or due diligence stage. We assess the air quality context of the site — AQMA designation, road proximity, nearby industrial sources, odour constraints — and provide a clear opinion on whether air quality is likely to be a material constraint and what assessment will be needed at the planning stage. Typically delivered within 3 to 5 working days.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Planning Stage Assessment</h3>
+          <p>The full air quality assessment for your planning application — screening, detailed assessment and dispersion modelling as required — alongside any dust risk assessment and odour assessment needed. We work with your planning consultant to ensure the environmental assessment is consistent with the wider planning strategy, and we respond to LPA queries within the agreed fee. Air Quality Neutral assessments for London sites are included as standard.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Construction CEMP</h3>
+          <p>A site-specific Construction Environmental Management Plan covering all dust-generating construction activities — demolition, excavation, bulk earthworks, piling, trackout and general construction. Written to satisfy the planning authority and your construction team alike, with monitoring protocols, complaint procedures and the responsible person structure that LPAs need to see before they discharge the condition.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+          </div>
+          <h3>Planning Condition Discharge</h3>
+          <p>Preparation of all documentation required to discharge air quality, dust and odour-related planning conditions — CEMPs, monitoring plans, ventilation specifications, updated assessments — submitted to the LPA with a covering technical note explaining how each element of the condition has been addressed. We aim to get conditions discharged at the first attempt so your programme is not held up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project types -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <span class="section-label">Project Types</span>
+          <h2 style="font-size:1.75rem;margin-bottom:1rem;">Types of Housebuilder Project We Cover</h2>
+          <p style="color:var(--clr-text-light);line-height:1.8;margin-bottom:1.5rem;">
+            We work with volume housebuilders, SME developers and self-build clients on residential projects of all sizes and types. Our service is deliberately flexible — we can provide a single-stage assessment for a small site or a full lifecycle service for a multi-phase strategic allocation.
+          </p>
+          <p style="color:var(--clr-text-light);line-height:1.8;">
+            Whatever the scale or tenure of your scheme, air quality is a material consideration that needs to be addressed competently and proportionately. We provide the right level of input for each project — not a standard product regardless of site context.
+          </p>
+        </div>
+        <div>
+          <ul class="area-list">
+            <li>Volume housing</li>
+            <li>SME housebuilders</li>
+            <li>Self-build schemes</li>
+            <li>Estate regeneration</li>
+            <li>Brownfield development</li>
+            <li>Urban extensions</li>
+            <li>Green belt release</li>
+            <li>PRS / build-to-rent</li>
+            <li>Later living / retirement</li>
+            <li>Mixed tenure schemes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section fade-in">
+    <div class="container">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <details class="faq-item">
+          <summary class="faq-item__question">At what stage should a housebuilder commission an air quality assessment?</summary>
+          <div class="faq-item__answer">
+            <p>The earlier the better. Ideally, a desktop air quality screening should be commissioned at the land acquisition or due diligence stage, before you commit to a site. This quickly establishes whether there are any air quality constraints — proximity to AQMAs, busy roads, industrial odour sources — and what level of assessment will be required at the planning stage. Identifying issues early means they can be designed out or budgeted for, rather than discovered under programme pressure at application stage.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What are the most common air quality constraints for housebuilders?</summary>
+          <div class="faq-item__answer">
+            <p>The most common constraints are: proximity to Air Quality Management Areas; sites within 200 metres of a motorway or busy A-road where dispersion modelling is typically required; sites in Greater London where Air Quality Neutral assessment is mandatory under the London Plan; brownfield sites with potential contaminated dust issues during construction; and sites near existing industrial or waste operations that generate odour or dust. In London, almost every residential site will require some level of air quality assessment.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">Do we need a separate assessment for each phase of a large site?</summary>
+          <div class="faq-item__answer">
+            <p>Not necessarily. For outline planning applications, a single air quality assessment covering the whole site is typically sufficient. For reserved matters applications, the original assessment may need to be updated to reflect the detailed layout. For large multi-phase sites, we can agree a phased assessment strategy at the outset that minimises duplication and cost while satisfying LPA requirements at each stage. We are experienced in preparing assessment frameworks for strategic sites that provide certainty early and reduce the burden at each subsequent application.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">How does Air Quality Neutral apply to our London sites?</summary>
+          <div class="faq-item__answer">
+            <p>Air Quality Neutral (AQN) is a London Plan policy requirement applying to all residential development in Greater London. It requires the developer to demonstrate that the scheme will not worsen air quality, by staying within benchmark emissions for both transport (based on trip generation) and building energy systems (based on combustion). For residential schemes, the building benchmark relates primarily to the heating system — a scheme with gas boilers is likely to exceed it, making heat pumps or district heating the preferred solution. We prepare AQN assessments as standard for all our London housebuilder clients and advise on the most commercially workable pathway to compliance.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">Can you work with our planning consultants?</summary>
+          <div class="faq-item__answer">
+            <p>Absolutely — and we strongly encourage it. Air quality is most effectively managed when it is integrated into the planning strategy from the outset. We work closely with planning consultants, pre-empting the questions that the LPA will ask and ensuring our assessments are consistent with the wider planning case. We operate as subconsultants who understand our role in the team and are committed to making the planning consultant's job easier, not harder. We are discreet, reliable and focused on keeping the application on track.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Talk to Us About Your Site</h2>
+      <p class="cta-banner__text">
+        Whether you are looking at a new acquisition or preparing to submit, we can help. Get in touch for a free, no-obligation conversation about your project.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--primary btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--outline btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="40" height="40">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered environmental consultants providing specialist air quality, dust and odour assessments across the United Kingdom. MIAQM | CEnv.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust</a></li>
+            <li><a href="services-odour.html">Odour</a></li>
+            <li><a href="services-noise.html">Noise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span>MIAQM</span>
+          <span>CEnv</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

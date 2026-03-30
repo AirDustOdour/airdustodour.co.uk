@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Air quality, dust and odour assessments for planning consultants across the UK. Fast, reliable reports that satisfy local authority requirements. MIAQM accredited.">
+  <meta property="og:title" content="Air Quality Assessment for Planning Consultants | Air Dust Odour">
+  <meta property="og:description" content="Air quality, dust and odour assessments for planning consultants across the UK. Fast, reliable reports that satisfy local authority requirements. MIAQM accredited.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://airdustodour.co.uk/air-quality-assessment-planning-consultants">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Air Quality Assessment for Planning Consultants | Air Dust Odour</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you work as a subconsultant to planning consultancies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — working as a subconsultant to planning consultancies is a core part of what we do. We understand the importance of operating as a trusted partner rather than a competitor, and we are completely comfortable working in the background. We engage directly with the planning authority on technical matters when required, but we always communicate through you so you remain in control of the client relationship. We are discreet, professional and focused on making your project a success."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can you turn around an air quality report?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For straightforward screening assessments, we can typically turn around a draft report within 5 working days. Detailed assessments with dispersion modelling usually take 2 to 4 weeks, depending on site complexity and data requirements. We are experienced at working to tight planning timescales and can discuss expedited turnaround where your programme requires it. We always agree a clear delivery date upfront and stick to it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What credentials do you hold?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our team holds MIAQM (Member of the Institute of Air Quality Management) and CEnv (Chartered Environmentalist) accreditation. These are the principal professional credentials for air quality practitioners in the UK and are recognised by planning authorities and the Planning Inspectorate as evidence of competence. We maintain our continuing professional development in line with IAQM requirements and stay current with evolving guidance and policy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you respond to planning authority queries on our behalf?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Responding to planning authority comments and queries — from environmental health officers, planning officers or third-party consultees — is a standard part of our service and is included within our agreed fee. We draft responses to technical queries, prepare supplementary technical notes where needed, and liaise directly with the LPA's environmental health team when it is helpful to do so. Our aim is always to resolve queries at the first attempt so your application keeps moving."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you cover the whole of the UK?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we work on projects across England, Wales, Scotland and Northern Ireland. We are familiar with the variations in local planning authority requirements across different regions and nations, including the distinct policy frameworks that apply in Wales (Future Wales, TAN policies) and Scotland (NPF4). Whatever the location of your project, we have the knowledge to prepare an assessment that meets local requirements."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <style>
+    .nav-item--dropdown { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      z-index: 200;
+      padding: 8px 0;
+    }
+    .nav-item--dropdown:hover .nav-dropdown,
+    .nav-item--dropdown:focus-within .nav-dropdown { display: block; }
+    .nav-dropdown a {
+      display: block;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      color: var(--clr-text, #1f2937);
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-dropdown a:hover { background: #f3f4f6; color: var(--clr-primary, #2563eb); }
+    .header__nav-link--dropdown::after { content: ' ▾'; font-size: 0.7em; }
+
+    .service-page__intro-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) { .service-page__intro-grid { grid-template-columns: 1fr; } }
+    .service-page__intro-grid p { color: var(--clr-text-light, #6b7280); line-height: 1.8; margin-bottom: 1rem; }
+
+    .quick-contact {
+      background: #f8fafc;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .quick-contact h3 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--clr-heading, #111827); }
+    .quick-contact p { font-size: 0.875rem; color: var(--clr-text-light, #6b7280); margin-bottom: 1.5rem; line-height: 1.6; }
+    .quick-contact .btn { width: 100%; justify-content: center; margin-bottom: 1rem; }
+    .quick-contact__tel {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.9rem; font-weight: 600;
+      color: var(--clr-heading, #111827); text-decoration: none; justify-content: center;
+    }
+    .quick-contact__tel:hover { color: var(--clr-primary, #2563eb); }
+    .quick-contact__divider { border: none; border-top: 1px solid var(--clr-border, #e5e7eb); margin: 1.25rem 0; }
+    .quick-contact__badge { font-size: 0.75rem; color: var(--clr-text-light, #6b7280); text-align: center; margin-top: 1rem; }
+
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) { .offerings-grid { grid-template-columns: 1fr; } }
+    .offering-card {
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 10px;
+      padding: 1.75rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .offering-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .offering-card__icon {
+      width: 48px; height: 48px;
+      background: #eff6ff; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;
+    }
+    .offering-card__icon svg { width: 22px; height: 22px; color: var(--clr-primary, #2563eb); }
+    .offering-card h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--clr-primary, #2563eb); }
+    .offering-card p { font-size: 0.875rem; color: var(--clr-text-light, #6b7280); line-height: 1.7; margin: 0; }
+
+    .area-list {
+      list-style: none; padding: 0; margin: 0;
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem 2rem;
+    }
+    @media (max-width: 600px) { .area-list { grid-template-columns: 1fr; } }
+    .area-list li {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.9rem; color: var(--clr-text, #1f2937);
+      padding: 0.5rem 0; border-bottom: 1px solid var(--clr-border, #e5e7eb);
+    }
+    .area-list li::before {
+      content: ''; width: 8px; height: 8px;
+      background: var(--clr-primary, #2563eb); border-radius: 50%; flex-shrink: 0;
+    }
+
+    .faq-section { max-width: 800px; margin: 2.5rem auto 0; }
+
+    .cta-banner__actions .btn--outline {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.6);
+      color: rgba(255,255,255,0.9);
+    }
+    .cta-banner__actions .btn--outline:hover {
+      background: rgba(255,255,255,0.15); border-color: #fff; color: #fff;
+    }
+
+    /* Trust badges */
+    .trust-row {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--clr-heading, #111827);
+    }
+    .trust-badge svg { color: var(--clr-primary, #2563eb); }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li class="nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown active">Services</a>
+            <div class="nav-dropdown">
+              <a href="services-air.html">Air Quality</a>
+              <a href="services-dust.html">Dust</a>
+              <a href="services-odour.html">Odour</a>
+              <a href="services-noise.html">Noise</a>
+            </div>
+          </li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="get-a-quote.html" class="btn btn--nav">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">Air Quality Assessments for Planning Consultants</h1>
+      <p class="page-hero__subtitle">
+        The trusted environmental subconsultant for planning practices across the UK. Reliable, first-time-right reports — delivered to your programme and at a fixed fee.
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro Grid -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="service-page__intro-grid">
+        <div class="service-page__intro-content">
+          <h2>Your Environmental Subconsultant — Not a Competitor</h2>
+          <p>
+            Planning consultants need an environmental subconsultant they can rely on completely. Someone who delivers technically robust reports without fuss, responds to planning authority queries without being chased, and understands that your client relationship is yours to keep. That is exactly what Air Dust Odour offers.
+          </p>
+          <p>
+            We have worked alongside planning consultancies of all sizes — from national practices to boutique specialist firms — delivering air quality, dust and odour assessments that slot seamlessly into their applications and satisfy planning officers first time. We understand how the planning system works, we know what different local authorities expect, and we write our reports accordingly. You will never have to explain our methodology to a planning officer because we pre-empt the questions before they arise.
+          </p>
+          <p>
+            Our MIAQM and CEnv credentials give planning authorities the assurance that the work has been carried out by competent, accredited professionals. And because we cover the full range of air quality, dust and odour work, you only need one subconsultant for all your environmental assessment needs — keeping your supply chain simple and your project management straightforward.
+          </p>
+          <div class="trust-row">
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              MIAQM Accredited
+            </div>
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              CEnv Chartered
+            </div>
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              UK-wide coverage
+            </div>
+          </div>
+        </div>
+        <aside class="quick-contact">
+          <h3>Discuss a Project</h3>
+          <p>Working on an application that needs an air quality, dust or odour assessment? Get in touch — we'll confirm the scope and fee quickly so you can keep your programme on track.</p>
+          <a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote</a>
+          <hr class="quick-contact__divider">
+          <a href="tel:+442080503003" class="quick-contact__tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            020 8050 3003
+          </a>
+          <p class="quick-contact__badge">Fixed fees &bull; Fast turnaround &bull; No hidden extras</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">What We Provide</span>
+      <h2 class="section-title">Our Services for Planning Consultants</h2>
+      <p class="section-subtitle" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
+        The full range of air quality, dust and odour assessment services — everything your planning application is likely to need, from one trusted subconsultant.
+      </p>
+      <div class="offerings-grid">
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 0 1 11 4h2a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-4a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h2"/><path d="M17 8h1a3 3 0 0 1 0 6h-1"/></svg>
+          </div>
+          <h3>Air Quality Assessment</h3>
+          <p>Screening and detailed air quality assessments for planning applications of all sizes and types. We are experienced with the requirements of local authorities across England, Wales, Scotland and Northern Ireland, and we write reports that planning officers and environmental health teams are satisfied with — reliably, on the first submission.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="1.5"/><circle cx="5" cy="5" r="1"/></svg>
+          </div>
+          <h3>Dust &amp; CEMP</h3>
+          <p>Dust risk assessments and Construction Environmental Management Plans prepared to the IAQM methodology. We know exactly what different planning authorities expect in a CEMP and we prepare them accordingly — including site-specific mitigation measures, monitoring protocols and the responsible person structure that planning officers need to see.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 16s1.5 2 4 2 4-2 4-2"/><path d="M12 2c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z"/></svg>
+          </div>
+          <h3>Odour Assessment</h3>
+          <p>EMAQ+ kitchen odour assessments for food and drink uses, IAQM odour assessments for industrial and waste development, and odour dispersion modelling for permit applications. We are the go-to subconsultant for planning consultancies handling food premises applications — fast, technically sound and familiar with what councils require.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Expert Witness &amp; Appeal Support</h3>
+          <p>Where an air quality, dust or odour matter goes to appeal, we provide expert witness services, prepare proofs of evidence, and attend hearings or inquiries as required. Our MIAQM and CEnv credentials are recognised by the Planning Inspectorate as evidence of expert competence in the field.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application types -->
+  <section class="section fade-in">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <span class="section-label">Application Types</span>
+          <h2 style="font-size:1.75rem;margin-bottom:1rem;">Planning Applications We Support</h2>
+          <p style="color:var(--clr-text-light);line-height:1.8;margin-bottom:1.5rem;">
+            We support the full range of planning application types — from early-stage scoping through to appeal. Whether you need a quick pre-application opinion or a full environmental statement chapter, we have the capacity and the expertise to deliver.
+          </p>
+          <p style="color:var(--clr-text-light);line-height:1.8;">
+            We are equally comfortable operating as a named consultant on the application or working entirely behind the scenes. Your client, your relationship — we are here to support you, not compete with you.
+          </p>
+        </div>
+        <div>
+          <ul class="area-list">
+            <li>Outline applications</li>
+            <li>Reserved matters</li>
+            <li>Full planning applications</li>
+            <li>EIA screening &amp; scoping</li>
+            <li>Pre-application enquiries</li>
+            <li>Planning condition discharge</li>
+            <li>Appeals</li>
+            <li>Environmental statements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <details class="faq-item">
+          <summary class="faq-item__question">Do you work as a subconsultant to planning consultancies?</summary>
+          <div class="faq-item__answer">
+            <p>Yes — working as a subconsultant to planning consultancies is a core part of what we do. We understand the importance of operating as a trusted partner rather than a competitor, and we are completely comfortable working in the background. We engage with the planning authority on technical matters when required, but we always communicate through you so you remain in control of the client relationship. We are discreet, professional and focused entirely on making your project a success.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">How quickly can you turn around an air quality report?</summary>
+          <div class="faq-item__answer">
+            <p>For straightforward screening assessments, we can typically turn around a draft report within 5 working days. Detailed assessments with dispersion modelling usually take 2 to 4 weeks, depending on site complexity and data requirements. We are experienced at working to tight planning timescales and can discuss expedited turnaround where your programme demands it. We always agree a clear delivery date upfront and deliver on time.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What credentials do you hold?</summary>
+          <div class="faq-item__answer">
+            <p>Our team holds MIAQM (Member of the Institute of Air Quality Management) and CEnv (Chartered Environmentalist) accreditation. These are the principal professional credentials for air quality practitioners in the UK and are recognised by planning authorities and the Planning Inspectorate as evidence of competence. We maintain our continuing professional development in line with IAQM requirements and stay current with evolving guidance and policy.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">Can you respond to planning authority queries on our behalf?</summary>
+          <div class="faq-item__answer">
+            <p>Yes. Responding to planning authority comments and queries — from environmental health officers, planning officers or third-party consultees — is included within our agreed fee as standard. We draft responses to technical queries, prepare supplementary technical notes where needed, and liaise directly with the LPA's environmental health team when it is helpful to do so. Our aim is always to resolve queries at the first attempt so your application keeps moving forward.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">Do you cover the whole of the UK?</summary>
+          <div class="faq-item__answer">
+            <p>Yes — we work on projects across England, Wales, Scotland and Northern Ireland. We are familiar with the variations in local planning authority requirements across different regions and nations, including the distinct policy frameworks that apply in Wales (Future Wales, TAN policies) and Scotland (NPF4). Whatever the location of your project, we have the knowledge to prepare an assessment that meets local requirements and is accepted by the relevant authority.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Let's Work Together</h2>
+      <p class="cta-banner__text">
+        If you need a reliable environmental subconsultant for your next planning application, get in touch. We would be happy to discuss how we can support your practice.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--primary btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--outline btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="40" height="40">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered environmental consultants providing specialist air quality, dust and odour assessments across the United Kingdom. MIAQM | CEnv.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust</a></li>
+            <li><a href="services-odour.html">Odour</a></li>
+            <li><a href="services-noise.html">Noise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span>MIAQM</span>
+          <span>CEnv</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

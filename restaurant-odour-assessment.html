@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Expert odour assessments for restaurants, cafés, takeaways and food businesses across the UK. EMAQ+ methodology, fast turnaround, planning approval support.">
+  <meta property="og:title" content="Restaurant Odour Assessment | Air Dust Odour">
+  <meta property="og:description" content="Expert odour assessments for restaurants, cafés, takeaways and food businesses across the UK. EMAQ+ methodology, fast turnaround, planning approval support.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://airdustodour.co.uk/restaurant-odour-assessment">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Restaurant Odour Assessment | Air Dust Odour</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do I need an odour assessment to open a restaurant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most cases, yes. If you are applying for planning permission to open a restaurant, café, takeaway, dark kitchen or any food business with a commercial kitchen, the local planning authority will almost certainly require an odour assessment as part of your application. This applies whether you are opening a new premises or changing the use of an existing building. The assessment demonstrates that cooking odours will be adequately controlled and will not cause a nuisance to nearby residents or businesses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is EMAQ+ and why does it matter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EMAQ+ (the Emissions, Mitigation, Assessment and Quantification framework, plus enhancements) is the industry-standard methodology for assessing odour from commercial kitchen extract systems. It calculates an odour effect index based on cooking type, number of covers, hours of operation, proximity to sensitive receptors, and the proposed extraction system specification. Local planning authorities across the UK recognise EMAQ+ as the appropriate methodology for these assessments, so using it means your report speaks the same language as the council's environmental health officers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does a kitchen odour assessment involve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A kitchen odour assessment for a restaurant or food premises typically involves a site visit to review the kitchen layout, cooking methods, proposed extraction duct routing and discharge point, and proximity to nearby residential or commercial receptors. We then apply the EMAQ+ methodology to calculate the odour effect index and determine the level of odour control equipment required. The output is a clear, professionally presented report that sets out the findings and any mitigation recommendations — such as carbon filters, UV-C treatment, or a high-level discharge point — ready for submission to the planning authority."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does a restaurant odour assessment cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Restaurant odour assessments using the EMAQ+ methodology typically start from £800 for a straightforward single-unit premises. More complex operations — larger restaurants, multiple kitchen types, sites adjacent to residential properties, or premises in sensitive locations — may require more detailed work and cost more accordingly. We provide clear, fixed-fee quotes following a brief initial conversation about your project. There are no hidden extras."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a restaurant odour assessment take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most restaurant and takeaway odour assessments can be completed within 5 to 10 working days of receiving the relevant information and confirming instructions. If a site visit is required, we will arrange this promptly and work to your programme. We understand that planning timescales can be tight and offer expedited turnaround for time-critical projects — just let us know when you get in touch."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <style>
+    /* Services dropdown */
+    .nav-item--dropdown { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      z-index: 200;
+      padding: 8px 0;
+    }
+    .nav-item--dropdown:hover .nav-dropdown,
+    .nav-item--dropdown:focus-within .nav-dropdown { display: block; }
+    .nav-dropdown a {
+      display: block;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      color: var(--clr-text, #1f2937);
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-dropdown a:hover { background: #f3f4f6; color: var(--clr-primary, #2563eb); }
+    .header__nav-link--dropdown::after { content: ' ▾'; font-size: 0.7em; }
+
+    /* Intro grid */
+    .service-page__intro-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .service-page__intro-grid { grid-template-columns: 1fr; }
+    }
+    .service-page__intro-grid p {
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    /* Quick contact card */
+    .quick-contact {
+      background: #f8fafc;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .quick-contact h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--clr-heading, #111827);
+    }
+    .quick-contact p {
+      font-size: 0.875rem;
+      color: var(--clr-text-light, #6b7280);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .quick-contact .btn { width: 100%; justify-content: center; margin-bottom: 1rem; }
+    .quick-contact__tel {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--clr-heading, #111827);
+      text-decoration: none;
+      justify-content: center;
+    }
+    .quick-contact__tel:hover { color: var(--clr-primary, #2563eb); }
+    .quick-contact__tel svg { flex-shrink: 0; }
+    .quick-contact__divider {
+      border: none;
+      border-top: 1px solid var(--clr-border, #e5e7eb);
+      margin: 1.25rem 0;
+    }
+    .quick-contact__badge {
+      font-size: 0.75rem;
+      color: var(--clr-text-light, #6b7280);
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    /* Offerings grid */
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) {
+      .offerings-grid { grid-template-columns: 1fr; }
+    }
+    .offering-card {
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 10px;
+      padding: 1.75rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .offering-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .offering-card__icon {
+      width: 48px;
+      height: 48px;
+      background: #eff6ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .offering-card__icon svg { width: 22px; height: 22px; color: var(--clr-primary, #2563eb); }
+    .offering-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--clr-primary, #2563eb);
+    }
+    .offering-card p {
+      font-size: 0.875rem;
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* Area list */
+    .area-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem 2rem;
+    }
+    @media (max-width: 600px) {
+      .area-list { grid-template-columns: 1fr; }
+    }
+    .area-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--clr-text, #1f2937);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--clr-border, #e5e7eb);
+    }
+    .area-list li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--clr-primary, #2563eb);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* FAQ section */
+    .faq-section { max-width: 800px; margin: 2.5rem auto 0; }
+
+    /* CTA btn--outline within cta-banner */
+    .cta-banner__actions .btn--outline {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.6);
+      color: rgba(255,255,255,0.9);
+    }
+    .cta-banner__actions .btn--outline:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: #fff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li class="nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown active">Services</a>
+            <div class="nav-dropdown">
+              <a href="services-air.html">Air Quality</a>
+              <a href="services-dust.html">Dust</a>
+              <a href="services-odour.html">Odour</a>
+              <a href="services-noise.html">Noise</a>
+            </div>
+          </li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="get-a-quote.html" class="btn btn--nav">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">Restaurant Odour Assessment</h1>
+      <p class="page-hero__subtitle">
+        Planning to open a restaurant, café, takeaway or food business? We provide EMAQ+ odour assessments that councils accept first time — helping your planning application go through without costly delays.
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro Grid -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="service-page__intro-grid">
+        <div class="service-page__intro-content">
+          <h2>The Odour Assessment Specialists for Food Premises</h2>
+          <p>
+            Odour from commercial kitchens is one of the most common environmental objections to planning applications for restaurants, takeaways and food businesses. Whether you are opening a new café, converting a retail unit into a restaurant or expanding an existing kitchen operation, the local planning authority will almost certainly require a kitchen odour assessment — and getting it right the first time is essential.
+          </p>
+          <p>
+            At Air Dust Odour, we have prepared kitchen odour assessments for a wide range of food premises across the UK, from independent restaurants to national fast food operators and large-scale dark kitchens. We know exactly what planning authorities expect, and we prepare our reports accordingly — using the EMAQ+ methodology that is recognised as the industry standard by councils and environmental health officers nationwide.
+          </p>
+          <p>
+            Our assessments don't just satisfy the planning requirement — they provide clear, practical advice on the extraction system and odour control equipment you need. That means no nasty surprises when you come to fit out your kitchen, and no conditions that require expensive retrospective works.
+          </p>
+        </div>
+        <aside class="quick-contact">
+          <h3>Get a Free Quote</h3>
+          <p>Tell us about your restaurant or food premises and we'll send you a no-obligation quote, usually within the same working day.</p>
+          <a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote</a>
+          <hr class="quick-contact__divider">
+          <a href="tel:+442080503003" class="quick-contact__tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            020 8050 3003
+          </a>
+          <p class="quick-contact__badge">Mon–Fri 9am–5:30pm &bull; Fast turnaround available</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">What We Provide</span>
+      <h2 class="section-title">Our Restaurant Odour Services</h2>
+      <p class="section-subtitle" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
+        From initial assessment to mitigation advice and planning support, we cover everything your food business needs to satisfy the council.
+      </p>
+      <div class="offerings-grid">
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 16s1.5 2 4 2 4-2 4-2"/><path d="M12 2c-2 4-6 6-6 10a6 6 0 0 0 12 0c0-4-4-6-6-10z"/></svg>
+          </div>
+          <h3>Kitchen Odour Assessment (EMAQ+)</h3>
+          <p>A full EMAQ+ odour effect index calculation for your kitchen operation, taking into account cooking type, covers, operating hours, extraction routing and receptor proximity. The cornerstone of any planning application for a food premises — prepared to a standard that councils accept first time.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3>Extraction System Review</h3>
+          <p>A technical review of your proposed or existing kitchen extraction system — including duct sizing, fan specification, discharge height and velocity — to identify whether it meets the requirements of the EMAQ+ assessment. We advise on any modifications needed to achieve compliance before you finalise your kitchen fit-out.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.87 0 3.6.57 5.04 1.55"/></svg>
+          </div>
+          <h3>Odour Mitigation Advice</h3>
+          <p>Practical, commercially grounded advice on the odour control measures appropriate for your premises — whether that is activated carbon filtration, UV-C treatment, water scrubbing, a high-level discharge point, or a combination of approaches. We help you choose solutions that work in practice, not just on paper.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Planning Support &amp; Resubmission</h3>
+          <p>If your application has been refused or the council has raised queries about odour, we can review the comments, prepare supplementary information or revised assessments, and liaise directly with the environmental health officer on your behalf. We know how councils think — and we know how to respond to their concerns effectively.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Types of premises -->
+  <section class="section fade-in">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <span class="section-label">Who We Work With</span>
+          <h2 style="font-size:1.75rem;margin-bottom:1rem;">Types of Food Premises We Cover</h2>
+          <p style="color:var(--clr-text-light);line-height:1.8;margin-bottom:1.5rem;">
+            We have prepared restaurant and kitchen odour assessments for a wide variety of food businesses. If your operation involves a commercial kitchen, we have the expertise to assess it.
+          </p>
+          <p style="color:var(--clr-text-light);line-height:1.8;">
+            Whether you are a single-site independent operator or a multi-site national brand, we provide the same quality of assessment and the same commitment to getting your planning application through first time.
+          </p>
+        </div>
+        <div>
+          <ul class="area-list">
+            <li>Restaurants</li>
+            <li>Takeaways</li>
+            <li>Cafés and coffee shops</li>
+            <li>Dark kitchens</li>
+            <li>Food manufacturing</li>
+            <li>Bakeries</li>
+            <li>Fish and chip shops</li>
+            <li>Fast food outlets</li>
+            <li>Pub kitchens</li>
+            <li>Hotel kitchens</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <details class="faq-item">
+          <summary class="faq-item__question">Do I need an odour assessment to open a restaurant?</summary>
+          <div class="faq-item__answer">
+            <p>In most cases, yes. If you are applying for planning permission to open a restaurant, café, takeaway, dark kitchen or any food business with a commercial kitchen, the local planning authority will almost certainly require an odour assessment as part of your application. This applies whether you are opening a new premises or changing the use of an existing building. The assessment demonstrates that cooking odours will be adequately controlled and will not cause a nuisance to nearby residents or businesses.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What is EMAQ+ and why does it matter?</summary>
+          <div class="faq-item__answer">
+            <p>EMAQ+ (the Emissions, Mitigation, Assessment and Quantification framework) is the industry-standard methodology for assessing odour from commercial kitchen extract systems. It calculates an odour effect index based on cooking type, number of covers, hours of operation, proximity to sensitive receptors, and the proposed extraction system. Local planning authorities across the UK recognise EMAQ+ as the appropriate methodology, so using it means your report speaks the same language as the council's environmental health officers — and is far more likely to be accepted first time.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What does a kitchen odour assessment involve?</summary>
+          <div class="faq-item__answer">
+            <p>A kitchen odour assessment typically involves a site visit to review the kitchen layout, cooking methods, extraction duct routing and discharge point, and proximity to nearby residential or commercial receptors. We then apply the EMAQ+ methodology to calculate the odour effect index and determine the level of odour control equipment required. The output is a clear, professionally presented report with findings and recommendations — such as carbon filters, UV-C treatment, or a high-level discharge point — ready for submission to the planning authority.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">How much does a restaurant odour assessment cost?</summary>
+          <div class="faq-item__answer">
+            <p>Restaurant odour assessments using the EMAQ+ methodology typically start from &pound;800 for a straightforward single-unit premises. More complex operations — larger restaurants, multiple kitchen types, or sites adjacent to residential properties — may require more detailed work. We provide clear, fixed-fee quotes following a brief conversation about your project. There are no hidden extras, and we are transparent about what is included.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">How long does a restaurant odour assessment take?</summary>
+          <div class="faq-item__answer">
+            <p>Most restaurant and takeaway odour assessments can be completed within 5 to 10 working days of receiving the relevant information and confirming instructions. If a site visit is required, we arrange this promptly and work to your programme. We understand that planning timescales can be tight and offer expedited turnaround for time-critical projects — just let us know when you get in touch.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Ready to Get Your Odour Assessment?</h2>
+      <p class="cta-banner__text">
+        Contact us today for a free, no-obligation quote. We'll review your project and come back to you, usually the same working day.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--primary btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--outline btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="40" height="40">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered environmental consultants providing specialist air quality, dust and odour assessments across the United Kingdom. MIAQM | CEnv.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust</a></li>
+            <li><a href="services-odour.html">Odour</a></li>
+            <li><a href="services-noise.html">Noise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span>MIAQM</span>
+          <span>CEnv</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
