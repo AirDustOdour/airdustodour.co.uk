@@ -1143,12 +1143,18 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
 
 /* Footer logo */
 .footer .header__logo-mark {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
 }
 
 .footer .header__logo-mark img {
   filter: invert(1);
+}
+
+/* Footer logo on location pages */
+.footer-col--brand img {
+  height: 80px !important;
+  width: auto;
 }
 
 .footer__heading {
