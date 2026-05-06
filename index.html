@@ -34,17 +34,63 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Air Dust Odour",
-    "description": "Chartered air quality assessment professionals. Specialist environmental consultancy providing air, dust and odour services across the UK.",
-    "url": "https://airdustodour.co.uk",
+    "description": "Chartered air quality assessment professionals. Specialist environmental consultancy providing air, dust and odour assessments, dust impact assessments, dispersion modelling and workplace air quality surveys across the UK.",
+    "url": "https://www.airdustodour.co.uk",
+    "logo": "https://www.airdustodour.co.uk/images/logo-dark.png",
+    "image": "https://www.airdustodour.co.uk/images/office-sign.webp",
     "email": "info@airdustodour.co.uk",
     "telephone": "+442080503003",
-    "areaServed": "United Kingdom",
-    "priceRange": "$$",
-    "knowsAbout": ["Air Quality Assessment", "Dust Monitoring", "Odour Assessment", "Dispersion Modelling", "CEMP"],
-    "member": {
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Seaham",
+      "addressRegion": "County Durham",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 54.8426,
+      "longitude": -1.3445
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:30"
+      }
+    ],
+    "areaServed": {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    "priceRange": "££",
+    "knowsAbout": [
+      "Air Quality Assessment",
+      "Dust Impact Assessment",
+      "Odour Assessment",
+      "Dispersion Modelling",
+      "CEMP",
+      "IAQM Guidance",
+      "Workplace Air Quality",
+      "Environmental Consultancy"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Environmental Consultancy Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Air Quality Assessment"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dust Impact Assessment"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Odour Assessment"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Noise Assessment"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Artificial Lighting Assessment"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Workplace Air Quality Survey"}}
+      ]
+    },
+    "founder": {
       "@type": "Person",
       "name": "Malcolm Pounder",
-      "jobTitle": "Founder & Chartered Environmentalist"
+      "jobTitle": "Founder & Chartered Environmentalist",
+      "hasCredential": ["CEnv", "MIAQM", "MIEnvSc"]
     }
   }
   </script>
