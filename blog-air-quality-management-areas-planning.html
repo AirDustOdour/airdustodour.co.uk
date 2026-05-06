@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="What are Air Quality Management Areas (AQMAs) and how do they affect planning applications? A guide for developers and planning consultants in the UK.">
+  <meta property="og:title" content="Air Quality Management Areas and What They Mean for Your Development | Air Dust Odour">
+  <meta property="og:description" content="What are Air Quality Management Areas (AQMAs) and how do they affect planning applications? A guide for developers and planning consultants in the UK.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/blog-air-quality-management-areas-planning.html">
+  <link rel="canonical" href="https://www.airdustodour.co.uk/blog-air-quality-management-areas-planning.html">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Air Quality Management Areas and What They Mean for Your Development | Air Dust Odour</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <!-- FAQPage JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an Air Quality Management Area (AQMA)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An AQMA is an area designated by a local authority where one or more national air quality objectives are not being met or are at risk of being exceeded. They are most commonly designated for nitrogen dioxide from road traffic."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an air quality assessment if my site is in an AQMA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Almost certainly yes. Local planning authorities apply greater scrutiny to developments in or near AQMAs and typically require a formal air quality assessment demonstrating that the proposal will not worsen existing conditions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does an air quality assessment near an AQMA involve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It typically involves reviewing DEFRA background concentration data, assessing traffic-related emissions using dispersion modelling, predicting pollutant concentrations at sensitive receptors, comparing results against national objectives, and recommending mitigation where needed."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    /* Blog article page styles */
+    .blog-article {
+      padding: var(--space-3xl) 0;
+    }
+
+    .blog-article__inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .blog-article__meta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-lg);
+      flex-wrap: wrap;
+    }
+
+    .blog-article__date {
+      font-size: var(--fs-sm);
+      color: var(--clr-text-light);
+    }
+
+    .blog-article__author {
+      font-size: var(--fs-sm);
+      color: var(--clr-text-light);
+    }
+
+    .blog-article__author::before {
+      content: '·';
+      margin-right: var(--space-sm);
+    }
+
+    .blog-article__body h2 {
+      font-size: var(--fs-xl);
+      font-weight: 700;
+      color: var(--clr-navy);
+      margin: var(--space-2xl) 0 var(--space-md);
+      line-height: 1.3;
+    }
+
+    .blog-article__body h2:first-child {
+      margin-top: 0;
+    }
+
+    .blog-article__body p {
+      font-size: var(--fs-base);
+      line-height: 1.8;
+      color: var(--clr-text);
+      margin-bottom: var(--space-md);
+    }
+
+    .blog-article__body ul,
+    .blog-article__body ol {
+      margin: 0 0 var(--space-md) var(--space-lg);
+      padding: 0;
+    }
+
+    .blog-article__body li {
+      font-size: var(--fs-base);
+      line-height: 1.8;
+      color: var(--clr-text);
+      margin-bottom: var(--space-xs);
+    }
+
+    .blog-article__body strong {
+      font-weight: 600;
+      color: var(--clr-navy);
+    }
+
+    .blog-article__body a {
+      color: var(--clr-teal);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .blog-article__body a:hover {
+      color: var(--clr-navy);
+    }
+
+    .blog-article__callout {
+      background: var(--clr-bg-alt, #f4f7fa);
+      border-left: 4px solid var(--clr-teal);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      padding: var(--space-md) var(--space-lg);
+      margin: var(--space-xl) 0;
+    }
+
+    .blog-article__callout p {
+      margin-bottom: 0;
+    }
+
+    .blog-article__faq {
+      margin-top: var(--space-2xl);
+      border-top: 1px solid var(--clr-border, #e2e8f0);
+      padding-top: var(--space-2xl);
+    }
+
+    .blog-article__faq h2 {
+      margin-top: 0;
+    }
+
+    .faq-item {
+      margin-bottom: var(--space-lg);
+    }
+
+    .faq-item__question {
+      font-size: var(--fs-base);
+      font-weight: 700;
+      color: var(--clr-navy);
+      margin-bottom: var(--space-xs);
+    }
+
+    .faq-item__answer {
+      font-size: var(--fs-base);
+      line-height: 1.8;
+      color: var(--clr-text);
+      margin-bottom: 0 !important;
+    }
+
+    .blog-article__back {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      font-size: var(--fs-sm);
+      font-weight: 500;
+      color: var(--clr-teal);
+      text-decoration: none;
+      margin-bottom: var(--space-xl);
+      transition: gap 0.2s ease;
+    }
+
+    .blog-article__back:hover {
+      gap: var(--space-sm);
+      color: var(--clr-navy);
+    }
+
+    .blog-article__back svg {
+      width: 16px;
+      height: 16px;
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="services.html" class="header__nav-link">Services</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="blog.html" class="header__nav-link active">Blog</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+        <div class="header__cta">
+          <a href="get-a-quote.html" class="btn btn--primary btn--sm">Get a Free Quote</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <a href="blog.html">Blog</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <span>Air Quality Management Areas and Planning</span>
+      </nav>
+      <h1 class="page-hero__title">Air Quality Management Areas and What They Mean for Your Development</h1>
+      <p class="page-hero__subtitle">
+        A practical guide for developers and planning consultants navigating AQMAs in the UK planning system.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Article -->
+  <section class="blog-article">
+    <div class="container">
+      <div class="blog-article__inner fade-in">
+
+        <a href="blog.html" class="blog-article__back">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Back to all articles
+        </a>
+
+        <!-- Article meta -->
+        <div class="blog-article__meta">
+          <span class="blog-card__category blog-card__category--general">Planning</span>
+          <span class="blog-article__date">December 2025</span>
+          <span class="blog-article__author">By Malcolm Pounder CEnv MIAQM</span>
+        </div>
+
+        <!-- Article body -->
+        <div class="blog-article__body">
+
+          <h2>Introduction</h2>
+          <p>Air Quality Management Areas (AQMAs) are designated by local authorities where national air quality objectives are being exceeded or are at risk of being exceeded. They are particularly common in urban areas with high road traffic volumes, particularly on major arterial routes, in town centres, and near heavily congested junctions. If your proposed development is within or near an AQMA, you are almost certain to face additional scrutiny from the local planning authority (LPA). In the majority of cases, you will need to commission a formal air quality assessment as part of your planning application, and the LPA may require that mitigation is incorporated into the scheme before they are willing to grant consent.</p>
+
+          <h2>What Is an AQMA?</h2>
+          <p>Under the Environment Act 1995, local authorities in England, Wales and Scotland are required to periodically review and assess local air quality against a set of national objectives. Where those objectives are not being met — or where there is a risk they will not be met in the future — the authority is required to designate an Air Quality Management Area and produce an Air Quality Action Plan (AQAP) setting out the steps it intends to take to improve air quality within the designated area.</p>
+          <p>The vast majority of AQMAs in the UK are designated for nitrogen dioxide (NO2), driven by emissions from road traffic and, in some areas, from industrial sources. A smaller number are designated for particulate matter (PM10), typically in areas affected by industrial activity, biomass burning or specific local emission sources. There are currently over 500 AQMAs designated across the UK, ranging from small stretches of a single road to large swathes of city centres. London, Birmingham, Leeds and Manchester contain some of the most extensive AQMA designations in the country, though many smaller market towns and rural district centres also have designated areas.</p>
+
+          <h2>How AQMAs Affect Your Planning Application</h2>
+          <p>The existence of an AQMA in or near your site has direct implications for the planning process. Local planning authorities are required by the National Planning Policy Framework (NPPF) to ensure that development does not give rise to unacceptable levels of air pollution, and they will apply particular caution where baseline conditions are already poor.</p>
+          <p><strong>Increased scrutiny from the LPA.</strong> Where a site falls within or adjacent to an AQMA, planning officers will typically flag air quality as a key material consideration at the pre-application stage. Even smaller developments that would not normally require an environmental assessment may trigger a request for air quality information when they are in close proximity to a designated area.</p>
+          <p><strong>A formal air quality assessment is almost always required.</strong> The NPPF, its accompanying Planning Practice Guidance, and most local plan policies require developers to demonstrate that their proposals will not worsen existing air quality conditions. In practice, this means submitting an air quality assessment prepared by a competent air quality professional. The scope of the assessment will depend on the nature and scale of the development, but it is unlikely to be straightforward where an AQMA is involved.</p>
+          <p><strong>The type of assessment required will vary.</strong> Depending on the development, the LPA may require one or more of the following:</p>
+          <ul>
+            <li>A screening assessment to determine whether a detailed assessment is warranted</li>
+            <li>Dispersion modelling of road traffic emissions using industry-standard tools such as ADMS-Roads or AERMOD, to predict pollutant concentrations at sensitive receptor locations</li>
+            <li>A construction dust impact assessment, particularly where demolition or earthworks are involved</li>
+            <li>A health impact assessment, increasingly requested for larger residential or mixed-use schemes</li>
+          </ul>
+          <p><strong>Mitigation measures may be required.</strong> Where the assessment demonstrates that the development will worsen air quality — or that future occupiers will be exposed to concentrations above the national objectives — the LPA is likely to require mitigation. This can include provision of electric vehicle charging infrastructure, a low-emission travel plan, financial contributions to the local authority's AQAP, or design changes to maximise separation between habitable rooms and major emission sources such as busy roads.</p>
+
+          <h2>How to Find Out if Your Site Is in an AQMA</h2>
+          <p>Most local authority websites publish a map of their designated AQMA boundaries, often within the environmental health or planning policy pages. DEFRA's Air Quality in England interactive mapping tool also shows all designated AQMAs across the country and is a useful first port of call.</p>
+          <p>However, it is important to understand that being outside an AQMA boundary does not guarantee that air quality will not be a concern in the planning process. Background concentrations of NO2 near busy roads and motorway junctions can be close to the annual mean objective of 40 µg/m³ even in areas without a formal designation, particularly in areas that have historically just fallen below the threshold. Your air quality consultant should always check the latest DEFRA background concentration data for your site, regardless of whether an AQMA is formally designated.</p>
+
+          <div class="blog-article__callout">
+            <p>Being outside an AQMA boundary is not the same as having no air quality issue. Always check local background concentrations against national objectives as an early step in feasibility.</p>
+          </div>
+
+          <h2>What Air Quality Assessments Involve</h2>
+          <p>An air quality assessment for a development near an AQMA is a structured technical exercise carried out by a qualified air quality professional. It typically involves the following steps:</p>
+          <ul>
+            <li><strong>Reviewing local background concentrations</strong> from the DEFRA background concentration datasets, which provide modelled annual mean concentrations of NO2, PM10 and PM2.5 at a 1 km grid resolution across the UK</li>
+            <li><strong>Assessing the change in traffic flows</strong> on nearby roads that will result from the development, usually using traffic data provided by the developer's transport consultant</li>
+            <li><strong>Running dispersion modelling</strong> to predict pollutant concentrations at sensitive receptor locations — typically the facades of the nearest residential properties, school buildings or other occupied premises</li>
+            <li><strong>Comparing predicted concentrations</strong> against the annual mean NO2 objective of 40 µg/m³, the daily mean PM10 objective, and the annual mean PM10 and PM2.5 objectives</li>
+            <li><strong>Preparing a technical report</strong> setting out the assessment methodology, results, significance of predicted impacts in accordance with the IAQM and Environmental Protection UK significance criteria, and any recommended mitigation measures</li>
+          </ul>
+          <p>The report is then submitted as a technical appendix to the planning application, typically accompanied by a non-technical summary within the planning statement or design and access statement.</p>
+
+          <h2>Construction Phase Impacts</h2>
+          <p>Even where the operational air quality impacts of a development are predicted to be acceptable, construction phase dust and emissions must also be addressed. This is particularly important in and near AQMAs, where baseline air quality conditions are already compromised and even temporary increases in dust or exhaust emissions can tip concentrations above the relevant objectives at nearby properties.</p>
+          <p>A construction dust impact assessment prepared in accordance with the Institute of Air Quality Management (IAQM) guidance — updated in 2024 to include recommendations for dust monitoring on sensitive sites — should typically accompany the planning submission. This assessment identifies the risk of dust impacts during each phase of construction, the sensitivity of nearby receptors, and the mitigation measures that should be implemented to reduce that risk to an acceptable level. For larger or more sensitive sites, the IAQM guidance now recommends that a dust monitoring programme is implemented during construction, and this may be secured by planning condition.</p>
+
+          <h2>Conclusion</h2>
+          <p>AQMAs are one of the most significant air quality triggers in the UK planning system. If your development site is within or near a designated area, early engagement with a qualified air quality consultant is essential. Identifying potential issues at the pre-application stage allows you to design in appropriate mitigation from the outset, rather than facing costly redesign or lengthy negotiations with planning officers after submission.</p>
+          <p>Air Dust Odour specialises in <a href="services-air.html">air quality assessments</a> for developments in and near AQMAs across the UK. Our team of chartered environmental professionals can advise on assessment scope, carry out dispersion modelling, prepare planning reports, and liaise with local authority environmental health officers on your behalf. <a href="get-a-quote.html">Get in touch for a free, no-obligation quote.</a></p>
+
+          <!-- FAQ Section -->
+          <div class="blog-article__faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+              <p class="faq-item__question">What is an Air Quality Management Area (AQMA)?</p>
+              <p class="faq-item__answer">An AQMA is an area designated by a local authority where one or more national air quality objectives are not being met or are at risk of being exceeded. They are most commonly designated for nitrogen dioxide from road traffic.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-item__question">Do I need an air quality assessment if my site is in an AQMA?</p>
+              <p class="faq-item__answer">Almost certainly yes. Local planning authorities apply greater scrutiny to developments in or near AQMAs and typically require a formal air quality assessment demonstrating that the proposal will not worsen existing conditions.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-item__question">What does an air quality assessment near an AQMA involve?</p>
+              <p class="faq-item__answer">It typically involves reviewing DEFRA background concentration data, assessing traffic-related emissions using dispersion modelling, predicting pollutant concentrations at sensitive receptors, comparing results against national objectives, and recommending mitigation where needed.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Need Expert Environmental Advice?</h2>
+      <p class="cta-banner__text">
+        Our chartered professionals are here to help with your air quality, dust or odour assessment needs.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--white btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered air quality assessment professionals providing specialist environmental consultancy services across the United Kingdom.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust Monitoring</a></li>
+            <li><a href="services-odour.html">Odour Assessment</a></li>
+            <li><a href="services-noise.html">Noise Assessment</a></li>
+            <li><a href="services-lighting.html">Lighting Assessment</a></li>
+            <li><a href="services-workplace.html">Workplace Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> CEnv</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg> MIAQM</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

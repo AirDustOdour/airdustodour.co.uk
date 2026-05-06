@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Air dispersion modelling consultants for planning applications across the UK. ADMS-Roads, AERMOD, traffic and industrial source modelling by qualified specialists.">
+  <meta property="og:title" content="Air Dispersion Modelling Services | Air Dust Odour">
+  <meta property="og:description" content="Air dispersion modelling consultants for planning applications across the UK. ADMS-Roads, AERMOD, traffic and industrial source modelling by qualified specialists.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/dispersion-modelling">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Air Dispersion Modelling Services | Air Dust Odour</title>
+  <link rel="canonical" href="https://www.airdustodour.co.uk/dispersion-modelling.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is air dispersion modelling?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Air dispersion modelling is a computational technique used to predict how pollutants from roads, industrial processes and other sources will spread through the atmosphere and reach nearby sensitive receptors such as homes, schools and workplaces. It uses mathematical algorithms based on meteorological data, source characteristics and terrain to estimate concentrations at specific locations. The results are compared against UK air quality objectives and WHO guidelines to determine whether a development will have a significant effect on air quality."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When is dispersion modelling required for planning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dispersion modelling is typically required when a screening assessment (such as a DMRB or IAQM screening) indicates that a development has the potential for a significant air quality effect. This commonly applies to large residential developments close to busy roads, commercial or industrial developments with on-site combustion or process emissions, major road schemes, and developments near existing AQMAs or in areas with elevated background concentrations. The relevant planning policy is set out in the NPPF and IAQM/EPUK guidance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What software do you use for dispersion modelling?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use ADMS-Roads (by Cambridge Environmental Research Consultants) for road traffic-related assessments, which is the industry-standard model for UK planning applications. For industrial point sources, volume sources and more complex scenarios, we use ADMS-Urban or AERMOD. All our modelling is carried out in accordance with current IAQM and Environment Agency guidance on model selection and application."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a dispersion modelling assessment take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Timescales depend on complexity. A straightforward ADMS-Roads screening assessment for a residential development can typically be completed within 5–10 working days of receiving traffic data and site information. A full detailed assessment with monitoring calibration for an EIA may take 3–6 weeks. We discuss programme requirements at the outset and can prioritise urgent work."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does dispersion modelling cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fees depend on the scope of the assessment — the number of modelled sources, the extent of the receptor network, whether baseline monitoring data is needed, and whether the work forms part of a wider EIA chapter. We provide clear fixed-fee quotes following a brief initial conversation about your project. All our fees are transparent with no hidden extras."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <style>
+    /* Services dropdown */
+    .nav-item--dropdown { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      z-index: 200;
+      padding: 8px 0;
+    }
+    .nav-item--dropdown:hover .nav-dropdown,
+    .nav-item--dropdown:focus-within .nav-dropdown { display: block; }
+    .nav-dropdown a {
+      display: block;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      color: var(--clr-text, #1f2937);
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-dropdown a:hover { background: #f3f4f6; color: var(--clr-primary, #2563eb); }
+    .header__nav-link--dropdown::after { content: ' ▾'; font-size: 0.7em; }
+
+    /* Intro grid */
+    .service-page__intro-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .service-page__intro-grid { grid-template-columns: 1fr; }
+    }
+    .service-page__intro-grid p {
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    /* Quick contact card */
+    .quick-contact {
+      background: #f8fafc;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .quick-contact h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--clr-heading, #111827);
+    }
+    .quick-contact p {
+      font-size: 0.875rem;
+      color: var(--clr-text-light, #6b7280);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .quick-contact .btn { width: 100%; justify-content: center; margin-bottom: 1rem; }
+    .quick-contact__tel {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--clr-heading, #111827);
+      text-decoration: none;
+      justify-content: center;
+    }
+    .quick-contact__tel:hover { color: var(--clr-primary, #2563eb); }
+    .quick-contact__tel svg { flex-shrink: 0; }
+    .quick-contact__divider {
+      border: none;
+      border-top: 1px solid var(--clr-border, #e5e7eb);
+      margin: 1.25rem 0;
+    }
+    .quick-contact__badge {
+      font-size: 0.75rem;
+      color: var(--clr-text-light, #6b7280);
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    /* Offerings grid */
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) {
+      .offerings-grid { grid-template-columns: 1fr; }
+    }
+    .offering-card {
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 10px;
+      padding: 1.75rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .offering-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .offering-card__icon {
+      width: 48px;
+      height: 48px;
+      background: #eff6ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .offering-card__icon svg { width: 22px; height: 22px; color: var(--clr-primary, #2563eb); }
+    .offering-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--clr-primary, #2563eb);
+    }
+    .offering-card p {
+      font-size: 0.875rem;
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* Area list */
+    .area-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem 2rem;
+    }
+    @media (max-width: 600px) {
+      .area-list { grid-template-columns: 1fr; }
+    }
+    .area-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--clr-text, #1f2937);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--clr-border, #e5e7eb);
+    }
+    .area-list li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--clr-primary, #2563eb);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* FAQ section */
+    .faq-section { max-width: 800px; margin: 2.5rem auto 0; }
+
+    /* CTA btn--outline within cta-banner */
+    .cta-banner__actions .btn--outline {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.6);
+      color: rgba(255,255,255,0.9);
+    }
+    .cta-banner__actions .btn--outline:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: #fff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li class="nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown active">Services</a>
+            <div class="nav-dropdown">
+              <a href="services-air.html">Air Quality</a>
+              <a href="services-dust.html">Dust</a>
+              <a href="services-odour.html">Odour</a>
+              <a href="services-noise.html">Noise</a>
+            </div>
+          </li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="get-a-quote.html" class="btn btn--nav">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">Air Dispersion Modelling Services</h1>
+      <p class="page-hero__subtitle">
+        Specialist air quality dispersion modelling for planning applications, EIA chapters and LAQM assessments. We use industry-standard software and follow IAQM and EA guidance to produce robust, council-accepted results.
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro Grid -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="service-page__intro-grid">
+        <div class="service-page__intro-content">
+          <h2>The Quantitative Backbone of Your Air Quality Assessment</h2>
+          <p>
+            Dispersion modelling is the quantitative backbone of most detailed air quality assessments. Where a simple screening exercise cannot rule out a significant effect, modelling is the tool that quantifies exactly how pollutants disperse from roads, industrial processes and other emission sources to nearby receptors — and what concentrations those receptors actually experience. Done well, it provides the robust, defensible evidence base that planning authorities and environmental regulators expect.
+          </p>
+          <p>
+            Malcolm Pounder CEnv MIAQM leads all modelling work personally. We use ADMS-Roads for traffic-related assessments — the industry-standard model for UK planning applications — and ADMS-Urban or AERMOD for industrial point source, volume source and more complex scenarios. Model results are compared against national air quality objectives (NO<sub>2</sub> 40 &micro;g/m&sup3; annual mean, PM<sub>10</sub> and PM<sub>2.5</sub> objectives) and PCM background concentrations from DEFRA, so your assessment is built on data that planning officers and environmental health teams recognise and trust.
+          </p>
+          <p>
+            We work efficiently and to programme, provide clearly presented outputs with full methodology documentation, and communicate directly with local planning authorities where needed. Whether you need a straightforward ADMS-Roads run for a housing allocation or a complex multi-source EIA chapter for an industrial facility, we have the technical depth to deliver.
+          </p>
+        </div>
+        <aside class="quick-contact">
+          <h3>Get a Free Quote</h3>
+          <p>Tell us about your modelling requirements and we'll send you a no-obligation quote, usually within the same working day.</p>
+          <a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote</a>
+          <hr class="quick-contact__divider">
+          <a href="tel:+442080503003" class="quick-contact__tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            020 8050 3003
+          </a>
+          <p class="quick-contact__badge">Mon&ndash;Fri 9am&ndash;5:30pm &bull; Fast turnaround available</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">What We Provide</span>
+      <h2 class="section-title">Our Dispersion Modelling Services</h2>
+      <p class="section-subtitle" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
+        From screening-level runs to full EIA air quality chapters, we provide the right level of modelling rigour for your project.
+      </p>
+      <div class="offerings-grid">
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18M3 15h18M9 3v18"/></svg>
+          </div>
+          <h3>ADMS-Roads Traffic Modelling</h3>
+          <p>Predict NO<sub>2</sub> and PM<sub>10</sub>/PM<sub>2.5</sub> concentrations at sensitive receptors from proposed road schemes, new junctions or development-generated traffic. We set up and run ADMS-Roads models to IAQM and Highways England standards, calibrating against local monitoring data where available and presenting results clearly against the relevant air quality objectives.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Industrial Source Modelling</h3>
+          <p>Point source, volume source and area source modelling for industrial, energy and waste facilities using ADMS or AERMOD. We model stack emissions, fugitive releases and process vents to demonstrate compliance with Environment Agency guidance and support permit applications, planning submissions and EIA chapters.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3>Screening &amp; Detailed Assessment</h3>
+          <p>Both Tier 1 (DMRB/screening) and Tier 2 (detailed modelling) assessments, proportionate to the scale and sensitivity of your project. Screening assessments allow planning applications to proceed quickly where impacts are demonstrably low; detailed assessments provide the full technical evidence base where a more thorough analysis is required by the LPA or EA.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>EIA Air Quality Chapter</h3>
+          <p>Full Environmental Impact Assessment air quality chapters, incorporating baseline monitoring, dispersion modelling results, significance assessment against IAQM criteria and mitigation measures. Written to a standard that satisfies planning inspectors, local planning authorities and statutory consultees including the Environment Agency and Natural England.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Work For -->
+  <section class="section fade-in">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <span class="section-label">Who We Work For</span>
+          <h2 style="font-size:1.75rem;margin-bottom:1rem;">The Clients We Serve</h2>
+          <p style="color:var(--clr-text-light);line-height:1.8;margin-bottom:1.5rem;">
+            We work alongside planning consultants, EIA teams, highways engineers and operators at all stages of the planning and consenting process — from pre-application advice through to condition discharge and appeal support.
+          </p>
+          <p style="color:var(--clr-text-light);line-height:1.8;">
+            Our modelling outputs integrate directly with your wider project team, and we are comfortable liaising with local authority environmental health teams and statutory consultees on your behalf.
+          </p>
+        </div>
+        <div>
+          <ul class="area-list">
+            <li>Planning consultants</li>
+            <li>Developers and housebuilders</li>
+            <li>Environmental Impact Assessment teams</li>
+            <li>Highways engineers</li>
+            <li>Industrial operators</li>
+            <li>Waste management companies</li>
+            <li>Energy developers</li>
+            <li>Local authorities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <details class="faq-item">
+          <summary class="faq-item__question">What is air dispersion modelling?</summary>
+          <div class="faq-item__answer">
+            <p>Air dispersion modelling is a computational technique used to predict how pollutants from roads, industrial processes and other sources will spread through the atmosphere and reach nearby sensitive receptors such as homes, schools and workplaces. It uses mathematical algorithms based on meteorological data, source characteristics and terrain to estimate concentrations at specific locations. The results are compared against UK air quality objectives and WHO guidelines to determine whether a development will have a significant effect on air quality.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">When is dispersion modelling required for planning?</summary>
+          <div class="faq-item__answer">
+            <p>Dispersion modelling is typically required when a screening assessment (such as a DMRB or IAQM screening) indicates that a development has the potential for a significant air quality effect. This commonly applies to large residential developments close to busy roads, commercial or industrial developments with on-site combustion or process emissions, major road schemes, and developments near existing AQMAs or in areas with elevated background concentrations. The relevant planning policy is set out in the NPPF and IAQM/EPUK guidance.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What software do you use for dispersion modelling?</summary>
+          <div class="faq-item__answer">
+            <p>We use ADMS-Roads (by Cambridge Environmental Research Consultants) for road traffic-related assessments, which is the industry-standard model for UK planning applications. For industrial point sources, volume sources and more complex scenarios, we use ADMS-Urban or AERMOD. All our modelling is carried out in accordance with current IAQM and Environment Agency guidance on model selection and application.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">How long does a dispersion modelling assessment take?</summary>
+          <div class="faq-item__answer">
+            <p>Timescales depend on complexity. A straightforward ADMS-Roads screening assessment for a residential development can typically be completed within 5&ndash;10 working days of receiving traffic data and site information. A full detailed assessment with monitoring calibration for an EIA may take 3&ndash;6 weeks. We discuss programme requirements at the outset and can prioritise urgent work where your planning timetable demands it.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">How much does dispersion modelling cost?</summary>
+          <div class="faq-item__answer">
+            <p>Fees depend on the scope of the assessment &mdash; the number of modelled sources, the extent of the receptor network, whether baseline monitoring data is needed, and whether the work forms part of a wider EIA chapter. We provide clear fixed-fee quotes following a brief initial conversation about your project. All our fees are transparent with no hidden extras.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Need Dispersion Modelling for Your Project?</h2>
+      <p class="cta-banner__text">
+        Contact us today for a free, no-obligation quote. We'll review your project and come back to you, usually the same working day.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--primary btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--outline btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="40" height="40">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered environmental consultants providing specialist air quality, dust and odour assessments across the United Kingdom. MIAQM | CEnv.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust</a></li>
+            <li><a href="services-odour.html">Odour</a></li>
+            <li><a href="services-noise.html">Noise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span>MIAQM</span>
+          <span>CEnv</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

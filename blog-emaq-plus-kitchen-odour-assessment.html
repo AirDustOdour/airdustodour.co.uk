@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EMAQ Plus kitchen odour assessment explained — methodology, odour emission rates, and what planning authorities require for restaurants and takeaways in the UK.">
+  <meta property="og:title" content="EMAQ Plus Kitchen Odour Assessment | Air Dust Odour">
+  <meta property="og:description" content="EMAQ Plus kitchen odour assessment explained — methodology, odour emission rates, and what planning authorities require for restaurants and takeaways in the UK.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/blog-emaq-plus-kitchen-odour-assessment.html">
+  <link rel="canonical" href="https://www.airdustodour.co.uk/blog-emaq-plus-kitchen-odour-assessment.html">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>EMAQ Plus Kitchen Odour Assessment | Air Dust Odour</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an EMAQ Plus assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EMAQ Plus is a structured methodology for assessing kitchen odour impacts at the planning stage. It evaluates factors including the type of cooking, extraction system, flue design, and proximity to sensitive receptors to produce an overall odour impact score."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an EMAQ Plus assessment for my restaurant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most planning authorities require an EMAQ Plus assessment for any new food premises or change of use to restaurant, takeaway or café where the premises are near residential properties or other sensitive receptors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What EMAQ Plus score is acceptable?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A score below 10 is generally considered acceptable by planning authorities. Scores between 10 and 20 typically require mitigation measures, while scores above 20 are likely to result in a planning refusal."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    /* Article-specific styles */
+    .article-body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: var(--space-2xl) var(--space-md);
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      flex-wrap: wrap;
+      margin-bottom: var(--space-lg);
+    }
+
+    .article-author {
+      font-size: var(--fs-sm);
+      color: var(--clr-text-light);
+    }
+
+    .article-date {
+      font-size: var(--fs-sm);
+      color: var(--clr-text-light);
+    }
+
+    .article-body h2 {
+      font-size: var(--fs-xl);
+      font-weight: 700;
+      color: var(--clr-navy);
+      margin-top: var(--space-2xl);
+      margin-bottom: var(--space-md);
+      line-height: 1.3;
+    }
+
+    .article-body p {
+      font-size: var(--fs-base);
+      line-height: 1.8;
+      color: var(--clr-text);
+      margin-bottom: var(--space-md);
+    }
+
+    .article-body ol,
+    .article-body ul {
+      margin: var(--space-md) 0 var(--space-md) var(--space-lg);
+      padding: 0;
+    }
+
+    .article-body li {
+      font-size: var(--fs-base);
+      line-height: 1.8;
+      color: var(--clr-text);
+      margin-bottom: var(--space-xs);
+    }
+
+    .article-body li strong {
+      color: var(--clr-navy);
+    }
+
+    .article-score-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: var(--space-lg) 0;
+      font-size: var(--fs-sm);
+    }
+
+    .article-score-table th {
+      background: var(--clr-navy);
+      color: var(--clr-white);
+      padding: var(--space-sm) var(--space-md);
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .article-score-table td {
+      padding: var(--space-sm) var(--space-md);
+      border-bottom: 1px solid var(--clr-border, #e5e7eb);
+      color: var(--clr-text);
+    }
+
+    .article-score-table tr:nth-child(even) td {
+      background: var(--clr-bg-alt, #f9fafb);
+    }
+
+    .score-acceptable { color: #16a34a; font-weight: 600; }
+    .score-mitigation { color: #d97706; font-weight: 600; }
+    .score-refusal    { color: #dc2626; font-weight: 600; }
+
+    .article-callout {
+      background: #f0f4ff;
+      border-left: 4px solid var(--clr-navy);
+      border-radius: 0 8px 8px 0;
+      padding: var(--space-md) var(--space-lg);
+      margin: var(--space-lg) 0;
+    }
+
+    .article-callout p {
+      margin: 0;
+      font-size: var(--fs-sm);
+      color: var(--clr-navy);
+    }
+
+    .faq-section {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 var(--space-md) var(--space-2xl);
+    }
+
+    .faq-section h2 {
+      font-size: var(--fs-xl);
+      font-weight: 700;
+      color: var(--clr-navy);
+      margin-bottom: var(--space-lg);
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--clr-border, #e5e7eb);
+      padding: var(--space-md) 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      font-size: var(--fs-base);
+      font-weight: 600;
+      color: var(--clr-navy);
+      margin-bottom: var(--space-xs);
+    }
+
+    .faq-answer {
+      font-size: var(--fs-sm);
+      line-height: 1.7;
+      color: var(--clr-text);
+    }
+
+    .article-body a {
+      color: var(--clr-navy);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-body a:hover {
+      color: var(--clr-teal, #0d9488);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="services.html" class="header__nav-link">Services</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="blog.html" class="header__nav-link active">Blog</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+        <div class="header__cta">
+          <a href="get-a-quote.html" class="btn btn--primary btn--sm">Get a Free Quote</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <a href="blog.html">Blog</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <span>EMAQ Plus Kitchen Odour Assessment</span>
+      </nav>
+      <h1 class="page-hero__title">EMAQ Plus Kitchen Odour Assessment</h1>
+      <p class="page-hero__subtitle">
+        Methodology, odour emission rates, and what planning authorities require for restaurants and takeaways across the UK.
+      </p>
+    </div>
+  </section>
+
+  <!-- Article Body -->
+  <article>
+    <div class="article-body fade-in">
+
+      <!-- Meta -->
+      <div class="article-meta">
+        <span class="blog-card__category blog-card__category--odour">Odour</span>
+        <span class="article-date">February 2026</span>
+        <span class="article-author">By Malcolm Pounder CEnv MIAQM</span>
+      </div>
+
+      <!-- Introduction -->
+      <p>
+        Kitchen odour from restaurants, takeaways, cafes and food production facilities is one of the most frequently
+        complained about odour sources in urban areas. The smells produced by commercial cooking — frying, grilling,
+        charcoal, and spiced cuisine in particular — travel readily through built environments and can significantly
+        affect quality of life for nearby residents. Planning authorities across England and Wales increasingly require a
+        formal odour assessment before granting permission for new food premises or changes of use to A3, A4 or A5 use
+        classes. The EMAQ Plus methodology is the industry-standard framework for these assessments in the UK.
+      </p>
+
+      <!-- Section 1 -->
+      <h2>What is EMAQ Plus?</h2>
+      <p>
+        EMAQ Plus (Environmental Management of Ambient Quality Plus) is a structured assessment framework for evaluating
+        kitchen odour impacts at the planning stage. It was developed to provide a consistent, evidence-based approach
+        that planning officers and environmental health officers can use to evaluate proposals — replacing the informal,
+        ad hoc descriptions of extraction equipment that were once common in planning applications.
+      </p>
+      <p>
+        Unlike a simple description of proposed filtration systems, EMAQ Plus produces a quantitative score that
+        indicates the likely odour impact on nearby sensitive receptors. The methodology is referenced in guidance from
+        the Chartered Institution of Environmental Health (CIEH) and is widely accepted by local planning authorities
+        across England and Wales, including most London boroughs and many major city councils. Where an authority does
+        not specify a preferred methodology, EMAQ Plus remains the de facto standard.
+      </p>
+      <p>
+        The framework is deliberately practical. It can be applied at the pre-application stage to inform the design of
+        extraction and abatement systems, and then updated for submission with the formal planning application.
+      </p>
+
+      <!-- Section 2 -->
+      <h2>How the Assessment Works</h2>
+      <p>
+        The EMAQ Plus methodology evaluates five key factors, each of which is scored and combined to produce an overall
+        impact rating. A thorough understanding of each factor is essential to achieving an acceptable score.
+      </p>
+      <ol>
+        <li>
+          <strong>Odour Emission Rate</strong> — determined primarily by the type and quantity of food being cooked.
+          High-intensity cooking methods such as charcoal grilling, char-grilling, deep frying and spiced cuisine
+          produce significantly higher emission rates than light cooking activities such as sandwich preparation or
+          reheating. The number of covers (meals served) and the frequency of service also contribute to the overall
+          emission rate. Getting this factor right is critical: underestimating the emission rate is a common source
+          of assessment error.
+        </li>
+        <li>
+          <strong>Flue height and design</strong> — the extraction stack must be tall enough and positioned correctly
+          to allow effective dispersion of odorous air. The flue should ideally terminate at or above roof ridge height
+          and, where this is not achievable, must be designed to direct the exhaust plume away from nearby openable
+          windows and habitable rooms. Stack height is one of the most influential variables in the assessment.
+        </li>
+        <li>
+          <strong>Distance to nearest sensitive receptor</strong> — residential properties, hotels, schools and open
+          amenity spaces located above, adjacent to, or within close proximity of the premises attract the greatest
+          scrutiny. The methodology applies distance bands that directly influence the receptor score, with premises
+          located directly beneath flats representing the most challenging scenario.
+        </li>
+        <li>
+          <strong>Extraction and abatement efficiency</strong> — this covers the effectiveness of the filtration and
+          treatment systems proposed. Carbon filters, UV-C photolysis, electrostatic precipitators (ESPs) and odour
+          neutralisation systems are each assigned efficiency ratings within the framework. The combination and
+          sequencing of technologies matters: a correctly designed multi-stage system will significantly reduce the
+          overall score.
+        </li>
+        <li>
+          <strong>Operating hours and frequency of use</strong> — premises operating during evening and night-time
+          hours, or seven days a week, receive a higher score for this factor, reflecting the greater potential for
+          receptor disturbance during periods when people are at home and windows may be open.
+        </li>
+      </ol>
+      <p>
+        Each factor is scored and the scores are combined to produce the overall EMAQ Plus rating. The scoring bands
+        used by most authorities are as follows:
+      </p>
+      <table class="article-score-table" aria-label="EMAQ Plus score bands and planning outcomes">
+        <thead>
+          <tr>
+            <th>EMAQ Plus Score</th>
+            <th>Likely Planning Outcome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="score-acceptable">Below 10</td>
+            <td>Generally acceptable — no further mitigation required</td>
+          </tr>
+          <tr>
+            <td class="score-mitigation">10 to 20</td>
+            <td>Mitigation required — enhanced abatement, taller flue, or operational restrictions</td>
+          </tr>
+          <tr>
+            <td class="score-refusal">Above 20</td>
+            <td>Likely refusal — fundamental changes to the proposal required</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Section 3 -->
+      <h2>Common Failure Points</h2>
+      <p>
+        The majority of high EMAQ Plus scores arise from a small number of recurring design and siting issues. Being
+        aware of these at an early stage can save significant time and cost.
+      </p>
+      <ul>
+        <li>
+          <strong>Insufficient stack height:</strong> the flue must typically terminate at roof ridge height or at
+          least one metre above any openable window within 20 metres. Where a premises is located at ground floor
+          level beneath multiple residential storeys, achieving adequate stack height requires careful structural
+          coordination and is often the single biggest obstacle to a satisfactory score.
+        </li>
+        <li>
+          <strong>Inadequate filtration:</strong> carbon filters alone are rarely sufficient for high-intensity
+          cooking operations. A UV-C system combined with carbon, or an electrostatic precipitator followed by
+          carbon, is usually required for grill and char-grill operations. The efficiency credited to each technology
+          in the EMAQ Plus calculation is only applicable when equipment is correctly specified, properly installed
+          and regularly maintained.
+        </li>
+        <li>
+          <strong>Poor receptor proximity:</strong> premises located directly below flats or within five metres of
+          habitable windows face the greatest scrutiny within the framework. In these situations, no combination of
+          abatement technology will achieve an acceptable score unless the flue can be routed to discharge well
+          clear of the building envelope. Pre-application engagement with the local authority is strongly advised
+          where receptor proximity is a concern.
+        </li>
+        <li>
+          <strong>Underestimating cooking intensity:</strong> applicants sometimes describe their cuisine in
+          conservative terms to achieve a lower emission rate score. Planning authorities and environmental health
+          officers are familiar with this tendency. Accurately characterising the cooking type from the outset
+          produces a more credible assessment and avoids conditions being imposed that are difficult to comply with
+          in practice.
+        </li>
+      </ul>
+
+      <!-- Section 4 -->
+      <h2>What Planning Authorities Require</h2>
+      <p>
+        Most London boroughs and many major city councils now require an EMAQ Plus assessment as a standard
+        requirement for any A3, A4 or A5 use class application where the premises are near residential or other
+        sensitive receptors. Some authorities publish their specific requirements in supplementary planning documents
+        or pre-application guidance notes — it is always worth checking before preparing the assessment.
+      </p>
+      <p>
+        The EMAQ Plus assessment should be submitted with the planning application, not provided as an afterthought
+        following a request for further information. Late submission can delay determination and, in competitive
+        locations, puts the application at a disadvantage if neighbouring premises have already established a
+        precedent for robust odour management.
+      </p>
+      <p>
+        Many authorities also attach planning conditions requiring the approved extraction and abatement equipment to
+        be installed before the premises opens, maintained in effective working order, and subject to periodic filter
+        replacement — typically at intervals recommended by the manufacturer. Air Dust Odour can advise on
+        appropriate management plan wording for these conditions and can assist operators in demonstrating compliance
+        if a complaint is received after opening.
+      </p>
+
+      <div class="article-callout">
+        <p>
+          Pre-application discussions with the local planning authority or environmental health team are strongly
+          recommended for any premises where receptor proximity or cooking intensity may result in a borderline or
+          high EMAQ Plus score. Early engagement can clarify expectations and avoid abortive design work.
+        </p>
+      </div>
+
+      <!-- Section 5 -->
+      <h2>Who Needs an EMAQ Plus Assessment?</h2>
+      <p>
+        Any operator proposing a new restaurant, takeaway, café, pub kitchen, ghost kitchen, dark kitchen or food
+        production facility near residential or other sensitive receptors should commission an EMAQ Plus assessment.
+        It is also frequently required for existing premises seeking to expand their kitchen capacity, extend their
+        operating hours, or change their cooking method — for example, a café adding a grill or a restaurant
+        introducing a charcoal oven.
+      </p>
+      <p>
+        Even where an authority does not explicitly require an EMAQ Plus assessment, providing one voluntarily
+        demonstrates a professional and proactive approach to odour management. It can strengthen the application
+        and reduce the likelihood of odour-related objections from neighbours or environmental health officers.
+      </p>
+
+      <!-- Conclusion -->
+      <h2>Commissioning an EMAQ Plus Assessment</h2>
+      <p>
+        Air Dust Odour prepares EMAQ Plus assessments for food premises across the UK. Our assessments are carried
+        out by chartered environmental professionals with direct experience of working with planning authorities and
+        environmental health teams. We can advise on extraction and abatement system design at the pre-application
+        stage, prepare the formal EMAQ Plus report for submission, and provide condition compliance support after
+        the premises opens.
+      </p>
+      <p>
+        For more information about our odour assessment services for restaurants and food premises, visit our
+        <a href="restaurant-odour-assessment.html">restaurant odour assessment page</a>, or
+        <a href="get-a-quote.html">get in touch for a free quote</a>.
+      </p>
+
+    </div><!-- /.article-body -->
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <p class="faq-question">What is an EMAQ Plus assessment?</p>
+        <p class="faq-answer">EMAQ Plus is a structured methodology for assessing kitchen odour impacts at the planning stage. It evaluates factors including the type of cooking, extraction system, flue design, and proximity to sensitive receptors to produce an overall odour impact score.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">Do I need an EMAQ Plus assessment for my restaurant?</p>
+        <p class="faq-answer">Most planning authorities require an EMAQ Plus assessment for any new food premises or change of use to restaurant, takeaway or café where the premises are near residential properties or other sensitive receptors.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">What EMAQ Plus score is acceptable?</p>
+        <p class="faq-answer">A score below 10 is generally considered acceptable by planning authorities. Scores between 10 and 20 typically require mitigation measures, while scores above 20 are likely to result in a planning refusal.</p>
+      </div>
+    </div>
+
+  </article>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Need Expert Environmental Advice?</h2>
+      <p class="cta-banner__text">
+        Our chartered professionals are here to help with your air quality, dust or odour assessment needs.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--white btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered air quality assessment professionals providing specialist environmental consultancy services across the United Kingdom.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust Monitoring</a></li>
+            <li><a href="services-odour.html">Odour Assessment</a></li>
+            <li><a href="services-noise.html">Noise Assessment</a></li>
+            <li><a href="services-lighting.html">Lighting Assessment</a></li>
+            <li><a href="services-workplace.html">Workplace Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> CEnv</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg> MIAQM</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

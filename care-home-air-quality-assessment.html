@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Air quality assessments for care homes, residential care and nursing home planning applications across the UK. NO2, PM2.5 and indoor air quality by chartered specialists.">
+  <meta property="og:title" content="Care Home Air Quality Assessment | Air Dust Odour">
+  <meta property="og:description" content="Air quality assessments for care homes, residential care and nursing home planning applications across the UK. NO2, PM2.5 and indoor air quality by chartered specialists.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/care-home-air-quality-assessment">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Care Home Air Quality Assessment | Air Dust Odour</title>
+  <link rel="canonical" href="https://www.airdustodour.co.uk/care-home-air-quality-assessment.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why do care home planning applications need an air quality assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Care homes, nursing homes and residential care facilities are classified as particularly sensitive receptors for air quality purposes because their residents — typically elderly people and those with underlying health conditions — are among the groups most vulnerable to the effects of air pollution. Local planning authorities apply greater scrutiny to air quality assessments for these uses, particularly where a proposed site is close to a busy road, within an Air Quality Management Area (AQMA), or in an area where background NO2 or PM2.5 concentrations are already elevated. An air quality assessment demonstrates that the proposed location is suitable for this sensitive use and, where necessary, sets out the mitigation measures required to protect residents."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What pollutants are assessed for care home applications?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The primary pollutants assessed for care home planning applications are nitrogen dioxide (NO2) and particulate matter (PM10 and PM2.5), as these are the traffic-related pollutants of greatest concern for health. Background concentrations are sourced from DEFRA's PCM model and compared against UK air quality objectives (NO2 40 μg/m³ annual mean) and WHO Air Quality Guidelines (PM2.5 5 μg/m³ annual mean under WHO 2021 guidelines, or 10 μg/m³ under previous guidelines still referenced by many authorities). Where relevant, we also address site-specific sources such as nearby industrial processes, road traffic emissions at the site access, and potential indoor air quality issues."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What mitigation can be recommended if air quality is poor at a care home site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Where air quality at a proposed care home site is found to be a concern, mitigation measures can include: building orientation and layout to maximise distance between habitable rooms and emission sources, enhanced ventilation systems with high-efficiency filtration (HEPA or equivalent), green infrastructure (green walls, planting buffers), air quality monitoring as a planning condition, and where the site is close to a very busy road, locating communal outdoor spaces away from the primary emission source. We provide practical, costed mitigation recommendations as part of our assessment, and advise on whether the site is fundamentally suitable for the proposed use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does a care home need an air quality assessment if it is not in an AQMA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — the absence of an AQMA does not mean that air quality is acceptable at a specific site. AQMAs are declared where annual air quality objectives are breached, but concentrations can be approaching the objective even outside an AQMA, and for a sensitive use such as a care home, many local authorities will require an assessment regardless of AQMA status. The relevant question is not whether an AQMA exists, but whether the site-specific concentrations are acceptable for the intended use and the health of the people who will live there."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a care home air quality assessment take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A care home air quality assessment using desktop screening and DEFRA background data can typically be completed within 5 to 10 working days. Where detailed dispersion modelling is required — for example, sites close to major roads or in areas with complex emission sources — timescales may be longer. We discuss programme requirements at the outset and work to your planning application timetable."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <style>
+    /* Services dropdown */
+    .nav-item--dropdown { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      z-index: 200;
+      padding: 8px 0;
+    }
+    .nav-item--dropdown:hover .nav-dropdown,
+    .nav-item--dropdown:focus-within .nav-dropdown { display: block; }
+    .nav-dropdown a {
+      display: block;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      color: var(--clr-text, #1f2937);
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-dropdown a:hover { background: #f3f4f6; color: var(--clr-primary, #2563eb); }
+    .header__nav-link--dropdown::after { content: ' ▾'; font-size: 0.7em; }
+
+    /* Intro grid */
+    .service-page__intro-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .service-page__intro-grid { grid-template-columns: 1fr; }
+    }
+    .service-page__intro-grid p {
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    /* Quick contact card */
+    .quick-contact {
+      background: #f8fafc;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .quick-contact h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--clr-heading, #111827);
+    }
+    .quick-contact p {
+      font-size: 0.875rem;
+      color: var(--clr-text-light, #6b7280);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .quick-contact .btn { width: 100%; justify-content: center; margin-bottom: 1rem; }
+    .quick-contact__tel {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--clr-heading, #111827);
+      text-decoration: none;
+      justify-content: center;
+    }
+    .quick-contact__tel:hover { color: var(--clr-primary, #2563eb); }
+    .quick-contact__tel svg { flex-shrink: 0; }
+    .quick-contact__divider {
+      border: none;
+      border-top: 1px solid var(--clr-border, #e5e7eb);
+      margin: 1.25rem 0;
+    }
+    .quick-contact__badge {
+      font-size: 0.75rem;
+      color: var(--clr-text-light, #6b7280);
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    /* Offerings grid */
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) {
+      .offerings-grid { grid-template-columns: 1fr; }
+    }
+    .offering-card {
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 10px;
+      padding: 1.75rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .offering-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .offering-card__icon {
+      width: 48px;
+      height: 48px;
+      background: #eff6ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .offering-card__icon svg { width: 22px; height: 22px; color: var(--clr-primary, #2563eb); }
+    .offering-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--clr-primary, #2563eb);
+    }
+    .offering-card p {
+      font-size: 0.875rem;
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* Area list */
+    .area-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem 2rem;
+    }
+    @media (max-width: 600px) {
+      .area-list { grid-template-columns: 1fr; }
+    }
+    .area-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--clr-text, #1f2937);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--clr-border, #e5e7eb);
+    }
+    .area-list li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--clr-primary, #2563eb);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* FAQ section */
+    .faq-section { max-width: 800px; margin: 2.5rem auto 0; }
+
+    /* CTA btn--outline within cta-banner */
+    .cta-banner__actions .btn--outline {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.6);
+      color: rgba(255,255,255,0.9);
+    }
+    .cta-banner__actions .btn--outline:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: #fff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li class="nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown active">Services</a>
+            <div class="nav-dropdown">
+              <a href="services-air.html">Air Quality</a>
+              <a href="services-dust.html">Dust</a>
+              <a href="services-odour.html">Odour</a>
+              <a href="services-noise.html">Noise</a>
+            </div>
+          </li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="get-a-quote.html" class="btn btn--nav">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">Care Home Air Quality Assessment</h1>
+      <p class="page-hero__subtitle">
+        Air quality assessments for care home and residential care planning applications. We assess NO<sub>2</sub>, PM<sub>2.5</sub> and site suitability for vulnerable occupants &mdash; with practical mitigation recommendations that planning authorities accept.
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro Grid -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="service-page__intro-grid">
+        <div class="service-page__intro-content">
+          <h2>Air Quality Assessment for the Most Sensitive of Receptors</h2>
+          <p>
+            Care homes, nursing homes and residential care facilities are among the most sensitive land uses that planning authorities consider. Their residents &mdash; typically elderly people and those with chronic health conditions &mdash; are the groups most at risk from elevated concentrations of nitrogen dioxide, fine particulate matter and other traffic-related pollutants. Local planning authorities know this, and they scrutinise air quality for these applications accordingly.
+          </p>
+          <p>
+            A care home air quality assessment must demonstrate not just that the site meets annual average objectives, but that concentrations are appropriate for continuous occupation by vulnerable people. Where background concentrations are elevated, or where the site is close to a busy road or industrial source, the assessment needs to address both the quantitative evidence and the qualitative question of whether the location is truly suitable for the proposed use.
+          </p>
+          <p>
+            At Air Dust Odour, Malcolm Pounder CEnv MIAQM leads all assessments for care and healthcare uses personally. We provide technically rigorous, clearly presented reports that address the specific concerns planning officers and public health consultees raise for this type of development &mdash; and we identify practical mitigation measures where the evidence base requires them.
+          </p>
+        </div>
+        <aside class="quick-contact">
+          <h3>Get a Free Quote</h3>
+          <p>Tell us about your care home site and we'll send you a no-obligation quote, usually within the same working day.</p>
+          <a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote</a>
+          <hr class="quick-contact__divider">
+          <a href="tel:+442080503003" class="quick-contact__tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            020 8050 3003
+          </a>
+          <p class="quick-contact__badge">Mon&ndash;Fri 9am&ndash;5:30pm &bull; Healthcare use specialists</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">What We Provide</span>
+      <h2 class="section-title">Our Care Home Air Quality Services</h2>
+      <p class="section-subtitle" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
+        From desktop screening to detailed modelling for complex sites, we provide the right level of assessment for your planning application.
+      </p>
+      <div class="offerings-grid">
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3>Air Quality Screening Assessment</h3>
+          <p>A desktop review of DEFRA background data, local AQMA status and proximity to roads to establish baseline air quality at the proposed site. Compared against UK objectives and, where relevant, WHO Air Quality Guidelines for sensitive uses. Provides a clear statement on whether the site is likely to be acceptable for care home use without the need for further detailed assessment.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18M3 15h18M9 3v18"/></svg>
+          </div>
+          <h3>Detailed Dispersion Modelling Assessment</h3>
+          <p>For sites close to major roads, within AQMAs or in areas with elevated background concentrations, a detailed assessment using ADMS-Roads or similar dispersion modelling software. Predicts actual NO<sub>2</sub> and PM<sub>2.5</sub>/PM<sub>10</sub> concentrations at the proposed building facade and outdoor amenity areas, calibrated against local monitoring data where available, and assessed against the full suite of relevant objectives and guidelines.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Mitigation Strategy</h3>
+          <p>Where air quality concerns are identified, we provide a clear, practical mitigation strategy covering building layout and orientation, ventilation system specification (including filtration requirements), outdoor amenity space positioning, green infrastructure, and air quality monitoring conditions. All recommendations are grounded in what planning authorities expect to see for sensitive uses and what is deliverable within a care home design and construction programme.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Pre-Application &amp; Stakeholder Support</h3>
+          <p>Pre-application advice on site suitability, air quality scope and assessment methodology before you invest in a full planning application. We can prepare scoping letters, attend pre-application meetings with the LPA, and liaise with local authority environmental health officers and public health consultees on your behalf. For contentious sites, early engagement saves significant time and cost downstream.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who We Work For -->
+  <section class="section fade-in">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <span class="section-label">Who We Work With</span>
+          <h2 style="font-size:1.75rem;margin-bottom:1rem;">Care &amp; Healthcare Uses We Cover</h2>
+          <p style="color:var(--clr-text-light);line-height:1.8;margin-bottom:1.5rem;">
+            We provide air quality assessments for the full range of residential care and healthcare land uses, from small specialist care homes to large Extra Care housing schemes and NHS facilities.
+          </p>
+          <p style="color:var(--clr-text-light);line-height:1.8;">
+            Our clients include specialist care home developers and operators, healthcare property investors, NHS trusts, planning consultants working on healthcare projects, and national housebuilders developing Extra Care schemes.
+          </p>
+        </div>
+        <div>
+          <ul class="area-list">
+            <li>Residential care homes</li>
+            <li>Nursing homes</li>
+            <li>Dementia care facilities</li>
+            <li>Extra Care housing</li>
+            <li>Supported living schemes</li>
+            <li>Hospices</li>
+            <li>GP surgeries and health centres</li>
+            <li>Mental health facilities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <details class="faq-item">
+          <summary class="faq-item__question">Why do care home planning applications need an air quality assessment?</summary>
+          <div class="faq-item__answer">
+            <p>Care homes and residential care facilities are classified as particularly sensitive receptors for air quality purposes because their residents &mdash; typically elderly people and those with underlying health conditions &mdash; are among the groups most vulnerable to air pollution. Local planning authorities apply greater scrutiny to air quality assessments for these uses, particularly where the proposed site is close to a busy road, within an Air Quality Management Area, or in an area where background NO<sub>2</sub> or PM<sub>2.5</sub> concentrations are elevated.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What pollutants are assessed for care home applications?</summary>
+          <div class="faq-item__answer">
+            <p>The primary pollutants are nitrogen dioxide (NO<sub>2</sub>) and particulate matter (PM<sub>10</sub> and PM<sub>2.5</sub>). Background concentrations are sourced from DEFRA&rsquo;s PCM model and compared against UK air quality objectives (NO<sub>2</sub> 40 &micro;g/m&sup3; annual mean) and WHO Air Quality Guidelines. For sites close to major roads, we also assess the road traffic contribution at the building facade using dispersion modelling. Site-specific sources such as nearby industrial processes are also considered where relevant.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What mitigation can be recommended if air quality is poor at a care home site?</summary>
+          <div class="faq-item__answer">
+            <p>Mitigation measures can include building orientation and layout to maximise distance between habitable rooms and emission sources, enhanced ventilation systems with high-efficiency filtration, green infrastructure and planting buffers, outdoor amenity space positioned away from the primary emission source, and air quality monitoring conditions. We provide practical, proportionate recommendations and advise honestly on whether a site is fundamentally suitable for the proposed use &mdash; a view that planning authorities will form regardless, so it is better to understand it early.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">Does a care home need an air quality assessment if it is not in an AQMA?</summary>
+          <div class="faq-item__answer">
+            <p>Yes &mdash; the absence of an AQMA does not mean that air quality is acceptable at a specific site. AQMAs are declared where annual air quality objectives are being breached, but concentrations can be approaching the objective even outside a designated area. For a sensitive use such as a care home, many local authorities will require an assessment regardless of AQMA status. The relevant question is whether the site-specific concentrations are appropriate for the intended use and the health of the people who will live there.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">How long does a care home air quality assessment take?</summary>
+          <div class="faq-item__answer">
+            <p>A care home air quality screening assessment using desktop data can typically be completed within 5 to 10 working days. Where detailed dispersion modelling is required &mdash; for example, sites close to major roads or in areas with elevated background concentrations &mdash; timescales may be 3 to 4 weeks. We discuss programme requirements at the outset and work to your planning application timetable.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Need an Air Quality Assessment for Your Care Home?</h2>
+      <p class="cta-banner__text">
+        Contact us today for a free, no-obligation quote. We'll review your site and planning requirements and come back to you, usually the same working day.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--primary btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--outline btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="40" height="40">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered environmental consultants providing specialist air quality, dust and odour assessments across the United Kingdom. MIAQM | CEnv.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust</a></li>
+            <li><a href="services-odour.html">Odour</a></li>
+            <li><a href="services-noise.html">Noise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span>MIAQM</span>
+          <span>CEnv</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

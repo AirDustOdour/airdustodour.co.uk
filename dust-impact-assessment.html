@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dust impact assessments for planning applications following IAQM 2024 guidance. Screening and detailed DIAs for demolition, earthworks, construction and trackout. UK-wide.">
+  <meta property="og:title" content="Dust Impact Assessment | IAQM 2024 Guidance | Air Dust Odour">
+  <meta property="og:description" content="Dust impact assessments for planning applications following IAQM 2024 guidance. Screening and detailed DIAs for demolition, earthworks, construction and trackout. UK-wide.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/dust-impact-assessment">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Dust Impact Assessment | IAQM 2024 Guidance | Air Dust Odour</title>
+  <link rel="canonical" href="https://www.airdustodour.co.uk/dust-impact-assessment.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a dust impact assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A dust impact assessment (DIA) is a systematic evaluation of the dust risks arising from construction activities at a development site. It identifies the nature and scale of dust-generating activities (demolition, earthworks, construction works and trackout), the sensitivity of nearby receptors, and the level of risk if standard mitigation measures are not applied. The 2024 IAQM guidance (V2.2) sets out the methodology that planning authorities across England, Wales and Scotland expect assessments to follow."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When is a dust impact assessment required?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A DIA is required — or strongly expected — when a planning application involves significant demolition, earthworks or construction activities close to sensitive receptors such as homes, schools, hospitals or nature conservation sites. The IAQM 2024 guidance sets size thresholds above which a detailed assessment is recommended: for demolition, buildings with a volume above 75,000 m³; for earthworks, areas above 110,000 m². Smaller sites may still require a proportionate assessment depending on receptor sensitivity and proximity. The requirement is usually attached as a planning condition."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does a dust impact assessment involve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A dust impact assessment involves characterising the site and its proposed construction activities, identifying sensitive receptors within the zone of influence (typically 350 m), assessing the inherent dust risk based on site size and construction phase, determining receptor sensitivity, and arriving at an overall risk level. Where the risk is considered medium or high, mitigation measures are specified. The assessment output is a clear, professionally presented report ready for submission to the planning authority or for discharge of a planning condition."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What changed in the IAQM 2024 guidance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The January 2024 IAQM guidance update (V2.2) principally revised the site size thresholds above which a detailed dust impact assessment is recommended. The key changes were: the demolition threshold increased from >50,000 m³ to >75,000 m³ gross internal floor area; the earthworks threshold increased from >10,000 m² to >110,000 m². These updates reflect improved understanding of dust generation rates and mean that many smaller sites that previously required a detailed assessment may now need only a proportionate or screening-level assessment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does a dust impact assessment cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fees depend on site size, complexity and the number of construction phases. A proportionate screening assessment for a modest residential development typically starts from around £600. A detailed DIA for a larger site with multiple phases, sensitive receptors and a requirement for baseline monitoring will be priced accordingly. We provide transparent, fixed-fee quotes following a brief conversation about your project — usually the same working day."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <style>
+    /* Services dropdown */
+    .nav-item--dropdown { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      z-index: 200;
+      padding: 8px 0;
+    }
+    .nav-item--dropdown:hover .nav-dropdown,
+    .nav-item--dropdown:focus-within .nav-dropdown { display: block; }
+    .nav-dropdown a {
+      display: block;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      color: var(--clr-text, #1f2937);
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-dropdown a:hover { background: #f3f4f6; color: var(--clr-primary, #2563eb); }
+    .header__nav-link--dropdown::after { content: ' ▾'; font-size: 0.7em; }
+
+    /* Intro grid */
+    .service-page__intro-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .service-page__intro-grid { grid-template-columns: 1fr; }
+    }
+    .service-page__intro-grid p {
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    /* Quick contact card */
+    .quick-contact {
+      background: #f8fafc;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .quick-contact h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--clr-heading, #111827);
+    }
+    .quick-contact p {
+      font-size: 0.875rem;
+      color: var(--clr-text-light, #6b7280);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .quick-contact .btn { width: 100%; justify-content: center; margin-bottom: 1rem; }
+    .quick-contact__tel {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--clr-heading, #111827);
+      text-decoration: none;
+      justify-content: center;
+    }
+    .quick-contact__tel:hover { color: var(--clr-primary, #2563eb); }
+    .quick-contact__tel svg { flex-shrink: 0; }
+    .quick-contact__divider {
+      border: none;
+      border-top: 1px solid var(--clr-border, #e5e7eb);
+      margin: 1.25rem 0;
+    }
+    .quick-contact__badge {
+      font-size: 0.75rem;
+      color: var(--clr-text-light, #6b7280);
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    /* Offerings grid */
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) {
+      .offerings-grid { grid-template-columns: 1fr; }
+    }
+    .offering-card {
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 10px;
+      padding: 1.75rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .offering-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .offering-card__icon {
+      width: 48px;
+      height: 48px;
+      background: #eff6ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .offering-card__icon svg { width: 22px; height: 22px; color: var(--clr-primary, #2563eb); }
+    .offering-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--clr-primary, #2563eb);
+    }
+    .offering-card p {
+      font-size: 0.875rem;
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* Area list */
+    .area-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem 2rem;
+    }
+    @media (max-width: 600px) {
+      .area-list { grid-template-columns: 1fr; }
+    }
+    .area-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--clr-text, #1f2937);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--clr-border, #e5e7eb);
+    }
+    .area-list li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--clr-primary, #2563eb);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* FAQ section */
+    .faq-section { max-width: 800px; margin: 2.5rem auto 0; }
+
+    /* CTA btn--outline within cta-banner */
+    .cta-banner__actions .btn--outline {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.6);
+      color: rgba(255,255,255,0.9);
+    }
+    .cta-banner__actions .btn--outline:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: #fff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li class="nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown active">Services</a>
+            <div class="nav-dropdown">
+              <a href="services-air.html">Air Quality</a>
+              <a href="services-dust.html">Dust</a>
+              <a href="services-odour.html">Odour</a>
+              <a href="services-noise.html">Noise</a>
+            </div>
+          </li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="get-a-quote.html" class="btn btn--nav">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">Dust Impact Assessment for Planning</h1>
+      <p class="page-hero__subtitle">
+        Screening and detailed dust impact assessments following the IAQM 2024 guidance (V2.2). We provide robust, proportionate reports that satisfy planning authorities and protect your programme.
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro Grid -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="service-page__intro-grid">
+        <div class="service-page__intro-content">
+          <h2>Dust Assessments That Keep Your Project Moving</h2>
+          <p>
+            Dust impact assessments (DIAs) are required by planning authorities to demonstrate that construction activities &mdash; demolition, earthworks, trackout and construction operations &mdash; will not cause unacceptable dust nuisance to nearby sensitive receptors. Whether the requirement is attached as a planning condition or forms part of an Environmental Statement, a well-prepared DIA is one of the most important environmental documents in your planning package.
+          </p>
+          <p>
+            The IAQM revised its guidance in January 2024 (V2.2), updating the site size thresholds that determine when a detailed DIA is required. The key changes affect demolition (threshold now &gt;75,000 m&sup3; gross internal volume) and earthworks (threshold now &gt;110,000 m&sup2;). If your assessment was prepared under the earlier guidance, or if your consultant has not updated their approach to reflect V2.2, your report may not be accepted by the LPA.
+          </p>
+          <p>
+            Malcolm Pounder CEnv MIAQM has prepared dust impact assessments for developments ranging from small residential conversions to major strategic land allocations. We apply the 2024 IAQM guidance consistently, produce proportionate reports that are clearly written and easy for planning officers to assess, and can turn around straightforward screening assessments quickly when your programme requires it.
+          </p>
+        </div>
+        <aside class="quick-contact">
+          <h3>Get a Free Quote</h3>
+          <p>Tell us about your development site and we'll send you a no-obligation quote for a dust impact assessment, usually within the same working day.</p>
+          <a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote</a>
+          <hr class="quick-contact__divider">
+          <a href="tel:+442080503003" class="quick-contact__tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            020 8050 3003
+          </a>
+          <p class="quick-contact__badge">Mon&ndash;Fri 9am&ndash;5:30pm &bull; Fast turnaround available</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">What We Provide</span>
+      <h2 class="section-title">Our Dust Impact Assessment Services</h2>
+      <p class="section-subtitle" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
+        From proportionate screening assessments to full detailed DIAs and Dust Management Plans, we cover the full range of what planning authorities require.
+      </p>
+      <div class="offerings-grid">
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3>IAQM Screening Assessment</h3>
+          <p>A proportionate screening assessment to determine whether a detailed DIA is required, based on the site size thresholds and receptor sensitivity criteria set out in the 2024 IAQM guidance (V2.2). For many smaller development sites, a well-prepared screening assessment is all the LPA needs &mdash; keeping your application straightforward and your programme on track.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Detailed Dust Impact Assessment</h3>
+          <p>A full quantitative and qualitative DIA covering all four dust-generating activities: demolition, earthworks, construction works and trackout. We assess inherent dust risk, receptor sensitivity and overall risk level for each phase, and specify the mitigation measures needed to reduce residual risk to low. Prepared to the standard expected by planning officers and EHOs across the UK.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h3>Dust Management Plan</h3>
+          <p>A standalone Dust Management Plan (DMP) for inclusion in a Construction Environmental Management Plan (CEMP) or as a standalone document for condition discharge. Sets out site-specific dust suppression and monitoring measures, responsibilities, trigger levels and complaint response procedures &mdash; tailored to your site, your construction programme and the sensitivity of the surrounding area.</p>
+        </div>
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 6h20M2 18h20"/></svg>
+          </div>
+          <h3>Baseline Dust Monitoring</h3>
+          <p>Where required by the LPA or where nearby receptors are particularly sensitive, we can design and manage a baseline dust monitoring campaign using directional deposition gauges or real-time Osiris monitors. Baseline data strengthens your DIA, provides pre-construction context, and forms the basis for construction-phase compliance monitoring where this is a condition of consent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Types of Development -->
+  <section class="section fade-in">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <span class="section-label">Types of Development We Cover</span>
+          <h2 style="font-size:1.75rem;margin-bottom:1rem;">What Kind of Sites Do We Assess?</h2>
+          <p style="color:var(--clr-text-light);line-height:1.8;margin-bottom:1.5rem;">
+            We prepare dust impact assessments for a wide range of development types, from small residential conversions that require a proportionate screening note to major strategic sites needing a full multi-phase DIA and Dust Management Plan.
+          </p>
+          <p style="color:var(--clr-text-light);line-height:1.8;">
+            Whatever the scale or sector, the 2024 IAQM guidance applies. We apply it correctly, proportionately, and in a way that gives your planning application the best chance of being accepted first time.
+          </p>
+        </div>
+        <div>
+          <ul class="area-list">
+            <li>Residential developments</li>
+            <li>Commercial and mixed-use schemes</li>
+            <li>Demolition projects</li>
+            <li>Major earthworks and cut-and-fill</li>
+            <li>Infrastructure and highways</li>
+            <li>Minerals extraction</li>
+            <li>Energy and waste facilities</li>
+            <li>Industrial redevelopment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <details class="faq-item">
+          <summary class="faq-item__question">What is a dust impact assessment?</summary>
+          <div class="faq-item__answer">
+            <p>A dust impact assessment (DIA) is a systematic evaluation of the dust risks arising from construction activities at a development site. It identifies the nature and scale of dust-generating activities (demolition, earthworks, construction works and trackout), the sensitivity of nearby receptors, and the level of risk if standard mitigation measures are not applied. The 2024 IAQM guidance (V2.2) sets out the methodology that planning authorities across England, Wales and Scotland expect assessments to follow.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">When is a dust impact assessment required?</summary>
+          <div class="faq-item__answer">
+            <p>A DIA is required &mdash; or strongly expected &mdash; when a planning application involves significant demolition, earthworks or construction activities close to sensitive receptors such as homes, schools, hospitals or nature conservation sites. The IAQM 2024 guidance sets size thresholds above which a detailed assessment is recommended: for demolition, buildings with a volume above 75,000 m&sup3;; for earthworks, areas above 110,000 m&sup2;. Smaller sites may still require a proportionate assessment depending on receptor sensitivity and proximity. The requirement is usually attached as a planning condition.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What does a dust impact assessment involve?</summary>
+          <div class="faq-item__answer">
+            <p>A dust impact assessment involves characterising the site and its proposed construction activities, identifying sensitive receptors within the zone of influence (typically 350 m), assessing the inherent dust risk based on site size and construction phase, determining receptor sensitivity, and arriving at an overall risk level. Where the risk is considered medium or high, mitigation measures are specified. The assessment output is a clear, professionally presented report ready for submission to the planning authority or for discharge of a planning condition.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What changed in the IAQM 2024 guidance?</summary>
+          <div class="faq-item__answer">
+            <p>The January 2024 IAQM guidance update (V2.2) principally revised the site size thresholds above which a detailed dust impact assessment is recommended. The key changes were: the demolition threshold increased from &gt;50,000 m&sup3; to &gt;75,000 m&sup3; gross internal floor area; the earthworks threshold increased from &gt;10,000 m&sup2; to &gt;110,000 m&sup2;. These updates reflect improved understanding of dust generation rates and mean that many smaller sites that previously required a detailed assessment may now need only a proportionate or screening-level assessment.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">How much does a dust impact assessment cost?</summary>
+          <div class="faq-item__answer">
+            <p>Fees depend on site size, complexity and the number of construction phases. A proportionate screening assessment for a modest residential development typically starts from around &pound;600. A detailed DIA for a larger site with multiple phases, sensitive receptors and a requirement for baseline monitoring will be priced accordingly. We provide transparent, fixed-fee quotes following a brief conversation about your project &mdash; usually the same working day.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Need a Dust Impact Assessment?</h2>
+      <p class="cta-banner__text">
+        Contact us today for a free, no-obligation quote. We'll review your project and come back to you, usually the same working day.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--primary btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--outline btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="40" height="40">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered environmental consultants providing specialist air quality, dust and odour assessments across the United Kingdom. MIAQM | CEnv.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust</a></li>
+            <li><a href="services-odour.html">Odour</a></li>
+            <li><a href="services-noise.html">Noise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span>MIAQM</span>
+          <span>CEnv</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Construction phase dust impact assessment under the 2024 IAQM guidance (V2.2). Covering demolition, earthworks, construction and trackout phases, dust monitoring and CEMPs.">
+  <meta property="og:title" content="Construction Phase Dust Impact Assessment | Air Dust Odour">
+  <meta property="og:description" content="Construction phase dust impact assessment under the 2024 IAQM guidance (V2.2). Covering demolition, earthworks, construction and trackout phases, dust monitoring and CEMPs.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/blog-construction-dust-impact-assessment.html">
+  <link rel="canonical" href="https://www.airdustodour.co.uk/blog-construction-dust-impact-assessment.html">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Construction Phase Dust Impact Assessment | Air Dust Odour</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <!-- FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a construction phase dust impact assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A formal assessment of the dust likely to be generated during demolition, earthworks, construction and trackout phases, evaluated against the sensitivity of nearby receptors. It follows the IAQM Guidance on the Assessment of Dust from Demolition and Construction (V2.2, January 2024)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When is a dust impact assessment required?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Local planning authorities typically require a dust impact assessment as part of a planning application where the proposed development involves demolition, significant earthworks or construction near residential or other sensitive receptors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What changed in the 2024 IAQM dust guidance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Version 2.2, published in January 2024, significantly revised the magnitude thresholds — particularly for earthworks, where the Large threshold increased from 10,000 m\u00b2 to 110,000 m\u00b2 site area. It also increased the focus on PM2.5 health impacts and recommends a screening assessment at outline planning stage."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    /* Article-specific styles */
+    .article-column {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .article-header {
+      margin-bottom: var(--space-xl);
+      padding-bottom: var(--space-lg);
+      border-bottom: 1px solid var(--clr-border, #e5e7eb);
+    }
+    .article-header__meta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      flex-wrap: wrap;
+      margin-bottom: var(--space-md);
+    }
+    .article-header__date {
+      font-size: var(--fs-sm, 0.875rem);
+      color: var(--clr-text-light);
+    }
+    .article-header__author {
+      font-size: var(--fs-sm, 0.875rem);
+      color: var(--clr-text-light);
+    }
+    .article-body h2 {
+      font-size: var(--fs-xl, 1.25rem);
+      font-weight: 700;
+      color: var(--clr-navy, #0d1b2e);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+    .article-body h3 {
+      font-size: var(--fs-lg, 1.125rem);
+      font-weight: 600;
+      color: var(--clr-navy, #0d1b2e);
+      margin-top: 1.75rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+    .article-body p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--clr-text, #374151);
+      margin-bottom: 1.25rem;
+    }
+    .article-body ul,
+    .article-body ol {
+      margin: 0 0 1.25rem 0;
+      padding-left: 1.5rem;
+    }
+    .article-body li {
+      font-size: 1rem;
+      line-height: 1.75;
+      color: var(--clr-text, #374151);
+      margin-bottom: 0.4rem;
+    }
+    .article-body .info-box {
+      background: #f0f4ff;
+      border-left: 4px solid var(--clr-primary, #2563eb);
+      border-radius: 0 8px 8px 0;
+      padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0;
+    }
+    .article-body .info-box p {
+      margin-bottom: 0;
+      font-size: 0.9375rem;
+    }
+    .article-body .info-box strong {
+      color: var(--clr-navy, #0d1b2e);
+    }
+    .related-posts {
+      background: var(--clr-bg-light, #f9fafb);
+      border-radius: 12px;
+      padding: var(--space-xl);
+      margin-top: var(--space-2xl);
+    }
+    .related-posts__title {
+      font-size: var(--fs-lg, 1.125rem);
+      font-weight: 700;
+      color: var(--clr-navy, #0d1b2e);
+      margin-bottom: var(--space-md);
+    }
+    .related-posts__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: var(--fs-sm, 0.875rem);
+      font-weight: 600;
+      color: var(--clr-primary, #2563eb);
+      text-decoration: none;
+    }
+    .related-posts__link:hover {
+      text-decoration: underline;
+    }
+    .threshold-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.9375rem;
+    }
+    .threshold-table th {
+      background: var(--clr-navy, #0d1b2e);
+      color: #fff;
+      text-align: left;
+      padding: 0.65rem 1rem;
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+    .threshold-table td {
+      padding: 0.6rem 1rem;
+      border-bottom: 1px solid #e5e7eb;
+      color: var(--clr-text, #374151);
+      vertical-align: top;
+    }
+    .threshold-table tr:last-child td {
+      border-bottom: none;
+    }
+    .threshold-table tr:nth-child(even) td {
+      background: #f9fafb;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="services.html" class="header__nav-link">Services</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="blog.html" class="header__nav-link active">Blog</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+        <div class="header__cta">
+          <a href="get-a-quote.html" class="btn btn--primary btn--sm">Get a Free Quote</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <a href="blog.html">Blog</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <span>Construction Phase Dust Impact Assessment</span>
+      </nav>
+      <h1 class="page-hero__title">Construction Phase Dust Impact Assessment</h1>
+      <p class="page-hero__subtitle">
+        Understanding the 2024 IAQM framework for assessing dust from demolition, earthworks, construction and trackout — and what it means for your planning application.
+      </p>
+    </div>
+  </section>
+
+  <!-- Article -->
+  <section class="section">
+    <div class="container">
+      <div class="article-column fade-in">
+
+        <!-- Article Header -->
+        <div class="article-header">
+          <div class="article-header__meta">
+            <span class="blog-card__category blog-card__category--dust">Dust</span>
+            <span class="article-header__date">March 2026</span>
+            <span class="article-header__author">By Malcolm Pounder CEnv MIAQM</span>
+          </div>
+        </div>
+
+        <!-- Article Body -->
+        <div class="article-body">
+
+          <h2>Introduction</h2>
+          <p>Construction activities generate significant dust across four key phases: demolition, earthworks, construction, and trackout. Failure to properly assess and manage dust can lead to planning refusals, enforcement action, and harm to nearby residents — particularly those living with respiratory conditions such as asthma or COPD. The Institute of Air Quality Management (IAQM) published updated guidance in January 2024 — Version 2.2 of the <em>Guidance on the Assessment of Dust from Demolition and Construction</em> — which substantially revised the thresholds used to categorise dust risk. Understanding this 2024 framework is now essential for developers and their consultants preparing planning applications that involve any significant demolition or groundworks.</p>
+
+          <h2>The Four Construction Phases</h2>
+          <p>The IAQM guidance recognises that dust generation varies considerably across the lifecycle of a construction project. Each phase presents distinct emission characteristics and risks, and each must be assessed separately using phase-specific criteria.</p>
+
+          <h3>1. Demolition</h3>
+          <p>Demolition involves the breaking down of existing structures — buildings, retaining walls, and hard-standing — generating both coarse particulate matter (PM<sub>10</sub>) and finer respirable fractions (PM<sub>2.5</sub>). The volume of the building being demolished is the primary parameter used to determine dust magnitude. Activities such as high-reach mechanical demolition, use of diamond wire saws, and the dropping of rubble from height can release substantial quantities of particulates in a short time.</p>
+
+          <h3>2. Earthworks</h3>
+          <p>Earthworks encompass excavation, cutting and filling, grading, and the bulk movement of soil across a site. Bare, disturbed soil is highly susceptible to wind erosion, particularly during dry conditions. The total site area subject to earthworks is the key assessment parameter. Large residential and commercial developments can involve significant earthworks activity over many months, making this phase a prolonged source of dust emission.</p>
+
+          <h3>3. Construction</h3>
+          <p>The construction phase covers the building activities that follow earthworks: concrete cutting and breaking, block and brick cutting with disc cutters, mixing of dry materials, and vehicle movements across unpaved haul roads. Dust generation tends to be more localised during this phase, but activities such as concrete cutting without water suppression can create concentrated, high-intensity plumes of respirable silica — a serious occupational and public health concern.</p>
+
+          <h3>4. Trackout</h3>
+          <p>Trackout occurs when mud, soil, and aggregate are carried off-site on the tyres and undercarriages of construction vehicles, depositing material onto public roads. As vehicles travel along the highway, that deposited material is re-suspended as fine dust by passing traffic. Trackout is a significant nuisance source in residential areas adjacent to active construction sites, and its control forms a specific component of any Construction Environmental Management Plan (CEMP).</p>
+
+          <h2>The 2024 IAQM Assessment Framework</h2>
+          <p>The 2024 guidance (IAQM V2.2, January 2024) uses a risk matrix combining two independent variables: dust emission magnitude and receptor sensitivity. The intersection of these two variables determines the overall dust risk level, which in turn drives the mitigation and monitoring requirements.</p>
+
+          <h3>Dust Emission Magnitude</h3>
+          <p>Magnitude is rated Small, Medium, or Large based on site-specific parameters — principally the volume of building being demolished or the area of land subject to earthworks. A key feature of the 2024 update is that the thresholds separating these magnitude categories have been substantially revised compared to the 2014 version of the guidance.</p>
+
+          <table class="threshold-table" aria-label="IAQM magnitude threshold comparison: 2014 vs 2024 guidance">
+            <thead>
+              <tr>
+                <th>Phase</th>
+                <th>Parameter</th>
+                <th>2014 Guidance — Large threshold</th>
+                <th>2024 Guidance — Large threshold</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Demolition</td>
+                <td>Building volume</td>
+                <td>&gt;50,000 m&sup3;</td>
+                <td>&gt;75,000 m&sup3;</td>
+              </tr>
+              <tr>
+                <td>Earthworks</td>
+                <td>Site area</td>
+                <td>&gt;10,000 m&sup2;</td>
+                <td>&gt;110,000 m&sup2;</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="info-box">
+            <p><strong>Key implication:</strong> The earthworks threshold change is particularly significant. Under the 2014 guidance, a 1.5-hectare site would have been classified as Large magnitude. Under V2.2, that same site now falls into the Medium category — potentially reducing the mitigation and monitoring requirements for a large number of schemes.</p>
+          </div>
+
+          <p>The 2024 guidance also places increased emphasis on PM<sub>2.5</sub> health impacts alongside the more established PM<sub>10</sub> metric. This reflects the growing body of epidemiological evidence linking fine particulate exposure to cardiovascular and respiratory disease. A screening assessment is now recommended at outline planning stage, with a detailed, quantitative assessment required at reserved matters stage for Medium and Large magnitude sites near sensitive receptors.</p>
+
+          <h3>Receptor Sensitivity</h3>
+          <p>Receptor sensitivity considers proximity to sensitive receptors — including residential properties, schools, hospitals, and care homes — and the local background PM<sub>10</sub> concentration. Areas already experiencing elevated background levels are treated as more sensitive, as additional dust burden from construction is proportionally more significant where existing air quality is compromised.</p>
+
+          <h2>Dust Monitoring Requirements</h2>
+          <p>The companion document — <em>IAQM (2018) Guidance on Monitoring in the Vicinity of Demolition and Construction Sites</em> — sets out monitoring methodology. For Medium and Large risk projects in sensitive areas, continuous real-time PM<sub>10</sub> monitoring is typically required at the site boundary, positioned to capture the impact on the nearest sensitive receptors.</p>
+          <p>Councils in areas with existing air quality pressures — particularly those that have declared Air Quality Management Areas (AQMAs) — often require up to three months of pre-construction baseline monitoring before works commence. This baseline is essential for distinguishing construction-related dust events from background pollution, and for calibrating action trigger levels.</p>
+          <p>PM<sub>10</sub> trigger levels should be agreed with the local authority prior to the start of construction. The 2018 IAQM monitoring guidance cites a generic action level of 190 &micro;g/m&sup3; as a one-hour mean at the site boundary, though many councils apply more stringent site-specific thresholds in areas of particular sensitivity. When trigger levels are exceeded, a defined escalation procedure should be activated immediately.</p>
+          <p>Monitoring data should be reviewed regularly, shared with the local authority on request, and used to inform adaptive management of site activities. A log of exceedances, complaints, and responses is an important component of any monitoring programme.</p>
+
+          <h2>Mitigation Measures</h2>
+          <p>Effective dust mitigation relies on a combination of engineering controls, management procedures, and contingency arrangements. The IAQM guidance sets out a tiered suite of measures proportionate to the assessed risk level. Key mitigation measures include:</p>
+          <ul>
+            <li><strong>Wheel wash facilities</strong> — installed at all site exits to remove mud and debris from vehicle tyres before they reach the public highway</li>
+            <li><strong>Road sweeping</strong> — regular mechanical sweeping of adjacent highways to remove any material that has been tracked out</li>
+            <li><strong>Site hoarding</strong> — solid hoarding or fencing along boundaries facing sensitive receptors to reduce the spread of airborne dust</li>
+            <li><strong>Damping down haul roads</strong> — regular application of water to unpaved haul routes and exposed stockpiles during dry or windy conditions</li>
+            <li><strong>Covering stockpiles</strong> — sheeting of spoil heaps and aggregate stockpiles when not in active use, particularly overnight and at weekends</li>
+            <li><strong>Wind speed restrictions</strong> — suspending high-dust activities such as demolition and bulk earthworks when mean wind speeds exceed a defined threshold (typically 10 m/s or as agreed with the local authority)</li>
+            <li><strong>Vehicle speed limits on site</strong> — reducing unpaved haul road speeds to minimise dust generation from vehicle movement</li>
+          </ul>
+          <p>Mitigation measures should be reviewed and updated throughout the construction programme as site conditions change and in response to monitoring data or complaint trends.</p>
+
+          <h2>The Construction Environmental Management Plan (CEMP)</h2>
+          <p>A Construction Environmental Management Plan — commonly referred to as a CEMP — is typically required as a pre-commencement planning condition on medium to large development schemes. The CEMP brings together all of the environmental management measures relevant to the construction phase, of which dust control is usually the most significant element.</p>
+          <p>A well-structured CEMP should include:</p>
+          <ul>
+            <li>The output of the dust impact assessment, including the magnitude and risk ratings for each phase</li>
+            <li>Site-specific mitigation measures tailored to the assessed risk level and site layout</li>
+            <li>A dust monitoring programme, including equipment locations, trigger levels, and escalation procedures</li>
+            <li>Named responsible persons — typically a Site Manager and an Environmental Manager — with clear lines of accountability</li>
+            <li>A complaint procedure, including response timescales and a record-keeping system</li>
+            <li>A communication plan for engaging with neighbouring residents prior to and during construction</li>
+          </ul>
+          <p>Air Dust Odour prepares CEMPs as a standalone service and as part of a full dust impact assessment at planning application stage. We work closely with developers, contractors, and planning officers to ensure that CEMPs are practical, enforceable, and accepted by the local authority at the first submission.</p>
+
+          <h2>Conclusion</h2>
+          <p>Construction dust is a material planning consideration that requires a structured, evidence-based approach under the 2024 IAQM guidance. The revised magnitude thresholds introduced in V2.2 will change the risk classification of many sites compared to previous assessments, and consultants preparing dust impact assessments must now work to the updated framework. Whether you are a developer, planning consultant, or contractor, understanding the requirements at an early stage avoids costly delays later in the process.</p>
+          <p>Air Dust Odour prepares construction phase dust impact assessments and CEMPs in full accordance with the January 2024 IAQM guidance. Our assessments are prepared by chartered environmental professionals with direct experience of securing planning approval in dust-sensitive environments across the UK.</p>
+          <p style="margin-top: 2rem;">
+            <a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote &rarr;</a>
+          </p>
+
+        </div>
+        <!-- /Article Body -->
+
+        <!-- Related Posts -->
+        <div class="related-posts">
+          <p class="related-posts__title">More from the Blog</p>
+          <a href="blog.html" class="related-posts__link">
+            View all articles
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Need Expert Environmental Advice?</h2>
+      <p class="cta-banner__text">
+        Our chartered professionals are here to help with your air quality, dust or odour assessment needs.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--white btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered air quality assessment professionals providing specialist environmental consultancy services across the United Kingdom.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust Monitoring</a></li>
+            <li><a href="services-odour.html">Odour Assessment</a></li>
+            <li><a href="services-noise.html">Noise Assessment</a></li>
+            <li><a href="services-lighting.html">Lighting Assessment</a></li>
+            <li><a href="services-workplace.html">Workplace Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> CEnv</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg> MIAQM</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
