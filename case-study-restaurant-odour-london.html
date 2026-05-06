@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anonymised case study: odour assessment for a national restaurant chain converting a retail unit in an inner-London borough. EMAQ+ assessment, discharge stack negotiation and delegated planning consent.">
+  <meta property="og:title" content="Restaurant Odour Assessment for a London Borough Application | Case Study | Air Dust Odour">
+  <meta property="og:description" content="Anonymised case study: odour assessment for a national restaurant chain converting a retail unit in an inner-London borough. EMAQ+ assessment, discharge stack negotiation and delegated planning consent.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/case-study-restaurant-odour-london">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Restaurant Odour Assessment for a London Borough Application | Case Study | Air Dust Odour</title>
+  <link rel="canonical" href="https://www.airdustodour.co.uk/case-study-restaurant-odour-london.html">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <style>
+    /* Services dropdown */
+    .nav-item--dropdown { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      z-index: 200;
+      padding: 8px 0;
+    }
+    .nav-item--dropdown:hover .nav-dropdown,
+    .nav-item--dropdown:focus-within .nav-dropdown { display: block; }
+    .nav-dropdown a {
+      display: block;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      color: var(--clr-text, #1f2937);
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-dropdown a:hover { background: #f3f4f6; color: var(--clr-primary, #2563eb); }
+    .header__nav-link--dropdown::after { content: ' ▾'; font-size: 0.7em; }
+
+    /* Confidentiality callout */
+    .confidentiality-note {
+      background: #fffbea;
+      border: 1px solid #fde68a;
+      border-left: 4px solid #f59e0b;
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 0 auto 2.5rem;
+      max-width: 880px;
+      color: #78350f;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+    .confidentiality-note strong { color: #78350f; }
+
+    /* At-a-glance panel */
+    .at-a-glance {
+      background: #f8fafc;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 0 auto 3rem;
+      max-width: 880px;
+    }
+    .at-a-glance h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem;
+      color: var(--clr-heading, #111827);
+    }
+    .at-a-glance__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem 2rem;
+    }
+    @media (max-width: 600px) {
+      .at-a-glance__grid { grid-template-columns: 1fr; }
+    }
+    .at-a-glance__item .label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--clr-primary, #2563eb);
+      margin-bottom: 0.35rem;
+    }
+    .at-a-glance__item .value {
+      font-size: 0.95rem;
+      color: var(--clr-text, #1f2937);
+      line-height: 1.5;
+    }
+
+    /* Case study body */
+    .case-body {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .case-body h2 {
+      font-size: 1.5rem;
+      margin: 2.5rem 0 1rem;
+      color: var(--clr-heading, #111827);
+    }
+    .case-body h2:first-child { margin-top: 0; }
+    .case-body p {
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    /* Services used grid */
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) {
+      .offerings-grid { grid-template-columns: 1fr; }
+    }
+    .offering-card {
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+      text-decoration: none;
+      display: block;
+    }
+    .offering-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .offering-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--clr-primary, #2563eb);
+    }
+    .offering-card p {
+      font-size: 0.875rem;
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* CTA btn--outline within cta-banner */
+    .cta-banner__actions .btn--outline {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.6);
+      color: rgba(255,255,255,0.9);
+    }
+    .cta-banner__actions .btn--outline:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: #fff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li class="nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown">Services</a>
+            <div class="nav-dropdown">
+              <a href="services-air.html">Air Quality</a>
+              <a href="services-dust.html">Dust</a>
+              <a href="services-odour.html">Odour</a>
+              <a href="services-noise.html">Noise</a>
+            </div>
+          </li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="get-a-quote.html" class="btn btn--nav">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">Restaurant Odour Assessment for a London Borough Application</h1>
+      <p class="page-hero__subtitle">
+        How a focused EMAQ+ odour assessment and constructive engagement with the architect helped a national casual-dining brand secure delegated planning consent in an inner-London borough &mdash; on programme.
+      </p>
+    </div>
+  </section>
+
+  <!-- Body -->
+  <section class="section fade-in">
+    <div class="container">
+
+      <div class="confidentiality-note">
+        <strong>Case study details have been anonymised.</strong> Project specifics, client names and exact locations are withheld for client confidentiality. Technical methodology and outcomes are representative of our approach.
+      </div>
+
+      <!-- At a glance -->
+      <div class="at-a-glance">
+        <h2>At a Glance</h2>
+        <div class="at-a-glance__grid">
+          <div class="at-a-glance__item">
+            <span class="label">Sector</span>
+            <span class="value">Hospitality &middot; Casual dining</span>
+          </div>
+          <div class="at-a-glance__item">
+            <span class="label">Project Type</span>
+            <span class="value">Use Class E to restaurant conversion</span>
+          </div>
+          <div class="at-a-glance__item">
+            <span class="label">Services Provided</span>
+            <span class="value">EMAQ+ odour impact assessment; discharge stack design review; planning support</span>
+          </div>
+          <div class="at-a-glance__item">
+            <span class="label">Outcome</span>
+            <span class="value">Delegated planning consent; no Environmental Health objection; tenant fit-out on programme</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case body -->
+      <div class="case-body">
+
+        <h2>The Project</h2>
+        <p>
+          Our client, a national casual-dining chain, was preparing a planning application to convert a Use Class E retail unit into a restaurant in an inner-London borough. The proposal involved a typical mid-market kitchen specification with grilling, frying and pan-cooking &mdash; activities recognised in the EMAQ+ guidance as moderate to high odour-generating processes.
+        </p>
+        <p>
+          The site sat within a mixed-use, predominantly residential street. Adjacent first-floor flats were located directly above the unit, and a children's nursery lay within 30m of the proposed extract location. With receptors that close, odour was always going to be the determining environmental issue for the application.
+        </p>
+
+        <h2>The Challenge</h2>
+        <p>
+          The borough had refused two similar applications in the previous 18 months on odour grounds, and Environmental Health had a known position that low-level discharge in this kind of context was unlikely to be acceptable. The client's planning consultant brought us in early but the timeline was already tight: an 8-week determination period was running, and the architect's drawings showed the extract terminating at low level, just 1.5m above the flat-roof structure &mdash; well below the height of nearby residential windows.
+        </p>
+        <p>
+          A first-pass screening using the EMAQ+ methodology indicated that, without changes, the predicted odour effect at the closest receptors would be high. That was unlikely to be defensible at planning, and a refusal would have set the brand's roll-out programme back by months.
+        </p>
+
+        <h2>Our Approach</h2>
+        <p>
+          We carried out a full odour impact assessment to the EMAQ+ (2018) methodology, classifying the cooking processes, characterising the receptor sensitivity and quantifying the required level of odour control. The output was a clear specification: a 3-stage filtration train comprising grease filtration at the canopy, activated carbon for VOC and odour adsorption, and UV-C ozone treatment for residual organic compounds. Filtration alone was not enough &mdash; discharge dispersion was equally critical.
+        </p>
+        <p>
+          We specified the discharge characteristics needed to achieve acceptable dispersion: a vertical, uncapped stack terminating at +1m above the highest adjacent ridgeline, with an exit velocity of 8 m/s to ensure the plume cleared the building wake zone. We then sat down with the architect and worked through the building's stair core to identify a viable route for the duct, threading it up through a redundant service riser to a roof-level termination.
+        </p>
+        <p>
+          Throughout the assessment we maintained a dialogue with the borough's Environmental Health team, sharing the proposed specification at draft stage and confirming that the approach addressed the concerns that had triggered previous refusals. This pre-engagement is, in our experience, almost always worth the effort &mdash; an officer who has seen the design before formal validation is much less likely to escalate concerns at the consultation stage.
+        </p>
+        <p>
+          The final assessment report set out the kitchen process, the EMAQ+ classification, the predicted unmitigated effect, the specified mitigation, and the residual effect with mitigation in place. The conclusion was that, with the specified extract system, the residual odour effect would be negligible at all sensitive receptors.
+        </p>
+
+        <h2>The Outcome</h2>
+        <p>
+          The application was determined under delegated authority within the 8-week target. Environmental Health raised no objection, and the planning conditions attached to the consent were limited to standard odour management plan and post-completion verification requirements &mdash; both of which are routine to discharge. The tenant fit-out proceeded on programme and the unit opened to the public on its planned launch date.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services used -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">Services in this Project</span>
+      <h2 class="section-title">Services Used</h2>
+      <div class="offerings-grid" style="max-width:880px;margin-left:auto;margin-right:auto;">
+        <a href="services-odour.html" class="offering-card">
+          <h3>Odour Assessment</h3>
+          <p>EMAQ+ odour impact assessments for commercial kitchens, restaurants, takeaways and process plants. Planning support across the UK.</p>
+        </a>
+        <a href="services.html" class="offering-card">
+          <h3>Planning Support</h3>
+          <p>Pre-application advice, response to LPA queries and ongoing engagement with Environmental Health to keep applications moving.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Have a Similar Project?</h2>
+      <p class="cta-banner__text">
+        Whether you're opening a single restaurant or rolling out a national brand, we can help you secure consent first time. Same-day quotes for most projects.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--primary btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--outline btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="40" height="40">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered environmental consultants providing specialist air quality, dust and odour assessments across the United Kingdom. MIAQM | CEnv.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust</a></li>
+            <li><a href="services-odour.html">Odour</a></li>
+            <li><a href="services-noise.html">Noise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span>MIAQM</span>
+          <span>CEnv</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

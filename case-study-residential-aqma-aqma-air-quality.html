@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anonymised case study: air quality assessment for a 250-home residential scheme in an NO2 Air Quality Management Area. ADMS-Roads dispersion modelling, mitigation design and resolution to grant at planning committee.">
+  <meta property="og:title" content="Air Quality Assessment for a 250-Home Scheme in an AQMA | Case Study | Air Dust Odour">
+  <meta property="og:description" content="Anonymised case study: air quality assessment for a 250-home residential scheme in an NO2 Air Quality Management Area. ADMS-Roads dispersion modelling, mitigation design and resolution to grant at planning committee.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/case-study-residential-aqma-aqma-air-quality">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Air Quality Assessment for a 250-Home Scheme in an AQMA | Case Study | Air Dust Odour</title>
+  <link rel="canonical" href="https://www.airdustodour.co.uk/case-study-residential-aqma-aqma-air-quality.html">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <style>
+    /* Services dropdown */
+    .nav-item--dropdown { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      z-index: 200;
+      padding: 8px 0;
+    }
+    .nav-item--dropdown:hover .nav-dropdown,
+    .nav-item--dropdown:focus-within .nav-dropdown { display: block; }
+    .nav-dropdown a {
+      display: block;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      color: var(--clr-text, #1f2937);
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-dropdown a:hover { background: #f3f4f6; color: var(--clr-primary, #2563eb); }
+    .header__nav-link--dropdown::after { content: ' ▾'; font-size: 0.7em; }
+
+    /* Confidentiality callout */
+    .confidentiality-note {
+      background: #fffbea;
+      border: 1px solid #fde68a;
+      border-left: 4px solid #f59e0b;
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 0 auto 2.5rem;
+      max-width: 880px;
+      color: #78350f;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+    .confidentiality-note strong { color: #78350f; }
+
+    /* At-a-glance panel */
+    .at-a-glance {
+      background: #f8fafc;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 0 auto 3rem;
+      max-width: 880px;
+    }
+    .at-a-glance h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem;
+      color: var(--clr-heading, #111827);
+    }
+    .at-a-glance__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem 2rem;
+    }
+    @media (max-width: 600px) {
+      .at-a-glance__grid { grid-template-columns: 1fr; }
+    }
+    .at-a-glance__item .label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--clr-primary, #2563eb);
+      margin-bottom: 0.35rem;
+    }
+    .at-a-glance__item .value {
+      font-size: 0.95rem;
+      color: var(--clr-text, #1f2937);
+      line-height: 1.5;
+    }
+
+    /* Case study body */
+    .case-body {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .case-body h2 {
+      font-size: 1.5rem;
+      margin: 2.5rem 0 1rem;
+      color: var(--clr-heading, #111827);
+    }
+    .case-body h2:first-child { margin-top: 0; }
+    .case-body p {
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    /* Services used grid */
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) {
+      .offerings-grid { grid-template-columns: 1fr; }
+    }
+    .offering-card {
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+      text-decoration: none;
+      display: block;
+    }
+    .offering-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .offering-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--clr-primary, #2563eb);
+    }
+    .offering-card p {
+      font-size: 0.875rem;
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* CTA btn--outline within cta-banner */
+    .cta-banner__actions .btn--outline {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.6);
+      color: rgba(255,255,255,0.9);
+    }
+    .cta-banner__actions .btn--outline:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: #fff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li class="nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown">Services</a>
+            <div class="nav-dropdown">
+              <a href="services-air.html">Air Quality</a>
+              <a href="services-dust.html">Dust</a>
+              <a href="services-odour.html">Odour</a>
+              <a href="services-noise.html">Noise</a>
+            </div>
+          </li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="get-a-quote.html" class="btn btn--nav">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">Air Quality Assessment for a 250-Home Scheme in an AQMA</h1>
+      <p class="page-hero__subtitle">
+        How detailed ADMS-Roads dispersion modelling and a layered mitigation strategy enabled a regional housebuilder to secure a resolution to grant on a brownfield site within an Air Quality Management Area declared for nitrogen dioxide.
+      </p>
+    </div>
+  </section>
+
+  <!-- Body -->
+  <section class="section fade-in">
+    <div class="container">
+
+      <div class="confidentiality-note">
+        <strong>Case study details have been anonymised.</strong> Project specifics, client names and exact locations are withheld for client confidentiality. Technical methodology and outcomes are representative of our approach.
+      </div>
+
+      <!-- At a glance -->
+      <div class="at-a-glance">
+        <h2>At a Glance</h2>
+        <div class="at-a-glance__grid">
+          <div class="at-a-glance__item">
+            <span class="label">Sector</span>
+            <span class="value">Residential &middot; Volume housebuilder</span>
+          </div>
+          <div class="at-a-glance__item">
+            <span class="label">Project Type</span>
+            <span class="value">250-dwelling brownfield development in an AQMA</span>
+          </div>
+          <div class="at-a-glance__item">
+            <span class="label">Services Provided</span>
+            <span class="value">ADMS-Roads dispersion modelling; receptor assessment; mitigation design; planning support</span>
+          </div>
+          <div class="at-a-glance__item">
+            <span class="label">Outcome</span>
+            <span class="value">Resolution to grant at planning committee; air quality conditions secured via Section 106</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case body -->
+      <div class="case-body">
+
+        <h2>The Project</h2>
+        <p>
+          A regional housebuilder was bringing forward a brownfield site for 250 dwellings in a North West town. The site was bordered to its southern edge by a strategic A-road carrying significant HGV traffic, and the entire site lay within an Air Quality Management Area (AQMA) that the local authority had declared in respect of exceedances of the annual mean nitrogen dioxide objective.
+        </p>
+        <p>
+          The scheme was strategically important to the housebuilder's regional pipeline and had outline allocation in the emerging Local Plan. The application was for full planning permission, with a submission deadline driven by the housebuilder's own land-acquisition timeline.
+        </p>
+
+        <h2>The Challenge</h2>
+        <p>
+          Officers had flagged early concerns that introducing 250 new dwellings into an AQMA would expose future residents to elevated NO2 concentrations &mdash; a long-standing tension in planning law where a development is policy-compliant in principle but raises legitimate concerns about the suitability of the receiving environment for new sensitive uses. A first-pass screening indicated that, on the southern facade closest to the A-road, the predicted annual mean NO2 concentration was likely to exceed the 40 &micro;g/m&sup3; objective. Without a robust technical answer, the application was at real risk of either refusal or onerous conditions that would compromise the scheme's deliverability.
+        </p>
+        <p>
+          The local authority had also been clear that they expected detailed dispersion modelling rather than a screening-level assessment, and that they would scrutinise the assumptions built into any future-year projections.
+        </p>
+
+        <h2>Our Approach</h2>
+        <p>
+          We commissioned detailed ADMS-Roads dispersion modelling of the local highway network, building the model on a calibrated baseline using the latest available local diffusion tube data from the council's monitoring network. Verification factors were derived following the Defra LAQM TG(22) procedure to ensure the model was correctly anchored against measured concentrations at nearby receptor locations.
+        </p>
+        <p>
+          For the future-year assessment, we incorporated the appropriate NO2 declining-trend factors from the Defra background mapping tools, recognising that fleet turnover and the gradual electrification of the vehicle parc means that NO2 concentrations are projected to fall over the development's build-out period. Sensitivity testing was carried out to demonstrate that the conclusions held up even under more conservative trend assumptions.
+        </p>
+        <p>
+          We then worked with the architect and the masterplanner to test three mitigation options. The first was a building setback &mdash; pulling the southernmost block 4m further from the highway boundary than the indicative layout had shown. The second was a mechanical ventilation strategy with NO2-rated F7-grade filtration on intakes serving the units closest to the A-road. The third was a layout amendment placing habitable rooms (living rooms and bedrooms) on the leeward elevation, with kitchens, bathrooms and circulation on the road-facing side.
+        </p>
+        <p>
+          The final assessment combined all three measures and demonstrated that, with mitigation in place, the annual mean NO2 objective would be achieved at all building facades and at all garden amenity locations. We also calculated the human exposure-weighted impact descriptor following IAQM guidance, which we used to support a finding that the residual effect on local air quality was not significant.
+        </p>
+
+        <h2>The Outcome</h2>
+        <p>
+          The application was reported to planning committee with an officer recommendation for approval. A resolution to grant was secured. The Section 106 agreement included an air quality condition requiring post-completion verification monitoring, and the design mitigation was secured via planning condition. No appeal was needed and the scheme proceeded to the discharge-of-conditions stage.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services used -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">Services in this Project</span>
+      <h2 class="section-title">Services Used</h2>
+      <div class="offerings-grid" style="max-width:880px;margin-left:auto;margin-right:auto;">
+        <a href="services-air.html" class="offering-card">
+          <h3>Air Quality Assessment</h3>
+          <p>Detailed and screening air quality assessments for residential and mixed-use developments, including AQMA-area sites and Local Plan allocations.</p>
+        </a>
+        <a href="air-quality-assessment-housebuilders.html" class="offering-card">
+          <h3>Air Quality for Housebuilders</h3>
+          <p>Specialist support for volume and regional housebuilders &mdash; from outline through to full applications and reserved matters.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Have a Similar Project?</h2>
+      <p class="cta-banner__text">
+        We support housebuilders and planning consultants on residential schemes UK-wide, including in AQMAs. Same-day quotes for most projects.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--primary btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--outline btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="40" height="40">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered environmental consultants providing specialist air quality, dust and odour assessments across the United Kingdom. MIAQM | CEnv.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust</a></li>
+            <li><a href="services-odour.html">Odour</a></li>
+            <li><a href="services-noise.html">Noise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span>MIAQM</span>
+          <span>CEnv</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

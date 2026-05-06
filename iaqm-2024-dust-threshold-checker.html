@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free reference: check if your development triggers the IAQM 2024 V2.2 dust impact assessment thresholds. Demolition, earthworks, construction and trackout — quick checker for planning consultants and developers.">
+  <meta property="og:title" content="Free IAQM 2024 Dust Threshold Checker | Air Dust Odour">
+  <meta property="og:description" content="Free reference: check if your development triggers the IAQM 2024 V2.2 dust impact assessment thresholds. Demolition, earthworks, construction and trackout — quick checker for planning consultants and developers.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/iaqm-2024-dust-threshold-checker.html">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Free IAQM 2024 Dust Threshold Checker | Air Dust Odour</title>
+  <link rel="canonical" href="https://www.airdustodour.co.uk/iaqm-2024-dust-threshold-checker.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What changed in V2.2 vs older IAQM guidance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The January 2024 V2.2 update revised the site size thresholds above which a detailed dust impact assessment is recommended. The headline changes are: the demolition threshold rose from >50,000 m³ to >75,000 m³ gross internal volume; the earthworks threshold rose from >10,000 m² to >110,000 m². The construction floor area trigger sits at >100,000 m², and trackout is screened against >100 outward HGV movements per day (or >50 averaged over a 12-month construction period). The buffer distances for sensitive receptors remain 350 m for human receptors and 50 m for ecological receptors, measured from the site boundary."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When does my project NOT need a dust impact assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your project sits below all four V2.2 thresholds (demolition <75,000 m³, earthworks <110,000 m², construction <100,000 m², trackout <100 HGV movements/day), and there are no human receptors within 350 m or ecological receptors within 50 m of the site boundary, the IAQM guidance indicates a DIA is unlikely to be required. However, planning authorities can still attach a condition requiring a Dust Management Plan, particularly in AQMAs or where complaints history exists. Always confirm with the LPA before omitting an assessment from your planning submission."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between a screening and a detailed DIA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A screening assessment is a proportionate, brief evaluation that applies the V2.2 thresholds, identifies receptors, and concludes whether a detailed assessment is needed. It is suitable for many smaller sites and is often accepted by LPAs as the only assessment required. A detailed DIA is a full quantitative and qualitative assessment of all four dust-generating activities, with risk categorisation (negligible/low/medium/high), receptor sensitivity analysis and specified mitigation measures. Detailed DIAs are required when the site exceeds one or more thresholds and sensitive receptors lie within the buffer distances."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do residential extensions need a dust impact assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In almost all cases, no. Single-dwelling extensions, loft conversions and minor householder works fall well below the V2.2 thresholds and would not warrant a DIA under the IAQM guidance. The exception is where the works form part of a larger scheme (e.g. multiple plots, demolition of a substantial outbuilding, or significant earthworks for a basement). If the LPA still asks for one, a brief screening note referencing the V2.2 thresholds is usually sufficient to discharge the request."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I still need a CEMP if I don't need a DIA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Possibly yes. A Construction Environmental Management Plan (CEMP) and an embedded Dust Management Plan (DMP) are often imposed by planning condition independently of whether a DIA was required at application stage. Even small sites near sensitive receptors are routinely conditioned for a DMP covering dust suppression, monitoring trigger levels and complaint procedures. This checker addresses DIA triggers only — it does not assess whether a DMP/CEMP will be required. This is a quick reference and does not replace a professional assessment."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airdustodour.co.uk/"},
+      {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.airdustodour.co.uk/services.html"},
+      {"@type": "ListItem", "position": 3, "name": "IAQM 2024 Dust Threshold Checker", "item": "https://www.airdustodour.co.uk/iaqm-2024-dust-threshold-checker.html"}
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <style>
+    /* Services dropdown */
+    .nav-item--dropdown { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      z-index: 200;
+      padding: 8px 0;
+    }
+    .nav-item--dropdown:hover .nav-dropdown,
+    .nav-item--dropdown:focus-within .nav-dropdown { display: block; }
+    .nav-dropdown a {
+      display: block;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      color: var(--clr-text, #1f2937);
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-dropdown a:hover { background: #f3f4f6; color: var(--clr-primary, #2563eb); }
+    .header__nav-link--dropdown::after { content: ' ▾'; font-size: 0.7em; }
+
+    /* Intro grid */
+    .service-page__intro-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .service-page__intro-grid { grid-template-columns: 1fr; }
+    }
+    .service-page__intro-grid p {
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    /* Quick contact card */
+    .quick-contact {
+      background: #f8fafc;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .quick-contact h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--clr-heading, #111827);
+    }
+    .quick-contact p {
+      font-size: 0.875rem;
+      color: var(--clr-text-light, #6b7280);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .quick-contact .btn { width: 100%; justify-content: center; margin-bottom: 1rem; }
+    .quick-contact__tel {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--clr-heading, #111827);
+      text-decoration: none;
+      justify-content: center;
+    }
+    .quick-contact__tel:hover { color: var(--clr-primary, #2563eb); }
+    .quick-contact__tel svg { flex-shrink: 0; }
+    .quick-contact__divider {
+      border: none;
+      border-top: 1px solid var(--clr-border, #e5e7eb);
+      margin: 1.25rem 0;
+    }
+    .quick-contact__badge {
+      font-size: 0.75rem;
+      color: var(--clr-text-light, #6b7280);
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    /* Offerings grid */
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 700px) {
+      .offerings-grid { grid-template-columns: 1fr; }
+    }
+    .offering-card {
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 10px;
+      padding: 1.75rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .offering-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .offering-card__icon {
+      width: 48px;
+      height: 48px;
+      background: #eff6ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .offering-card__icon svg { width: 22px; height: 22px; color: var(--clr-primary, #2563eb); }
+    .offering-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--clr-primary, #2563eb);
+    }
+    .offering-card p {
+      font-size: 0.875rem;
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* Threshold callout box inside offering card */
+    .threshold-box {
+      background: #eff6ff;
+      border-left: 3px solid var(--clr-primary, #2563eb);
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      margin: 0.85rem 0;
+      font-size: 0.875rem;
+      color: var(--clr-heading, #111827);
+    }
+    .threshold-box strong { color: var(--clr-primary, #2563eb); display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem; }
+    .threshold-value { font-weight: 700; font-size: 1rem; }
+    .next-step {
+      font-size: 0.8rem;
+      color: var(--clr-text-light, #6b7280);
+      font-style: italic;
+      margin-top: 0.85rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--clr-border, #e5e7eb);
+    }
+
+    /* Decision tree steps */
+    .decision-tree {
+      max-width: 820px;
+      margin: 2.5rem auto 0;
+      counter-reset: step;
+    }
+    .decision-step {
+      position: relative;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 10px;
+      padding: 1.5rem 1.5rem 1.5rem 5rem;
+      margin-bottom: 1rem;
+    }
+    .decision-step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      background: var(--clr-primary, #2563eb);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .decision-step h4 {
+      font-size: 1rem;
+      margin: 0 0 0.4rem;
+      color: var(--clr-heading, #111827);
+    }
+    .decision-step p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--clr-text-light, #6b7280);
+      line-height: 1.6;
+    }
+    .decision-arrow {
+      text-align: center;
+      color: var(--clr-primary, #2563eb);
+      font-size: 1.4rem;
+      line-height: 0.5;
+      margin: -0.25rem 0 0.75rem;
+    }
+
+    /* Receptors columns */
+    .receptors-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 800px) {
+      .receptors-grid { grid-template-columns: 1fr; }
+    }
+    .receptor-col {
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 10px;
+      padding: 1.5rem;
+    }
+    .receptor-col h4 {
+      font-size: 0.95rem;
+      margin-bottom: 0.85rem;
+      color: var(--clr-primary, #2563eb);
+    }
+    .receptor-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .receptor-col li {
+      font-size: 0.875rem;
+      color: var(--clr-text, #1f2937);
+      padding: 0.4rem 0;
+      border-bottom: 1px solid var(--clr-border, #e5e7eb);
+      line-height: 1.5;
+    }
+    .receptor-col li:last-child { border-bottom: none; }
+
+    /* Mistakes list */
+    .mistakes-list {
+      max-width: 820px;
+      margin: 2rem auto 0;
+      list-style: none;
+      padding: 0;
+      counter-reset: mistake;
+    }
+    .mistakes-list li {
+      position: relative;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-left: 4px solid #f59e0b;
+      border-radius: 8px;
+      padding: 1.1rem 1.25rem 1.1rem 4rem;
+      margin-bottom: 0.85rem;
+      font-size: 0.9rem;
+      color: var(--clr-text, #1f2937);
+      line-height: 1.6;
+    }
+    .mistakes-list li::before {
+      counter-increment: mistake;
+      content: counter(mistake);
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+      background: #fef3c7;
+      color: #b45309;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .mistakes-list strong { color: var(--clr-heading, #111827); display: block; margin-bottom: 0.25rem; }
+
+    /* FAQ section */
+    .faq-section { max-width: 800px; margin: 2.5rem auto 0; }
+
+    /* CTA btn--outline within cta-banner */
+    .cta-banner__actions .btn--outline {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.6);
+      color: rgba(255,255,255,0.9);
+    }
+    .cta-banner__actions .btn--outline:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: #fff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li class="nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown active">Services</a>
+            <div class="nav-dropdown">
+              <a href="services-air.html">Air Quality</a>
+              <a href="services-dust.html">Dust</a>
+              <a href="services-odour.html">Odour</a>
+              <a href="services-noise.html">Noise</a>
+            </div>
+          </li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="get-a-quote.html" class="btn btn--nav">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">IAQM 2024 Dust Threshold Checker</h1>
+      <p class="page-hero__subtitle">
+        A free quick-reference tool for planning consultants, developers and contractors to check whether your project requires a Dust Impact Assessment under the IAQM 2024 V2.2 guidance.
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro Grid -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="service-page__intro-grid">
+        <div class="service-page__intro-content">
+          <h2>What This Checker Is For</h2>
+          <p>
+            The Institute of Air Quality Management (IAQM) published an updated V2.2 of the <em>Land-Use Planning &amp; Development Control: Planning for Air Quality</em> guidance in January 2024. The update revised the site size thresholds that determine when a Dust Impact Assessment (DIA) is required to support a planning application.
+          </p>
+          <p>
+            The headline effect is that many developments which previously triggered a DIA no longer do under V2.2 &mdash; and in a few cases, sites that were below the older thresholds may now sit closer to the line. Use this checker as a free first-look reference to confirm whether your project is likely to require an assessment, and what level of detail the LPA will expect.
+          </p>
+          <p>
+            This is a quick reference, not a substitute for a professional assessment. If your site is close to any of the thresholds, or if sensitive receptors are nearby, get in touch &mdash; we'll review your project and give you a clear answer the same working day.
+          </p>
+        </div>
+        <aside class="quick-contact">
+          <h3>Need a Proper Assessment?</h3>
+          <p>If your project triggers any of the V2.2 thresholds, we'll send you a no-obligation quote for a screening or detailed DIA, usually within the same working day.</p>
+          <a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote</a>
+          <hr class="quick-contact__divider">
+          <a href="tel:+442080503003" class="quick-contact__tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            020 8050 3003
+          </a>
+          <p class="quick-contact__badge">Mon&ndash;Fri 9am&ndash;5:30pm &bull; Same-day response</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- The 4 Activities Checker -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">The Four Dust-Generating Activities</span>
+      <h2 class="section-title">Check Your Project Against the V2.2 Thresholds</h2>
+      <p class="section-subtitle" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
+        The IAQM guidance defines four dust-generating activities. If any one of them exceeds its threshold and sensitive receptors lie within the buffer distance, a DIA is likely required.
+      </p>
+      <div class="offerings-grid">
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg>
+          </div>
+          <h3>1. Demolition</h3>
+          <p>Total volume of building(s) to be demolished, measured as gross internal volume in cubic metres.</p>
+          <div class="threshold-box">
+            <strong>V2.2 Threshold</strong>
+            <span class="threshold-value">&gt; 75,000 m&sup3;</span>
+          </div>
+          <p>Previously the trigger was &gt;50,000 m&sup3;, so smaller demolition projects that historically required a detailed DIA may now sit below the line.</p>
+          <p class="next-step"><strong>What to do next:</strong> Calculate gross internal volume of all structures being demolished. If above 75,000 m&sup3;, a screening or detailed assessment is likely needed.</p>
+        </div>
+
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M4 22V10l8-6 8 6v12"/><path d="M2 14h20"/></svg>
+          </div>
+          <h3>2. Earthworks</h3>
+          <p>Total site area subject to earthworks &mdash; cut-and-fill, levelling, stripping of topsoil, large excavations.</p>
+          <div class="threshold-box">
+            <strong>V2.2 Threshold</strong>
+            <span class="threshold-value">&gt; 110,000 m&sup2;</span>
+          </div>
+          <p>The V2.2 update raised this dramatically (from &gt;10,000 m&sup2;). Low-risk sites under 2,500 m&sup2; are screened out entirely.</p>
+          <p class="next-step"><strong>What to do next:</strong> Measure the total earthworks area, not the whole red-line site. If it exceeds 110,000 m&sup2;, proceed to receptor screening.</p>
+        </div>
+
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V11l7-7 7 7v10"/><path d="M9 21v-6h6v6"/></svg>
+          </div>
+          <h3>3. Construction</h3>
+          <p>Total floor area of new buildings to be constructed across all phases of the development.</p>
+          <div class="threshold-box">
+            <strong>V2.2 Threshold</strong>
+            <span class="threshold-value">&gt; 100,000 m&sup2;</span>
+          </div>
+          <p>This is the cumulative floor area trigger for the construction phase. Smaller schemes typically need only a screening note or a Dust Management Plan.</p>
+          <p class="next-step"><strong>What to do next:</strong> Sum the GIA across every plot or phase. If the total is above 100,000 m&sup2;, the construction phase will require assessment.</p>
+        </div>
+
+        <div class="offering-card">
+          <div class="offering-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>4. Trackout</h3>
+          <p>HGV movements per day to/from the site travelling over unpaved or dust-bearing surfaces.</p>
+          <div class="threshold-box">
+            <strong>V2.2 Threshold</strong>
+            <span class="threshold-value">&gt; 100 outward HGV / day</span>
+          </div>
+          <p>Or &gt;50 outward HGV movements per day averaged across a 12-month construction period. Trackout is often missed for sites with paved access roads.</p>
+          <p class="next-step"><strong>What to do next:</strong> Estimate peak HGV movements during muck-away or material delivery. If above the trigger, trackout becomes a key risk factor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decision Tree -->
+  <section class="section fade-in">
+    <div class="container">
+      <span class="section-label">Step-by-Step Process</span>
+      <h2 class="section-title">The IAQM 2024 Decision Tree</h2>
+      <p class="section-subtitle" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
+        Five steps to determine whether your development needs a DIA, and what level of assessment is appropriate.
+      </p>
+      <div class="decision-tree">
+        <div class="decision-step">
+          <h4>Identify the dust-generating activities on your site</h4>
+          <p>Confirm which of the four activities (demolition, earthworks, construction, trackout) will take place &mdash; many sites involve more than one.</p>
+        </div>
+        <div class="decision-arrow">&#9660;</div>
+        <div class="decision-step">
+          <h4>Check each activity against the V2.2 thresholds</h4>
+          <p>Compare your site quantities to the thresholds above. Any single activity exceeding its trigger means the site is in scope for further screening.</p>
+        </div>
+        <div class="decision-arrow">&#9660;</div>
+        <div class="decision-step">
+          <h4>Identify sensitive receptors within the buffer</h4>
+          <p>Map all human receptors within 350 m, and ecological designations within 50 m, of the site boundary. No receptors in the buffer means no significant effect &mdash; even if thresholds are exceeded.</p>
+        </div>
+        <div class="decision-arrow">&#9660;</div>
+        <div class="decision-step">
+          <h4>Assign a risk category for each activity and phase</h4>
+          <p>Combine the dust emission magnitude (small/medium/large) with receptor sensitivity (low/medium/high) to give a risk category: negligible, low, medium or high.</p>
+        </div>
+        <div class="decision-arrow">&#9660;</div>
+        <div class="decision-step">
+          <h4>Scope the assessment and mitigation</h4>
+          <p>Negligible/low risk: a screening note plus standard mitigation usually suffices. Medium/high risk: a detailed DIA with site-specific mitigation, monitoring and a Dust Management Plan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sensitive Receptors -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">Reminder</span>
+      <h2 class="section-title">What Counts as a Sensitive Receptor?</h2>
+      <p class="section-subtitle" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
+        The thresholds only matter if there are sensitive receptors close enough to be affected. The IAQM defines three categories.
+      </p>
+      <div class="receptors-grid">
+        <div class="receptor-col">
+          <h4>Human Receptors (350 m buffer)</h4>
+          <ul>
+            <li>Residential dwellings (houses, flats, HMOs)</li>
+            <li>Schools and nurseries</li>
+            <li>Hospitals, GP surgeries and care homes</li>
+            <li>Hotels and student accommodation</li>
+            <li>Public open spaces in regular use</li>
+            <li>Allotments and community gardens</li>
+          </ul>
+        </div>
+        <div class="receptor-col">
+          <h4>Ecological Receptors (50 m buffer)</h4>
+          <ul>
+            <li>Sites of Special Scientific Interest (SSSIs)</li>
+            <li>Special Areas of Conservation (SACs)</li>
+            <li>Special Protection Areas (SPAs)</li>
+            <li>Areas of Outstanding Natural Beauty (AONBs)</li>
+            <li>Local Wildlife Sites and Local Nature Reserves</li>
+            <li>Ancient woodland</li>
+          </ul>
+        </div>
+        <div class="receptor-col">
+          <h4>Commercial / Other</h4>
+          <ul>
+            <li>Offices and workplaces (medium sensitivity)</li>
+            <li>Retail premises with outdoor display</li>
+            <li>Food production / outdoor processing</li>
+            <li>Listed buildings &amp; conservation areas</li>
+            <li>Existing AQMAs (Air Quality Management Areas)</li>
+            <li>Water bodies used for recreation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Common Mistakes -->
+  <section class="section fade-in">
+    <div class="container">
+      <span class="section-label">Watch Out For</span>
+      <h2 class="section-title">Common Mistakes With the IAQM Thresholds</h2>
+      <p class="section-subtitle" style="max-width:680px;margin-left:auto;margin-right:auto;text-align:center;">
+        These are the errors we most often see in DIAs that have been sent back by planning officers for revision.
+      </p>
+      <ol class="mistakes-list">
+        <li>
+          <strong>Measuring the buffer from the activity location, not the site boundary</strong>
+          The 350 m and 50 m buffers are measured from the red-line site boundary, not from the specific spot where dust is generated. Drawing the buffer from the demolition footprint will under-count receptors.
+        </li>
+        <li>
+          <strong>Ignoring trackout because the site has a paved access road</strong>
+          Trackout doesn't stop at the site gate. Material carried out on tyres deposits dust onto public roads for hundreds of metres, especially in dry weather. Trackout still needs assessing even with a paved access.
+        </li>
+        <li>
+          <strong>Using GIA where the guidance asks for gross internal volume</strong>
+          The demolition threshold is a volume (m&sup3;), not a floor area (m&sup2;). Multiplying floor area by storey height is the correct approach &mdash; tall industrial buildings can exceed the threshold even with a modest footprint.
+        </li>
+        <li>
+          <strong>Double-counting receptors across multiple activities</strong>
+          The same residential block doesn't become four receptors just because the site has demolition, earthworks, construction and trackout. Identify each receptor once, then assess the combined risk to it across all activities.
+        </li>
+        <li>
+          <strong>Applying the older (pre-V2.2) thresholds out of habit</strong>
+          Many DIAs prepared in 2024 still cite the &gt;50,000 m&sup3; demolition and &gt;10,000 m&sup2; earthworks thresholds. LPAs are increasingly rejecting these as out of date. Always reference the V2.2 January 2024 guidance.
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--grey fade-in">
+    <div class="container">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-section">
+        <details class="faq-item">
+          <summary class="faq-item__question">What changed in V2.2 vs older IAQM guidance?</summary>
+          <div class="faq-item__answer">
+            <p>The January 2024 V2.2 update revised the site size thresholds above which a detailed dust impact assessment is recommended. The headline changes are: the demolition threshold rose from &gt;50,000 m&sup3; to &gt;75,000 m&sup3; gross internal volume; the earthworks threshold rose from &gt;10,000 m&sup2; to &gt;110,000 m&sup2;. The construction floor area trigger sits at &gt;100,000 m&sup2;, and trackout is screened against &gt;100 outward HGV movements per day (or &gt;50 averaged over a 12-month construction period). The buffer distances for sensitive receptors remain 350 m for human receptors and 50 m for ecological receptors, measured from the site boundary.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">When does my project NOT need a dust impact assessment?</summary>
+          <div class="faq-item__answer">
+            <p>If your project sits below all four V2.2 thresholds (demolition &lt;75,000 m&sup3;, earthworks &lt;110,000 m&sup2;, construction &lt;100,000 m&sup2;, trackout &lt;100 HGV movements/day), and there are no human receptors within 350 m or ecological receptors within 50 m of the site boundary, the IAQM guidance indicates a DIA is unlikely to be required. However, planning authorities can still attach a condition requiring a Dust Management Plan, particularly in AQMAs or where complaints history exists. Always confirm with the LPA before omitting an assessment from your planning submission.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">What is the difference between a screening and a detailed DIA?</summary>
+          <div class="faq-item__answer">
+            <p>A screening assessment is a proportionate, brief evaluation that applies the V2.2 thresholds, identifies receptors, and concludes whether a detailed assessment is needed. It is suitable for many smaller sites and is often accepted by LPAs as the only assessment required. A detailed DIA is a full quantitative and qualitative assessment of all four dust-generating activities, with risk categorisation (negligible/low/medium/high), receptor sensitivity analysis and specified mitigation measures. Detailed DIAs are required when the site exceeds one or more thresholds and sensitive receptors lie within the buffer distances.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">Do residential extensions need a dust impact assessment?</summary>
+          <div class="faq-item__answer">
+            <p>In almost all cases, no. Single-dwelling extensions, loft conversions and minor householder works fall well below the V2.2 thresholds and would not warrant a DIA under the IAQM guidance. The exception is where the works form part of a larger scheme (e.g. multiple plots, demolition of a substantial outbuilding, or significant earthworks for a basement). If the LPA still asks for one, a brief screening note referencing the V2.2 thresholds is usually sufficient to discharge the request.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">Do I still need a CEMP if I don't need a DIA?</summary>
+          <div class="faq-item__answer">
+            <p>Possibly yes. A Construction Environmental Management Plan (CEMP) and an embedded Dust Management Plan (DMP) are often imposed by planning condition independently of whether a DIA was required at application stage. Even small sites near sensitive receptors are routinely conditioned for a DMP covering dust suppression, monitoring trigger levels and complaint procedures. This checker addresses DIA triggers only &mdash; it does not assess whether a DMP/CEMP will be required. <em>This is a quick reference and does not replace a professional assessment.</em></p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Your project triggers a threshold? We can help.</h2>
+      <p class="cta-banner__text">
+        Contact us today for a free, no-obligation quote. We'll review your project against the IAQM 2024 V2.2 guidance and come back to you, usually the same working day.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--primary btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--outline btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="40" height="40">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered environmental consultants providing specialist air quality, dust and odour assessments across the United Kingdom. MIAQM | CEnv.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust</a></li>
+            <li><a href="services-odour.html">Odour</a></li>
+            <li><a href="services-noise.html">Noise</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span>MIAQM</span>
+          <span>CEnv</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
