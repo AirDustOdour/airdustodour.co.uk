@@ -558,7 +558,7 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
 
 .hero__actions .btn--secondary:hover {
   background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.75);
 }
 
 /* Hero stats */
@@ -582,7 +582,7 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
 
 .hero__stat-label {
   font-size: var(--fs-sm);
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 /* Hero visual - animated graphic */
@@ -664,7 +664,7 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
 .hero__graphic-node span {
   font-size: 9px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.75);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: color var(--transition-base);
@@ -1117,7 +1117,7 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
 .cta-banner__actions .btn--secondary:hover {
   color: var(--clr-white);
   background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.75);
 }
 
 /* ---------- Footer ---------- */
@@ -1135,7 +1135,7 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
 
 .footer__brand-text {
   font-size: var(--fs-sm);
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.75);
   margin-top: var(--space-md);
   line-height: 1.6;
   max-width: 300px;
@@ -1174,7 +1174,7 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
 
 .footer__links a {
   font-size: var(--fs-sm);
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.75);
   transition: color var(--transition-fast);
 }
 
@@ -1199,7 +1199,7 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
 }
 
 .footer__contact-item a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .footer__contact-item a:hover {
@@ -1217,7 +1217,7 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
 
 .footer__copyright {
   font-size: var(--fs-xs);
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .footer__accreditations {
@@ -1304,7 +1304,7 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
 }
 
 .page-hero__breadcrumb a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .page-hero__breadcrumb a:hover {

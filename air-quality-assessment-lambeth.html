@@ -12,7 +12,9 @@
   <link rel="icon" type="image/png" href="images/logo-dark.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
   <link rel="stylesheet" href="css/style.css">
   <title>Air Quality Assessment Lambeth | Air Dust Odour</title>
   <link rel="canonical" href="https://www.airdustodour.co.uk/air-quality-assessment-lambeth.html">
@@ -103,6 +105,7 @@
       </nav>
     </div>
   </header>
+  <main id="main-content">
 
   <!-- Page Hero -->
   <section class="page-hero">
@@ -341,6 +344,8 @@
   </section>
 
   <!-- Footer -->
+  </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
@@ -357,7 +362,7 @@
           <p class="footer__brand-text">Chartered air quality assessment professionals providing specialist environmental consultancy services across the United Kingdom.</p>
         </div>
         <div>
-          <h4 class="footer__heading">Services</h4>
+          <h3 class="footer__heading">Services</h3>
           <ul class="footer__links">
             <li><a href="services-air.html">Air Quality</a></li>
             <li><a href="services-dust.html">Dust Monitoring</a></li>
@@ -372,7 +377,7 @@
           </ul>
         </div>
         <div>
-          <h4 class="footer__heading">Company</h4>
+          <h3 class="footer__heading">Company</h3>
           <ul class="footer__links">
             <li><a href="about.html">About Us</a></li>
             <li><a href="blog.html">Blog</a></li>
@@ -382,7 +387,7 @@
           </ul>
         </div>
         <div>
-          <h4 class="footer__heading">Contact</h4>
+          <h3 class="footer__heading">Contact</h3>
           <div class="footer__contact-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
