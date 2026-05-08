@@ -2561,3 +2561,50 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
   opacity: 1;
   visibility: visible;
 }
+
+/* Sticky mobile CTA bar (Get a Quote + WhatsApp) */
+.mobile-cta-bar { display: none; }
+@media (max-width: 768px) {
+  .mobile-cta-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    background: #ffffff;
+    border-top: 1px solid var(--clr-border, #e5e7eb);
+    padding: 10px 12px;
+    gap: 8px;
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+  }
+  .mobile-cta-bar a {
+    flex: 1;
+    text-align: center;
+    padding: 11px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 0.15s, transform 0.15s;
+  }
+  .mobile-cta-bar a:active { transform: scale(0.97); }
+  .mobile-cta-bar__primary {
+    background: var(--clr-primary, #2563eb);
+    color: #ffffff !important;
+  }
+  .mobile-cta-bar__primary:hover { filter: brightness(1.1); }
+  .mobile-cta-bar__whatsapp {
+    background: #25D366;
+    color: #ffffff !important;
+  }
+  .mobile-cta-bar__whatsapp:hover { filter: brightness(1.05); }
+
+  /* Reserve space at bottom of body so content isn't hidden behind the bar */
+  body { padding-bottom: 64px; }
+  /* Lift scroll-top above the CTA bar when both are visible */
+  .scroll-top { bottom: 80px !important; }
+}

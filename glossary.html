@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plain-English glossary of UK air quality terms — AQMA, NRMM, IAQM 2024, CEMP, EMAQ+, dispersion modelling and more. From a chartered environmental consultancy.">
+  <meta property="og:title" content="Air Quality Jargon Explained: Glossary | Air Dust Odour">
+  <meta property="og:description" content="Plain-English glossary of UK air quality terms — AQMA, NRMM, IAQM 2024, CEMP, EMAQ+, dispersion modelling and more. From a chartered environmental consultancy.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/glossary.html">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Air Quality Jargon Explained: Glossary | Air Dust Odour</title>
+  <link rel="canonical" href="https://www.airdustodour.co.uk/glossary.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airdustodour.co.uk/"},
+      {"@type": "ListItem", "position": 2, "name": "Resources", "item": "https://www.airdustodour.co.uk/blog.html"},
+      {"@type": "ListItem", "position": 3, "name": "Glossary", "item": "https://www.airdustodour.co.uk/glossary.html"}
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <style>
+    /* Services dropdown */
+    .nav-item--dropdown { position: relative; }
+    .nav-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: #fff;
+      border: 1px solid var(--clr-border, #e5e7eb);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 220px;
+      z-index: 200;
+      padding: 8px 0;
+    }
+    .nav-item--dropdown:hover .nav-dropdown,
+    .nav-item--dropdown:focus-within .nav-dropdown { display: block; }
+    .nav-dropdown a {
+      display: block;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+      color: var(--clr-text, #1f2937);
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nav-dropdown a:hover { background: #f3f4f6; color: var(--clr-primary, #2563eb); }
+    .header__nav-link--dropdown::after { content: ' ▾'; font-size: 0.7em; }
+
+    /* Glossary alphabet jump bar */
+    .glossary-alphabet { display:flex; flex-wrap:wrap; gap:6px; justify-content:center; margin: 1rem 0 2rem; padding:1rem; background:#f8fafc; border-radius:12px; position:sticky; top:0; z-index:50; }
+    .glossary-alphabet a { display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:8px; background:#fff; border:1px solid var(--clr-border, #e5e7eb); color:var(--clr-primary, #2563eb); font-weight:600; font-size:0.85rem; text-decoration:none; transition: background 0.15s, transform 0.15s; }
+    .glossary-alphabet a:hover { background: var(--clr-primary, #2563eb); color: #fff; transform: translateY(-2px); }
+    .glossary-alphabet a.disabled { background:#f3f4f6; color:#9ca3af; pointer-events:none; }
+    .glossary-section { margin-bottom: 3rem; }
+    .glossary-section__letter { font-size:2.5rem; font-weight:800; color: var(--clr-primary, #2563eb); border-bottom: 2px solid var(--clr-border, #e5e7eb); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    .glossary-term { padding: 1.5rem 0; border-bottom: 1px solid var(--clr-border, #e5e7eb); scroll-margin-top: 80px; }
+    .glossary-term:last-child { border-bottom: none; }
+    .glossary-term__name { font-size: 1.1rem; font-weight: 700; color: var(--clr-heading, #111827); margin: 0 0 0.5rem 0; }
+    .glossary-term__abbr { color: var(--clr-text-light, #6b7280); font-weight: 500; font-size: 0.95rem; }
+    .glossary-term__def { color: var(--clr-text, #1f2937); line-height: 1.7; margin: 0; }
+    .glossary-term__def + .glossary-term__def { margin-top: 0.5rem; }
+    .glossary-term__related { font-size: 0.85rem; color: var(--clr-text-light, #6b7280); margin-top: 0.75rem; }
+    .glossary-term__related a { color: var(--clr-primary, #2563eb); text-decoration: none; }
+    .glossary-term__related a:hover { text-decoration: underline; }
+
+    /* CTA btn--outline within cta-banner */
+    .cta-banner__actions .btn--outline {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.6);
+      color: rgba(255,255,255,0.9);
+    }
+    .cta-banner__actions .btn--outline:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: #fff;
+      color: #fff;
+    }
+
+    .glossary-wrap { max-width: 880px; margin: 0 auto; }
+    .glossary-intro { color: var(--clr-text-light, #6b7280); line-height: 1.8; margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li class="nav-item--dropdown">
+            <a href="services.html" class="header__nav-link header__nav-link--dropdown">Services</a>
+            <div class="nav-dropdown">
+              <a href="services-air.html">Air Quality</a>
+              <a href="services-dust.html">Dust</a>
+              <a href="services-odour.html">Odour</a>
+              <a href="services-noise.html">Noise</a>
+              <a href="dispersion-modelling.html">Dispersion Modelling</a>
+              <a href="dust-impact-assessment.html">Dust Impact Assessment</a>
+              <a href="cemp-air-quality.html">CEMP Air Quality</a>
+            </div>
+          </li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="case-studies.html" class="header__nav-link">Case Studies</a></li>
+          <li><a href="get-a-quote.html" class="btn btn--nav">Get a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">Air Quality Jargon Explained</h1>
+      <p class="page-hero__subtitle">
+        A plain-English glossary of the air quality, dust and odour terms you'll see on planning consultations and council reports &mdash; written by a chartered environmentalist for non-specialists.
+      </p>
+    </div>
+  </section>
+
+  <!-- Glossary -->
+  <section class="section fade-in">
+    <div class="container">
+      <div class="glossary-wrap">
+        <p class="glossary-intro">
+          Air quality reports are full of acronyms and technical shorthand. This glossary covers the terms you're most likely to come across on a UK planning application or council consultation, with explanations aimed at planning consultants, developers and case officers who aren't air quality specialists. Use the alphabet bar to jump straight to a term, or search the page with Ctrl/Cmd+F.
+        </p>
+
+        <!-- Alphabet jump bar -->
+        <nav class="glossary-alphabet" aria-label="Glossary letter index">
+          <a href="#letter-A">A</a>
+          <a href="#letter-B">B</a>
+          <a href="#letter-C">C</a>
+          <a href="#letter-D">D</a>
+          <a href="#letter-E">E</a>
+          <a href="#letter-F">F</a>
+          <a class="disabled" aria-disabled="true">G</a>
+          <a href="#letter-H">H</a>
+          <a href="#letter-I">I</a>
+          <a class="disabled" aria-disabled="true">J</a>
+          <a class="disabled" aria-disabled="true">K</a>
+          <a href="#letter-L">L</a>
+          <a href="#letter-M">M</a>
+          <a href="#letter-N">N</a>
+          <a href="#letter-O">O</a>
+          <a href="#letter-P">P</a>
+          <a class="disabled" aria-disabled="true">Q</a>
+          <a href="#letter-R">R</a>
+          <a href="#letter-S">S</a>
+          <a href="#letter-T">T</a>
+          <a class="disabled" aria-disabled="true">U</a>
+          <a href="#letter-V">V</a>
+          <a href="#letter-W">W</a>
+          <a class="disabled" aria-disabled="true">X</a>
+          <a class="disabled" aria-disabled="true">Y</a>
+          <a class="disabled" aria-disabled="true">Z</a>
+        </nav>
+
+        <!-- A -->
+        <section class="glossary-section" id="letter-A">
+          <h2 class="glossary-section__letter">A</h2>
+
+          <div class="glossary-term" id="aqma">
+            <h3 class="glossary-term__name">AQMA <span class="glossary-term__abbr">&mdash; Air Quality Management Area</span></h3>
+            <p class="glossary-term__def">An AQMA is a geographical area declared by a local authority where one or more air quality objectives are not being met, or are likely not to be met. They're declared under Part IV of the Environment Act 1995 and are usually triggered by exceedances of the annual mean nitrogen dioxide objective near busy roads.</p>
+            <p class="glossary-term__def">Once an AQMA is declared, the council must produce an Air Quality Action Plan setting out how it intends to bring concentrations back into compliance. New developments inside or close to an AQMA face additional scrutiny on whether they will worsen exceedances or expose new receptors to elevated pollution.</p>
+            <p class="glossary-term__related">Related: <a href="#aqs-objectives">AQS Objectives</a>, <a href="#laqm">LAQM</a>, <a href="#no2">Nitrogen Dioxide</a></p>
+          </div>
+
+          <div class="glossary-term" id="aqs-objectives">
+            <h3 class="glossary-term__name">AQS Objectives <span class="glossary-term__abbr">&mdash; Air Quality Strategy Objectives</span></h3>
+            <p class="glossary-term__def">The legally-binding concentration limits set out in the Air Quality (England) Regulations 2000 (as amended). They include an annual mean of 40 &micro;g/m&sup3; for NO<sub>2</sub>, an annual mean of 40 &micro;g/m&sup3; for PM<sub>10</sub> and an annual mean of 25 &micro;g/m&sup3; for PM<sub>2.5</sub>, plus various short-term objectives.</p>
+            <p class="glossary-term__def">When an air quality assessment compares predicted concentrations to "the objective", these are the numbers being referenced. They are not the same as the WHO Air Quality Guidelines, which are tighter and have no legal force in the UK.</p>
+            <p class="glossary-term__related">Related: <a href="#no2">Nitrogen Dioxide</a>, <a href="#pm10">PM<sub>10</sub></a>, <a href="#who-aqg">WHO Air Quality Guidelines</a></p>
+          </div>
+
+          <div class="glossary-term" id="adms-roads">
+            <h3 class="glossary-term__name">ADMS-Roads</h3>
+            <p class="glossary-term__def">A dispersion model produced by Cambridge Environmental Research Consultants (CERC) and the de facto industry standard for road traffic air quality assessments in the UK. It predicts concentrations of NO<sub>2</sub>, PM<sub>10</sub> and PM<sub>2.5</sub> at receptor points around a road network using traffic flow, fleet composition and meteorological data.</p>
+            <p class="glossary-term__def">If a council planning officer asks for "modelling" on a development with a traffic effect, this is almost always the tool that will be used.</p>
+            <p class="glossary-term__related">Related: <a href="#dispersion-modelling-term">Dispersion Modelling</a>, <a href="dispersion-modelling.html">Our dispersion modelling service</a></p>
+          </div>
+
+          <div class="glossary-term" id="adms-urban">
+            <h3 class="glossary-term__name">ADMS-Urban</h3>
+            <p class="glossary-term__def">A more capable sibling of ADMS-Roads, also from CERC. ADMS-Urban handles whole towns and cities at once and can mix point, line, area and volume sources in a single run. It's used for larger EIAs, regional air quality studies and projects where industrial sources sit alongside road sources.</p>
+            <p class="glossary-term__related">Related: <a href="#adms-roads">ADMS-Roads</a>, <a href="#aermod">AERMOD</a></p>
+          </div>
+
+          <div class="glossary-term" id="aermod">
+            <h3 class="glossary-term__name">AERMOD</h3>
+            <p class="glossary-term__def">A Gaussian dispersion model originally developed by the US Environmental Protection Agency. In the UK it's most often used for industrial point sources &mdash; chimneys, stacks and process vents &mdash; particularly where Environment Agency permitting is involved. It's an alternative to ADMS for that kind of work and the two models often produce similar results.</p>
+            <p class="glossary-term__related">Related: <a href="#dispersion-modelling-term">Dispersion Modelling</a>, <a href="#stack-height">Stack Height</a></p>
+          </div>
+
+          <div class="glossary-term" id="air-quality-neutral">
+            <h3 class="glossary-term__name">Air Quality Neutral Assessment</h3>
+            <p class="glossary-term__def">A specific style of assessment required mainly for developments inside Greater London, derived from the London Plan and accompanying GLA guidance. It compares the predicted emissions of a new development (from buildings and transport) against benchmarks; if the development exceeds those benchmarks it must offset the difference through design changes or contributions.</p>
+            <p class="glossary-term__def">It's a different beast from a standard IAQM-style assessment and the methodology is set by the GLA rather than IAQM. Some authorities outside London now reference similar concepts in local plans.</p>
+          </div>
+
+          <div class="glossary-term" id="annual-mean">
+            <h3 class="glossary-term__name">Annual Mean</h3>
+            <p class="glossary-term__def">The average concentration of a pollutant over a calendar year. Most of the headline air quality objectives (NO<sub>2</sub>, PM<sub>10</sub>, PM<sub>2.5</sub>) are expressed as annual means because health effects are dominated by chronic, long-term exposure.</p>
+            <p class="glossary-term__def">When you see "40 &micro;g/m&sup3;" quoted for NO<sub>2</sub>, that's an annual mean &mdash; not an instantaneous concentration. Short bursts of higher concentrations are normal; what matters is the year-round average at sensitive receptors.</p>
+            <p class="glossary-term__related">Related: <a href="#hourly-mean">Hourly Mean</a>, <a href="#aqs-objectives">AQS Objectives</a></p>
+          </div>
+        </section>
+
+        <!-- B -->
+        <section class="glossary-section" id="letter-B">
+          <h2 class="glossary-section__letter">B</h2>
+
+          <div class="glossary-term" id="background-concentration">
+            <h3 class="glossary-term__name">Background Concentration</h3>
+            <p class="glossary-term__def">The concentration of a pollutant in the local air before you add the contribution from a specific source like a new road or a development. In a UK assessment, background NO<sub>2</sub> and PM concentrations are usually taken from the DEFRA national background maps (the "PCM" or "1km grid" data) and adjusted for the assessment year.</p>
+            <p class="glossary-term__def">The total concentration at a receptor is then the background plus the modelled local contribution. Getting the background right matters: in many cases it's the dominant component of the total.</p>
+            <p class="glossary-term__related">Related: <a href="#defra">DEFRA</a>, <a href="#receptor">Receptor</a></p>
+          </div>
+
+          <div class="glossary-term" id="bar-pm10">
+            <h3 class="glossary-term__name">BAR-PM10 <span class="glossary-term__abbr">&mdash; Benchmark Annual Reference</span></h3>
+            <p class="glossary-term__def">A reference figure used in some dust assessment frameworks to compare predicted PM<sub>10</sub> contributions from a construction site against an indicative threshold. It's sometimes quoted in older dust assessments and pre-IAQM 2024 work, though most current UK practice now leans on the IAQM dust risk-based approach rather than fixed benchmarks.</p>
+            <p class="glossary-term__related">Related: <a href="#iaqm-2024">IAQM 2024 V2.2</a>, <a href="#pm10">PM<sub>10</sub></a></p>
+          </div>
+        </section>
+
+        <!-- C -->
+        <section class="glossary-section" id="letter-C">
+          <h2 class="glossary-section__letter">C</h2>
+
+          <div class="glossary-term" id="cemp">
+            <h3 class="glossary-term__name">CEMP <span class="glossary-term__abbr">&mdash; Construction Environmental Management Plan</span></h3>
+            <p class="glossary-term__def">A document submitted &mdash; usually as a planning condition discharge &mdash; setting out how the contractor will manage environmental effects during construction. It typically covers dust, noise, water, ecology, waste and traffic, with the air quality and dust sections often the most scrutinised.</p>
+            <p class="glossary-term__def">A good air quality CEMP includes a clear list of mitigation measures keyed to the IAQM dust guidance, a monitoring scheme proportionate to the site's risk rating, complaint procedures and clear responsibilities. It should be a working document the site team actually uses, not boilerplate text copy-pasted from elsewhere.</p>
+            <p class="glossary-term__related">Related: <a href="#dmp">DMP</a>, <a href="#iaqm-2024">IAQM 2024 V2.2</a>, <a href="cemp-air-quality.html">Our CEMP service</a></p>
+          </div>
+
+          <div class="glossary-term" id="cenv">
+            <h3 class="glossary-term__name">CEnv <span class="glossary-term__abbr">&mdash; Chartered Environmentalist</span></h3>
+            <p class="glossary-term__def">A registered designation awarded by the Society for the Environment to environmental professionals who have demonstrated a recognised level of competence, ethical practice and ongoing professional development. It's a parallel to "Chartered Engineer" or "Chartered Surveyor" and is supported by a number of licensed bodies including IAQM/IES.</p>
+            <p class="glossary-term__def">A CEnv author on an air quality report carries weight with planning authorities and at appeal, where the technical credibility of the assessor can be a material consideration.</p>
+            <p class="glossary-term__related">Related: <a href="#iaqm">IAQM</a>, <a href="#miaqm">MIAQM</a></p>
+          </div>
+
+          <div class="glossary-term" id="construction-phase">
+            <h3 class="glossary-term__name">Construction Phase</h3>
+            <p class="glossary-term__def">The temporary period during which a development is being built. From an air quality point of view, this is the phase dominated by dust risk (demolition, earthworks, construction, trackout) and by emissions from non-road mobile machinery. Operational-phase air quality concerns &mdash; mainly traffic and any combustion plant &mdash; are assessed separately.</p>
+            <p class="glossary-term__related">Related: <a href="#cemp">CEMP</a>, <a href="#nrmm">NRMM</a>, <a href="#trackout">Trackout</a></p>
+          </div>
+        </section>
+
+        <!-- D -->
+        <section class="glossary-section" id="letter-D">
+          <h2 class="glossary-section__letter">D</h2>
+
+          <div class="glossary-term" id="damage-cost">
+            <h3 class="glossary-term__name">Damage Cost Calculation</h3>
+            <p class="glossary-term__def">A monetary approach to valuing the air quality impact of a development, using DEFRA's published damage cost factors (in &pound; per tonne of pollutant emitted). It converts predicted emissions of NO<sub>x</sub>, PM<sub>10</sub> and PM<sub>2.5</sub> into a financial figure that can be used for offsetting payments or local authority contributions.</p>
+            <p class="glossary-term__def">It's increasingly used as a mitigation/compensation mechanism for developments that pass screening but still generate non-trivial emissions, and is sometimes built into local plan policies.</p>
+          </div>
+
+          <div class="glossary-term" id="defra">
+            <h3 class="glossary-term__name">DEFRA <span class="glossary-term__abbr">&mdash; Department for Environment, Food &amp; Rural Affairs</span></h3>
+            <p class="glossary-term__def">The UK government department responsible for air quality policy in England. DEFRA publishes the LAQM technical guidance, the national pollutant background maps, the Pollution Climate Mapping (PCM) model, monitoring data from the AURN automatic network and the damage cost factors. If your assessment cites "national guidance" for emission factors or background concentrations, DEFRA is usually the underlying source.</p>
+            <p class="glossary-term__related">Related: <a href="#tg22">TG22</a>, <a href="#background-concentration">Background Concentration</a></p>
+          </div>
+
+          <div class="glossary-term" id="detailed-assessment">
+            <h3 class="glossary-term__name">Detailed Assessment</h3>
+            <p class="glossary-term__def">In the LAQM context, a more in-depth review undertaken by a local authority where its annual screening / Annual Status Report flags a potential exceedance. In the planning context, the term is also used for a full Tier 2 air quality assessment that goes beyond simple screening &mdash; usually involving dispersion modelling, baseline monitoring and a quantitative significance judgement.</p>
+            <p class="glossary-term__related">Related: <a href="#screening-assessment">Screening Assessment</a>, <a href="#laqm">LAQM</a></p>
+          </div>
+
+          <div class="glossary-term" id="dia">
+            <h3 class="glossary-term__name">DIA <span class="glossary-term__abbr">&mdash; Dust Impact Assessment</span></h3>
+            <p class="glossary-term__def">A structured assessment of the dust risk from a construction or demolition site, usually following the IAQM methodology. It looks at four activities &mdash; demolition, earthworks, construction and trackout &mdash; and combines dust emission magnitude with the sensitivity of the surrounding area to give a risk rating for each.</p>
+            <p class="glossary-term__def">The risk rating then drives a proportionate package of mitigation measures, which feed into the CEMP or DMP. A DIA is the standard deliverable when an LPA conditions an application for a "dust assessment".</p>
+            <p class="glossary-term__related">Related: <a href="#iaqm-2024">IAQM 2024 V2.2</a>, <a href="#cemp">CEMP</a>, <a href="#dmp">DMP</a>, <a href="dust-impact-assessment.html">Our DIA service</a></p>
+          </div>
+
+          <div class="glossary-term" id="diffusion-tubes">
+            <h3 class="glossary-term__name">Diffusion Tubes</h3>
+            <p class="glossary-term__def">Small passive samplers, usually for nitrogen dioxide, deployed for one-month exposure periods at sensitive receptors. They're cheap, can be put up almost anywhere and form the backbone of UK local authority NO<sub>2</sub> monitoring under LAQM. Annual averages from a year of monthly tubes are commonly used to verify or "bias correct" dispersion model results.</p>
+            <p class="glossary-term__def">They're not as accurate as continuous reference analysers but they're well understood and DEFRA publishes a national bias adjustment factor each year.</p>
+            <p class="glossary-term__related">Related: <a href="#no2">Nitrogen Dioxide</a>, <a href="#laqm">LAQM</a></p>
+          </div>
+
+          <div class="glossary-term" id="dispersion-modelling-term">
+            <h3 class="glossary-term__name">Dispersion Modelling</h3>
+            <p class="glossary-term__def">The use of computer models to predict how a pollutant emitted from a source &mdash; a road, a stack, a process vent &mdash; spreads through the atmosphere and reaches surrounding receptors. The models combine emission data, source geometry, hourly meteorological data and (sometimes) local terrain to estimate concentrations at chosen points.</p>
+            <p class="glossary-term__def">In the UK, the most common tools are ADMS-Roads, ADMS-Urban and AERMOD. Modelling is the quantitative engine behind most detailed air quality assessments and EIA chapters.</p>
+            <p class="glossary-term__related">Related: <a href="#adms-roads">ADMS-Roads</a>, <a href="#aermod">AERMOD</a>, <a href="dispersion-modelling.html">Our modelling service</a></p>
+          </div>
+
+          <div class="glossary-term" id="dmp">
+            <h3 class="glossary-term__name">DMP <span class="glossary-term__abbr">&mdash; Dust Management Plan</span></h3>
+            <p class="glossary-term__def">A focused document that sets out site-specific dust mitigation, monitoring and complaint-handling procedures during construction. In simple terms, the DMP is the dust-only chapter of a CEMP &mdash; some councils ask for a standalone DMP, others fold it inside the CEMP. The technical content is the same either way and should be tied to the IAQM dust risk rating from the DIA.</p>
+            <p class="glossary-term__related">Related: <a href="#cemp">CEMP</a>, <a href="#dia">DIA</a></p>
+          </div>
+        </section>
+
+        <!-- E -->
+        <section class="glossary-section" id="letter-E">
+          <h2 class="glossary-section__letter">E</h2>
+
+          <div class="glossary-term" id="eia">
+            <h3 class="glossary-term__name">EIA <span class="glossary-term__abbr">&mdash; Environmental Impact Assessment</span></h3>
+            <p class="glossary-term__def">The formal process required for larger developments under the Town and Country Planning (Environmental Impact Assessment) Regulations. An EIA produces an Environmental Statement covering all relevant topics &mdash; air quality, noise, ecology, water, landscape, heritage etc. &mdash; with each as a chapter.</p>
+            <p class="glossary-term__def">The air quality chapter of an Environmental Statement is typically the most rigorous form of air quality assessment, with full baseline monitoring, dispersion modelling, significance assessment and a mitigation strategy.</p>
+            <p class="glossary-term__related">Related: <a href="#screening-assessment">Screening Assessment</a>, <a href="#detailed-assessment">Detailed Assessment</a></p>
+          </div>
+
+          <div class="glossary-term" id="emaq-plus">
+            <h3 class="glossary-term__name">EMAQ+ <span class="glossary-term__abbr">&mdash; kitchen extract odour assessment</span></h3>
+            <p class="glossary-term__def">A widely-cited methodology for assessing odour from commercial kitchen extract systems &mdash; restaurants, takeaways, dark kitchens. It scores the cooking type, customer numbers and operating hours against the proposed extract design and discharge location to determine whether the design is likely to control odour to an acceptable level at the nearest sensitive receptors.</p>
+            <p class="glossary-term__def">EMAQ+ is the assessment most environmental health officers expect to see when a planning application for new or modified cooking premises is referred for an odour comment.</p>
+            <p class="glossary-term__related">Related: <a href="#odour-impact">Odour Impact Assessment</a>, <a href="#fidol">FIDOL</a>, <a href="restaurant-odour-assessment.html">Restaurant odour service</a></p>
+          </div>
+
+          <div class="glossary-term" id="epuk">
+            <h3 class="glossary-term__name">EPUK <span class="glossary-term__abbr">&mdash; Environmental Protection UK</span></h3>
+            <p class="glossary-term__def">A long-standing UK environmental charity. In an air quality context, EPUK is best known as the co-author (with IAQM) of the planning guidance "Land-Use Planning &amp; Development Control: Planning for Air Quality" &mdash; the document most assessments cite when justifying their methodology and significance criteria for development effects on local air quality.</p>
+            <p class="glossary-term__related">Related: <a href="#iaqm">IAQM</a>, <a href="#nppf">NPPF</a></p>
+          </div>
+        </section>
+
+        <!-- F -->
+        <section class="glossary-section" id="letter-F">
+          <h2 class="glossary-section__letter">F</h2>
+
+          <div class="glossary-term" id="fidol">
+            <h3 class="glossary-term__name">FIDOL <span class="glossary-term__abbr">&mdash; Frequency, Intensity, Duration, Offensiveness, Location</span></h3>
+            <p class="glossary-term__def">The five factors used to judge whether an odour exposure amounts to a statutory nuisance or a planning-relevant odour problem. The principle is that an odour's significance depends not just on how strong it is, but how often it occurs, how long it lasts, how unpleasant it's perceived to be and where it's experienced.</p>
+            <p class="glossary-term__def">FIDOL underpins the IAQM odour guidance and is the structure environmental health officers tend to use when investigating odour complaints. A pleasant smell at low frequency in an industrial estate is a very different proposition from a strong sickly smell ten times a day above a residential window.</p>
+            <p class="glossary-term__related">Related: <a href="#odour-impact">Odour Impact Assessment</a>, <a href="#emaq-plus">EMAQ+</a></p>
+          </div>
+        </section>
+
+        <!-- H -->
+        <section class="glossary-section" id="letter-H">
+          <h2 class="glossary-section__letter">H</h2>
+
+          <div class="glossary-term" id="hourly-mean">
+            <h3 class="glossary-term__name">Hourly Mean</h3>
+            <p class="glossary-term__def">A short-term concentration averaging period. The UK NO<sub>2</sub> objective includes a one-hour mean of 200 &micro;g/m&sup3;, not to be exceeded more than 18 times per year. It exists alongside the annual mean to capture acute exposure peaks rather than long-term average exposure.</p>
+            <p class="glossary-term__def">In most planning assessments, modelling shows that if a location complies with the annual mean it will also comply with the hourly mean &mdash; but it's still checked, especially close to busy junctions or industrial sources.</p>
+            <p class="glossary-term__related">Related: <a href="#annual-mean">Annual Mean</a>, <a href="#aqs-objectives">AQS Objectives</a></p>
+          </div>
+        </section>
+
+        <!-- I -->
+        <section class="glossary-section" id="letter-I">
+          <h2 class="glossary-section__letter">I</h2>
+
+          <div class="glossary-term" id="iaqm">
+            <h3 class="glossary-term__name">IAQM <span class="glossary-term__abbr">&mdash; Institute of Air Quality Management</span></h3>
+            <p class="glossary-term__def">The professional body for air quality practitioners in the UK. IAQM publishes most of the technical guidance that UK air quality assessments rely on &mdash; including the planning guidance (with EPUK), the construction dust guidance and the odour guidance &mdash; and operates a tiered membership grade system culminating in MIAQM. Its guidance is referenced as good practice in many local plan policies.</p>
+            <p class="glossary-term__related">Related: <a href="#miaqm">MIAQM</a>, <a href="#cenv">CEnv</a>, <a href="#iaqm-2024">IAQM 2024 V2.2</a></p>
+          </div>
+
+          <div class="glossary-term" id="iaqm-2024">
+            <h3 class="glossary-term__name">IAQM 2024 V2.2 <span class="glossary-term__abbr">&mdash; updated dust guidance</span></h3>
+            <p class="glossary-term__def">The current version of the IAQM construction dust guidance, "Guidance on the Assessment of Dust from Demolition and Construction" (2024, v2.2). It supersedes the 2014 version that had been the standard for a decade and refines several aspects of the methodology.</p>
+            <p class="glossary-term__def">Notable changes include updated dust emission magnitude thresholds &mdash; large-scale demolition is now defined as &gt;75,000 m&sup3;, large-scale earthworks as &gt;110,000 m&sup2;, with smaller-scale and medium-scale tiers below &mdash; clarified mitigation hierarchies, refreshed wording for sensitivity categorisation, and a stronger emphasis on monitoring proportionality. Existing assessments produced under the 2014 version are not invalid, but new assessments should follow the 2024 framework.</p>
+            <p class="glossary-term__related">Related: <a href="#dia">DIA</a>, <a href="#cemp">CEMP</a>, <a href="dust-impact-assessment.html">Our DIA service</a></p>
+          </div>
+        </section>
+
+        <!-- L -->
+        <section class="glossary-section" id="letter-L">
+          <h2 class="glossary-section__letter">L</h2>
+
+          <div class="glossary-term" id="laqm">
+            <h3 class="glossary-term__name">LAQM <span class="glossary-term__abbr">&mdash; Local Air Quality Management</span></h3>
+            <p class="glossary-term__def">The statutory regime under Part IV of the Environment Act 1995 that requires local authorities to review and assess air quality in their areas, declare AQMAs where objectives are not met, and prepare Action Plans to deal with them. LAQM is the framework that links local authority monitoring data, AQMA declarations and planning decisions on air quality grounds.</p>
+            <p class="glossary-term__related">Related: <a href="#aqma">AQMA</a>, <a href="#tg22">TG22</a>, <a href="#defra">DEFRA</a></p>
+          </div>
+
+          <div class="glossary-term" id="lpa">
+            <h3 class="glossary-term__name">LPA <span class="glossary-term__abbr">&mdash; Local Planning Authority</span></h3>
+            <p class="glossary-term__def">The council (or other body) responsible for determining planning applications in a given area &mdash; usually a district, borough, unitary or county council. The LPA's environmental health team is normally the consultee on air quality and odour matters and decides whether a submitted assessment is fit for purpose, whether further work is needed and whether planning conditions are required.</p>
+          </div>
+        </section>
+
+        <!-- M -->
+        <section class="glossary-section" id="letter-M">
+          <h2 class="glossary-section__letter">M</h2>
+
+          <div class="glossary-term" id="miaqm">
+            <h3 class="glossary-term__name">MIAQM <span class="glossary-term__abbr">&mdash; Member of the Institute of Air Quality Management</span></h3>
+            <p class="glossary-term__def">The full professional grade of IAQM membership. To become a Member, an applicant must demonstrate substantial relevant experience in air quality work, a track record of leading assessments and competence across the discipline, all judged against IAQM's published competency framework.</p>
+            <p class="glossary-term__def">An MIAQM-led assessment is generally taken by LPAs and at appeal to indicate suitable professional standing, particularly in combination with CEnv registration.</p>
+            <p class="glossary-term__related">Related: <a href="#iaqm">IAQM</a>, <a href="#cenv">CEnv</a></p>
+          </div>
+        </section>
+
+        <!-- N -->
+        <section class="glossary-section" id="letter-N">
+          <h2 class="glossary-section__letter">N</h2>
+
+          <div class="glossary-term" id="no2">
+            <h3 class="glossary-term__name">Nitrogen Dioxide <span class="glossary-term__abbr">&mdash; NO<sub>2</sub></span></h3>
+            <p class="glossary-term__def">A reactive gas, mainly produced in the UK by combustion in road vehicles (especially diesels) and by gas boilers. NO<sub>2</sub> is the single pollutant most often responsible for triggering AQMA declarations and is the dominant focus of road traffic-related air quality assessments.</p>
+            <p class="glossary-term__def">The UK annual mean objective is 40 &micro;g/m&sup3;; the WHO 2021 guideline is significantly tighter at 10 &micro;g/m&sup3;. NO<sub>2</sub> contributes to respiratory irritation, exacerbates asthma and is associated with cardiovascular effects.</p>
+            <p class="glossary-term__related">Related: <a href="#aqs-objectives">AQS Objectives</a>, <a href="#diffusion-tubes">Diffusion Tubes</a>, <a href="#aqma">AQMA</a></p>
+          </div>
+
+          <div class="glossary-term" id="nppf">
+            <h3 class="glossary-term__name">NPPF <span class="glossary-term__abbr">&mdash; National Planning Policy Framework</span></h3>
+            <p class="glossary-term__def">The government's overarching planning policy document for England. The NPPF requires planning decisions to take account of air quality, sustain compliance with national objectives, and be consistent with local Air Quality Action Plans. Most planning officer reports on developments with an air quality element will cite the relevant NPPF paragraphs.</p>
+            <p class="glossary-term__related">Related: <a href="#nppg">NPPG</a>, <a href="#lpa">LPA</a></p>
+          </div>
+
+          <div class="glossary-term" id="nppg">
+            <h3 class="glossary-term__name">NPPG <span class="glossary-term__abbr">&mdash; National Planning Practice Guidance</span></h3>
+            <p class="glossary-term__def">A web-based companion to the NPPF that gives more detailed guidance on how planning policy should be applied. The NPPG includes specific air quality guidance &mdash; including when an assessment is appropriate, what it should cover and how mitigation should be considered.</p>
+            <p class="glossary-term__related">Related: <a href="#nppf">NPPF</a></p>
+          </div>
+
+          <div class="glossary-term" id="nrmm">
+            <h3 class="glossary-term__name">NRMM <span class="glossary-term__abbr">&mdash; Non-Road Mobile Machinery</span></h3>
+            <p class="glossary-term__def">Diesel-powered plant used on construction sites that doesn't drive on the public road &mdash; excavators, dumpers, generators, telehandlers, mobile compressors and similar. NRMM emissions are regulated by EU/UK Stage standards (currently up to Stage V), and Greater London operates a specific NRMM Low Emission Zone with mandatory minimum emission standards on most large sites.</p>
+            <p class="glossary-term__def">Outside London, more LPAs are now writing NRMM minimum standards (typically Stage IIIB or Stage V) into CEMP requirements, and a planning condition requiring an NRMM register is increasingly common.</p>
+            <p class="glossary-term__related">Related: <a href="#cemp">CEMP</a>, <a href="#construction-phase">Construction Phase</a></p>
+          </div>
+        </section>
+
+        <!-- O -->
+        <section class="glossary-section" id="letter-O">
+          <h2 class="glossary-section__letter">O</h2>
+
+          <div class="glossary-term" id="odour-impact">
+            <h3 class="glossary-term__name">Odour Impact Assessment</h3>
+            <p class="glossary-term__def">A structured assessment of the likelihood and significance of odour effects from a source &mdash; typically a sewage works, waste facility, food processor or commercial kitchen &mdash; on nearby sensitive receptors. UK practice usually follows the IAQM odour guidance, applying the FIDOL principles and (for kitchens) the EMAQ+ methodology.</p>
+            <p class="glossary-term__def">For larger industrial sources, dispersion modelling of odour units (ouE/m&sup3;) may be used alongside qualitative judgement. The output informs whether mitigation (improved abatement, taller stacks, design changes) is needed and whether the source is acceptable in planning terms.</p>
+            <p class="glossary-term__related">Related: <a href="#fidol">FIDOL</a>, <a href="#emaq-plus">EMAQ+</a>, <a href="services-odour.html">Our odour service</a></p>
+          </div>
+        </section>
+
+        <!-- P -->
+        <section class="glossary-section" id="letter-P">
+          <h2 class="glossary-section__letter">P</h2>
+
+          <div class="glossary-term" id="pm10">
+            <h3 class="glossary-term__name">PM<sub>10</sub></h3>
+            <p class="glossary-term__def">Particulate matter with an aerodynamic diameter of 10 microns or less &mdash; about a fifth of the width of a human hair. It includes road dust, brake and tyre wear, combustion particles and soil-derived material. The UK objective is an annual mean of 40 &micro;g/m&sup3; and a 24-hour mean of 50 &micro;g/m&sup3; not to be exceeded more than 35 times a year.</p>
+            <p class="glossary-term__def">PM<sub>10</sub> is the headline metric for construction dust assessments, since dust generation tends to dominate the coarse fraction of particulate matter.</p>
+            <p class="glossary-term__related">Related: <a href="#pm25">PM<sub>2.5</sub></a>, <a href="#particulate-matter">Particulate Matter</a>, <a href="#dia">DIA</a></p>
+          </div>
+
+          <div class="glossary-term" id="pm25">
+            <h3 class="glossary-term__name">PM<sub>2.5</sub></h3>
+            <p class="glossary-term__def">Particulate matter with an aerodynamic diameter of 2.5 microns or less. PM<sub>2.5</sub> is largely combustion-derived &mdash; vehicles, biomass burning, industrial sources and (importantly) secondary aerosol formed in the atmosphere. It penetrates deep into the lungs and is the particulate fraction most closely associated with serious health effects.</p>
+            <p class="glossary-term__def">The UK annual mean objective is 25 &micro;g/m&sup3;. The WHO 2021 guideline is far tighter at 5 &micro;g/m&sup3;, and the gap between the two is one of the most-cited mismatches in current UK air quality policy.</p>
+            <p class="glossary-term__related">Related: <a href="#pm10">PM<sub>10</sub></a>, <a href="#who-aqg">WHO Air Quality Guidelines</a></p>
+          </div>
+
+          <div class="glossary-term" id="particulate-matter">
+            <h3 class="glossary-term__name">Particulate Matter</h3>
+            <p class="glossary-term__def">The umbrella term for tiny solid and liquid particles suspended in air. In a UK regulatory context it almost always refers to PM<sub>10</sub> and PM<sub>2.5</sub> &mdash; the size fractions for which there are objectives. Particulate matter is generated by combustion, road and tyre wear, construction activity, biomass burning and natural sources, and is one of the pollutants most strongly linked to premature mortality.</p>
+            <p class="glossary-term__related">Related: <a href="#pm10">PM<sub>10</sub></a>, <a href="#pm25">PM<sub>2.5</sub></a></p>
+          </div>
+        </section>
+
+        <!-- R -->
+        <section class="glossary-section" id="letter-R">
+          <h2 class="glossary-section__letter">R</h2>
+
+          <div class="glossary-term" id="receptor">
+            <h3 class="glossary-term__name">Receptor <span class="glossary-term__abbr">&mdash; Sensitive Receptor</span></h3>
+            <p class="glossary-term__def">A location where people (or, occasionally, ecosystems) are exposed to air pollution and where compliance with the air quality objectives needs to be checked. Typical "sensitive receptors" are residential properties, schools, hospitals, care homes and other locations with prolonged exposure of vulnerable groups.</p>
+            <p class="glossary-term__def">The choice of receptors &mdash; what's included, where the modelling point is placed (fa&ccedil;ade, garden, school playground) &mdash; can materially affect the results of an assessment, so most assessments include a receptor location plan and a written justification.</p>
+            <p class="glossary-term__related">Related: <a href="#dispersion-modelling-term">Dispersion Modelling</a>, <a href="#background-concentration">Background Concentration</a></p>
+          </div>
+        </section>
+
+        <!-- S -->
+        <section class="glossary-section" id="letter-S">
+          <h2 class="glossary-section__letter">S</h2>
+
+          <div class="glossary-term" id="screening-assessment">
+            <h3 class="glossary-term__name">Screening Assessment</h3>
+            <p class="glossary-term__def">A simple, conservative first-pass air quality assessment used to decide whether a more detailed study is needed. For development traffic, the IAQM/EPUK guidance gives screening criteria based on changes in vehicle flows and HGV percentages. For dust, the IAQM 2024 dust guidance includes a screening step based on the distance from the site boundary to the nearest receptor.</p>
+            <p class="glossary-term__def">If a project clearly screens out, a detailed assessment is unnecessary and the report focuses on demonstrating that. If it doesn't, the screening step still informs the scope of the more detailed work.</p>
+            <p class="glossary-term__related">Related: <a href="#detailed-assessment">Detailed Assessment</a>, <a href="#dia">DIA</a></p>
+          </div>
+
+          <div class="glossary-term" id="so2">
+            <h3 class="glossary-term__name">SO<sub>2</sub> <span class="glossary-term__abbr">&mdash; Sulphur Dioxide</span></h3>
+            <p class="glossary-term__def">A pungent gas produced mainly by burning sulphur-containing fuels &mdash; coal, heavy fuel oils and some industrial processes. UK ambient SO<sub>2</sub> concentrations have fallen sharply since the 1980s with the move away from coal, and SO<sub>2</sub> is now rarely a controlling pollutant for planning purposes outside specific industrial settings (refineries, large boilers, certain manufacturing).</p>
+            <p class="glossary-term__def">It still has UK air quality objectives, including a 15-minute mean and a 24-hour mean, mainly relevant near operating industrial sources.</p>
+          </div>
+
+          <div class="glossary-term" id="stack-height">
+            <h3 class="glossary-term__name">Stack Height</h3>
+            <p class="glossary-term__def">The height above ground at which a stack, chimney or extract terminates. For industrial point sources and commercial kitchen extracts, stack height is one of the most important design variables because taller stacks produce greater dispersion and lower ground-level concentrations near the source.</p>
+            <p class="glossary-term__def">Stack height assessments use approaches like the Environment Agency's "D1" methodology or odour-specific dispersion modelling to identify the minimum height needed to meet impact criteria, while balancing visual amenity and roof access constraints.</p>
+            <p class="glossary-term__related">Related: <a href="#aermod">AERMOD</a>, <a href="#emaq-plus">EMAQ+</a></p>
+          </div>
+        </section>
+
+        <!-- T -->
+        <section class="glossary-section" id="letter-T">
+          <h2 class="glossary-section__letter">T</h2>
+
+          <div class="glossary-term" id="tg22">
+            <h3 class="glossary-term__name">TG22 <span class="glossary-term__abbr">&mdash; DEFRA Technical Guidance 2022</span></h3>
+            <p class="glossary-term__def">The current edition of DEFRA's "Local Air Quality Management Technical Guidance", published in 2022. TG22 sets out how local authorities should review and assess air quality, the methods for processing monitoring data (including diffusion tube bias correction), how to apply the national pollutant background maps and how to verify dispersion model results against monitoring.</p>
+            <p class="glossary-term__def">It's the methodology document that almost every UK air quality assessment cites for routine technical steps.</p>
+            <p class="glossary-term__related">Related: <a href="#defra">DEFRA</a>, <a href="#laqm">LAQM</a>, <a href="#diffusion-tubes">Diffusion Tubes</a></p>
+          </div>
+
+          <div class="glossary-term" id="trackout">
+            <h3 class="glossary-term__name">Trackout</h3>
+            <p class="glossary-term__def">The transport of mud and dust off a construction site by vehicle wheels onto the surrounding road network, where it dries and is re-suspended by passing traffic. Trackout is one of the four dust-generating activities considered explicitly in the IAQM dust guidance, alongside demolition, earthworks and construction.</p>
+            <p class="glossary-term__def">Mitigation typically involves wheel washes, road sweepers, hard-surfaced haul routes near the exit and a clear inspection regime in the CEMP.</p>
+            <p class="glossary-term__related">Related: <a href="#dia">DIA</a>, <a href="#cemp">CEMP</a>, <a href="#iaqm-2024">IAQM 2024 V2.2</a></p>
+          </div>
+        </section>
+
+        <!-- V -->
+        <section class="glossary-section" id="letter-V">
+          <h2 class="glossary-section__letter">V</h2>
+
+          <div class="glossary-term" id="voc">
+            <h3 class="glossary-term__name">VOC <span class="glossary-term__abbr">&mdash; Volatile Organic Compounds</span></h3>
+            <p class="glossary-term__def">A broad family of carbon-based gases that evaporate readily at room temperature. They include solvents, fuel vapours, cooking emissions and many natural plant emissions. VOCs are relevant to air quality both directly (some, like benzene, are toxic in their own right) and indirectly &mdash; in sunlight they react with NO<sub>x</sub> to produce ground-level ozone.</p>
+            <p class="glossary-term__def">VOCs are also significant for odour, since many of the chemicals that smell of solvents, cooking, sewage or fuels are in this category.</p>
+            <p class="glossary-term__related">Related: <a href="#odour-impact">Odour Impact Assessment</a></p>
+          </div>
+        </section>
+
+        <!-- W -->
+        <section class="glossary-section" id="letter-W">
+          <h2 class="glossary-section__letter">W</h2>
+
+          <div class="glossary-term" id="who-aqg">
+            <h3 class="glossary-term__name">WHO Air Quality Guidelines</h3>
+            <p class="glossary-term__def">Health-based guideline concentrations published by the World Health Organization, most recently updated in 2021. They are not legally binding in the UK but are increasingly cited in planning consultations, environmental health assessments and political discussion of air quality policy.</p>
+            <p class="glossary-term__def">The 2021 update tightened the recommended levels significantly &mdash; for example a 10 &micro;g/m&sup3; annual mean for NO<sub>2</sub> and 5 &micro;g/m&sup3; for PM<sub>2.5</sub> &mdash; far below the current UK statutory objectives. Where assessments are asked to comment against WHO guidelines, that comparison is informative rather than a regulatory test.</p>
+            <p class="glossary-term__related">Related: <a href="#aqs-objectives">AQS Objectives</a>, <a href="#pm25">PM<sub>2.5</sub></a></p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Need Help Applying These in Practice?</h2>
+      <p class="cta-banner__text">
+        If you're trying to work out which of these apply to your project, send us a 1-line message and we'll point you to the right starting point.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--primary btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--outline btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call 020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="40" height="40">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered environmental consultants providing specialist air quality, dust and odour assessments across the United Kingdom. MIAQM | CEnv.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust</a></li>
+            <li><a href="services-odour.html">Odour</a></li>
+            <li><a href="services-noise.html">Noise</a></li>
+            <li><a href="dispersion-modelling.html">Dispersion Modelling</a></li>
+            <li><a href="dust-impact-assessment.html">Dust Impact Assessment</a></li>
+            <li><a href="cemp-air-quality.html">CEMP Air Quality</a></li>
+            <li><a href="restaurant-odour-assessment.html">Restaurant Odour</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Company</h3>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span>MIAQM</span>
+          <span>CEnv</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
