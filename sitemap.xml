@@ -239,6 +239,84 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Sector landing pages -->
+  <url>
+    <loc>https://www.airdustodour.co.uk/data-centre-air-quality-assessment.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/school-air-quality-assessment.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/petrol-station-air-quality-assessment.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/waste-transfer-station-odour-assessment.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/composting-facility-odour-assessment.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/anaerobic-digestion-odour-air-quality-assessment.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Decision / pricing pages -->
+  <url>
+    <loc>https://www.airdustodour.co.uk/air-quality-assessment-cost-uk.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/dust-impact-assessment-cost.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/emaq-plus-kitchen-extract-assessment-cost.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- London-specific pages -->
+  <url>
+    <loc>https://www.airdustodour.co.uk/london-ulez-air-quality-assessment.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/gla-london-plan-air-quality-neutral.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/nrmm-stage-v-compliance-london.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Regional pages -->
   <url>
     <loc>https://www.airdustodour.co.uk/air-quality-assessment-london.html</loc>
