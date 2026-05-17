@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A plain-English walk-through of what an air quality assessment for a planning application actually contains: the screening test, baseline data, dispersion modelling, receptor identification, significance criteria, mitigation and the report itself. By Malcolm Pounder CEnv MIAQM MIEnvSc.">
+  <meta property="og:title" content="What Does an Air Quality Assessment for Planning Actually Look Like? | Air Dust Odour">
+  <meta property="og:description" content="What's inside an air quality assessment for a UK planning application — sections, contents, methods, lead times and fees. Written for developers, architects and planning consultants who haven't seen one before.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/blog-what-does-an-air-quality-assessment-look-like.html">
+  <link rel="canonical" href="https://www.airdustodour.co.uk/blog-what-does-an-air-quality-assessment-look-like.html">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="css/style.css">
+  <title>What Does an Air Quality Assessment for Planning Actually Look Like? | Air Dust Odour</title>
+  <!-- Article schema with author Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What Does an Air Quality Assessment for Planning Actually Look Like?",
+    "description": "A plain-English walk-through of what an air quality assessment for a planning application actually contains: the screening test, baseline data, dispersion modelling, receptor identification, significance criteria, mitigation and the report itself.",
+    "image": "https://www.airdustodour.co.uk/images/office-sign.webp",
+    "datePublished": "2026-05-08",
+    "dateModified": "2026-05-17",
+    "mainEntityOfPage": "https://www.airdustodour.co.uk/blog-what-does-an-air-quality-assessment-look-like.html",
+    "keywords": "air quality assessment, AQA, planning application, screening assessment, dispersion modelling, IAQM, ADMS-Roads, DEFRA, sensitive receptors, significance criteria",
+    "author": {
+      "@type": "Person",
+      "@id": "https://www.airdustodour.co.uk/about.html#malcolm-pounder",
+      "name": "Malcolm Pounder",
+      "honorificSuffix": "CEnv MIAQM MIEnvSc",
+      "jobTitle": "Founder & Chartered Environmentalist",
+      "url": "https://www.airdustodour.co.uk/about.html",
+      "sameAs": ["https://www.linkedin.com/in/malcolm-pounder-a1a23842/"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Air Dust Odour",
+      "logo": {"@type": "ImageObject", "url": "https://www.airdustodour.co.uk/images/logo-dark.png"}
+    }
+  }
+  </script>
+  <!-- FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long does an air quality assessment take to produce?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A screening assessment for a small or simple scheme typically takes one to two weeks from instruction. A detailed assessment involving dispersion modelling typically takes three to five weeks, depending on the complexity of the source, the availability of background and traffic data, and the responsiveness of the design team to scoping questions. Larger EIA-grade chapters with multiple sensitive receptors and committee-level scrutiny can take six to eight weeks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does an air quality assessment cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fees vary widely with complexity. A screening assessment for a small residential or commercial scheme typically falls in the region of £1,500 to £2,500 plus VAT. A detailed assessment with ADMS-Roads dispersion modelling for a major scheme typically falls between £4,000 and £8,000 plus VAT. EIA-grade work with multiple receptors, sensitivity testing and committee support is normally £10,000 plus VAT and upwards. Fixed fees agreed at instruction are the norm."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between a screening assessment and a detailed assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A screening assessment establishes whether a detailed quantitative air quality assessment is needed at all. It uses straightforward thresholds — traffic generation, distance to Air Quality Management Areas, proximity to sensitive receptors — to test the proposed scheme against IAQM and EPUK criteria. If the screening test concludes a detailed assessment is not needed, the screening note is the deliverable. If the test concludes a detailed assessment is needed, the screening sets the scope for that next stage."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "CLARITY_PROJECT_ID_PLACEHOLDER");
+  </script>
+  <style>
+    .article-column { max-width: 760px; margin: 0 auto; }
+    .article-header { margin-bottom: var(--space-xl); padding-bottom: var(--space-lg); border-bottom: 1px solid var(--clr-border, #e5e7eb); }
+    .article-header__meta { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin-bottom: var(--space-md); font-size: var(--fs-sm, 0.875rem); color: var(--clr-text-light, #6b7280); }
+    .article-header__date, .article-header__author { color: var(--clr-text-light, #6b7280); }
+    .article-header__author { font-weight: 600; }
+    .article-body h2 { margin-top: var(--space-xl); margin-bottom: var(--space-sm); font-size: 1.5rem; color: var(--clr-navy, #0d1b2e); }
+    .article-body h3 { margin-top: var(--space-lg); margin-bottom: var(--space-xs); font-size: 1.2rem; color: var(--clr-navy, #0d1b2e); }
+    .article-body p { margin-bottom: var(--space-md); line-height: 1.75; color: var(--clr-text, #374151); }
+    .article-body ul { margin-bottom: var(--space-md); padding-left: 1.5rem; }
+    .article-body ul li { margin-bottom: 0.5rem; line-height: 1.7; color: var(--clr-text, #374151); }
+    .article-body strong { color: var(--clr-navy, #0d1b2e); }
+    .article-body a { color: var(--clr-primary, #2563eb); text-decoration: underline; }
+    .pull-callout { margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: #f3f6fb; border-left: 4px solid var(--clr-primary, #2563eb); border-radius: 6px; }
+    .pull-callout p { margin: 0; color: var(--clr-navy, #0d1b2e); }
+    .related-posts { margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--clr-border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .related-posts__title { font-weight: 600; color: var(--clr-navy, #0d1b2e); }
+    .related-posts__link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: var(--fs-sm, 0.875rem); font-weight: 600; color: var(--clr-primary, #2563eb); text-decoration: none; }
+    .related-posts__link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark"><img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48"></div>
+        <div class="header__logo-text"><span class="header__logo-name">Air Dust Odour</span><span class="header__logo-tagline">The Air, Dust and Odour Specialists</span></div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="services.html" class="header__nav-link">Services</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="blog.html" class="header__nav-link active">Blog</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+          <li><a href="case-studies.html" class="header__nav-link">Case Studies</a></li>
+        </ul>
+        <div class="header__cta"><a href="get-a-quote.html" class="btn btn--primary btn--sm">Get a Free Quote</a></div>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <a href="blog.html">Blog</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <span>What an AQA looks like</span>
+      </nav>
+      <h1 class="page-hero__title">What Does an Air Quality Assessment for Planning Actually Look Like?</h1>
+      <p class="page-hero__subtitle">A plain-English walk-through of what&rsquo;s inside an AQA &mdash; sections, methods, lead times, fees &mdash; for developers, architects and planning consultants who haven&rsquo;t seen one before.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-column fade-in">
+        <div class="article-header">
+          <div class="article-header__meta">
+            <span class="blog-card__category blog-card__category--air">Air Quality</span>
+            <span class="article-header__date">May 2026</span>
+            <span class="article-header__author">By Malcolm Pounder CEnv MIAQM MIEnvSc</span>
+          </div>
+        </div>
+        <div class="article-body">
+
+          <h2>Introduction</h2>
+          <p>If you&rsquo;re commissioning an air quality assessment for the first time, it can be hard to know what you&rsquo;re actually paying for. The acronyms (IAQM, EPUK, DEFRA, AQMA, ADMS-Roads), the numerical objectives (40 &micro;g/m&sup3; for NO<sub>2</sub>, 25 &micro;g/m&sup3; for PM<sub>2.5</sub>), and the methods can make the whole thing feel opaque from the outside. The deliverable also looks substantial &mdash; usually 30 to 60 pages of technical analysis &mdash; without it being obvious how much of that was a desk exercise and how much real modelling work.</p>
+          <p>This article is a plain-English walk-through of what a UK air quality assessment for a planning application actually contains. It is written for developers, architects, planning consultants, parish councillors and others who need to understand what they&rsquo;re going to receive, how long it takes to produce and where the cost goes &mdash; without needing a degree in atmospheric science to follow the answer.</p>
+
+          <div class="pull-callout">
+            <p>An AQA answers one question: what will this development do to local air quality at the receptors, and is that change material against the air quality objectives and IAQM significance criteria?</p>
+          </div>
+
+          <h2>What Triggers an AQA in the First Place</h2>
+          <p>Not every planning application needs an air quality assessment. The trigger is usually one of:</p>
+          <ul>
+            <li><strong>The site sits within or adjacent to an Air Quality Management Area (AQMA)</strong> &mdash; a local authority designation indicating that one or more air quality objectives are not being met</li>
+            <li><strong>The development will generate significant additional traffic</strong> on roads that are already close to or exceeding the air quality objectives</li>
+            <li><strong>The development introduces sensitive receptors</strong> &mdash; new residents, schoolchildren, hospital patients &mdash; into a location with existing poor air quality</li>
+            <li><strong>The local planning authority has attached a condition</strong> at pre-application or screening stage explicitly requesting an air quality assessment</li>
+            <li><strong>The development involves a notable point source</strong> &mdash; a biomass boiler, a kitchen extract, a process emission &mdash; that requires its own dispersion modelling</li>
+          </ul>
+          <p>The IAQM/EPUK 2017 guidance sets out widely-adopted thresholds for when an AQA is required, and most local authorities apply these or close variants. A pre-application discussion with the case officer is the most reliable way to confirm whether an AQA is needed for a specific scheme.</p>
+
+          <h2>Stage 1: The Screening Assessment</h2>
+          <p>Almost every AQA starts with a screening test. A screening assessment is a structured, mostly desk-based exercise that applies the IAQM/EPUK thresholds to the proposed scheme and concludes one of two things: either a detailed assessment is not needed (in which case the screening note is the deliverable), or a detailed assessment is needed (in which case the screening defines the scope of that further work).</p>
+          <p>A typical screening note covers the site context, the development description, the relevant air quality objectives, the IAQM/EPUK threshold tests, the receptors that would need to be considered if a detailed assessment were undertaken, and the conclusion. It is usually 10 to 20 pages including figures, and takes one to two weeks from instruction.</p>
+          <p>For a meaningful proportion of UK planning applications &mdash; small residential schemes away from AQMAs, modest commercial extensions, change-of-use applications without traffic implications &mdash; the screening note is the only assessment ever required.</p>
+
+          <h2>Stage 2: The Detailed Assessment</h2>
+          <p>Where screening concludes that a detailed assessment is needed, the next stage is a quantitative analysis that predicts the air quality impact of the scheme at named sensitive receptors. The detailed assessment is the substantial piece of work, and the bulk of a typical AQA fee.</p>
+
+          <h3>Receptor identification</h3>
+          <p>The assessor identifies and maps the sensitive receptors that need to be considered &mdash; residential properties, schools, hospitals, care homes, sometimes ecological designations. Each receptor is described, located on a plan, and assigned a representative ground-level point for modelling.</p>
+
+          <h3>Baseline air quality</h3>
+          <p>The current air quality at each receptor location is established from a combination of:</p>
+          <ul>
+            <li><strong>DEFRA background maps</strong> &mdash; modelled annual mean concentrations of NO<sub>2</sub>, PM<sub>10</sub> and PM<sub>2.5</sub> at 1 km resolution across the UK</li>
+            <li><strong>Local authority monitoring data</strong> &mdash; from the council&rsquo;s diffusion tube network and any continuous monitors within reasonable distance</li>
+            <li><strong>The local authority&rsquo;s Annual Status Report (ASR)</strong> &mdash; the council&rsquo;s annual published assessment of progress against the air quality objectives, including monitoring trends</li>
+          </ul>
+          <p>Together these establish the &ldquo;do-minimum&rdquo; baseline against which the change attributable to the development will be assessed.</p>
+
+          <h3>Dispersion modelling</h3>
+          <p>For traffic-generated emissions, the standard model is <a href="https://www.cerc.co.uk/" rel="noopener">ADMS-Roads</a> from CERC. The assessor builds a model of the relevant road network, applies emission factors consistent with the DEFRA Emissions Factor Toolkit, runs the model with do-minimum traffic flows for a baseline year and do-something traffic flows for an opening year, and extracts the predicted incremental contribution at each receptor. For point sources, ADMS-Urban or AERMOD is normally used with source-specific emission characteristics.</p>
+          <p>The model is run with a representative meteorological dataset (the subject of our separate article on <a href="blog-choosing-meteorological-station-dispersion-modelling.html">meteorological station selection</a>), and is verified against local monitoring data where possible.</p>
+
+          <h3>Construction phase</h3>
+          <p>Where the construction phase is likely to be material, the AQA also addresses construction-phase impacts &mdash; usually dust from demolition, earthworks, construction and trackout, assessed under the <a href="blog-construction-dust-impact-assessment.html">IAQM 2024 V2.2 framework</a>. Construction-phase NRMM emissions may also be considered for large or long-duration sites.</p>
+
+          <h3>Significance criteria</h3>
+          <p>The predicted changes at each receptor are evaluated against the IAQM/EPUK significance criteria. These take account of both the magnitude of the change (in micrograms per cubic metre) and the absolute concentration at the receptor compared with the air quality objective. A small change at a receptor already close to the objective is more significant than the same change at a receptor well below the objective.</p>
+
+          <h3>Mitigation and conclusion</h3>
+          <p>Where the assessment identifies a more-than-negligible adverse effect, the assessor proposes mitigation &mdash; design responses, operational measures, low-NO<sub>x</sub> boiler specifications, electric vehicle charging provision, off-site contributions where the development cannot mitigate in full. The residual effect after mitigation is assessed against the same significance criteria, and the AQA concludes with a clear judgement on whether the residual effect is acceptable in planning terms.</p>
+
+          <h2>The Report Itself</h2>
+          <p>A detailed AQA report typically runs to 40 to 80 pages. The standard structure includes:</p>
+          <ul>
+            <li>Executive summary</li>
+            <li>Introduction and site context</li>
+            <li>Policy and legislative context</li>
+            <li>Assessment methodology</li>
+            <li>Baseline air quality</li>
+            <li>Construction phase assessment</li>
+            <li>Operational phase assessment (modelling results)</li>
+            <li>Significance evaluation</li>
+            <li>Mitigation</li>
+            <li>Residual effects and conclusion</li>
+            <li>Appendices: figures, modelling inputs, monitoring data, traffic data, emission factors</li>
+          </ul>
+          <p>The report is signed by the assessor and, on schemes where it materially adds weight, by a Chartered Environmentalist.</p>
+
+          <h2>Lead Times</h2>
+          <p>Indicative timelines, from instruction to delivery:</p>
+          <ul>
+            <li><strong>Screening only:</strong> 1&ndash;2 weeks</li>
+            <li><strong>Detailed assessment, small to medium scheme:</strong> 3&ndash;5 weeks</li>
+            <li><strong>Detailed assessment with construction dust:</strong> 4&ndash;6 weeks</li>
+            <li><strong>EIA-grade chapter with multiple receptors and committee support:</strong> 6&ndash;10 weeks</li>
+          </ul>
+          <p>The biggest single driver of timeline is the availability of inputs &mdash; particularly traffic data from the transport assessment, building services emission specifications, and design fixity on site layout. Schemes that engage the air quality consultant early in the design process consistently deliver faster and to lower cost than those that come in cold late in the planning programme.</p>
+
+          <h2>Fees</h2>
+          <p>Indicative fixed-fee bands at the date of writing:</p>
+          <ul>
+            <li><strong>Screening assessment:</strong> &pound;1,500&ndash;&pound;2,500 plus VAT</li>
+            <li><strong>Detailed assessment, simple scheme:</strong> &pound;3,500&ndash;&pound;5,000 plus VAT</li>
+            <li><strong>Detailed assessment with ADMS-Roads modelling and construction dust:</strong> &pound;5,000&ndash;&pound;8,000 plus VAT</li>
+            <li><strong>EIA-grade chapter:</strong> &pound;10,000 plus VAT and upwards</li>
+          </ul>
+          <p>Fixed fees agreed at instruction are normal practice in this discipline. Reputable consultants do not charge by the hour for planning-application air quality work, because the scope can be defined clearly at the outset and the client benefits from cost certainty.</p>
+
+          <h2>Air Dust Odour</h2>
+          <p>Air Dust Odour prepares air quality assessments &mdash; screening notes, detailed assessments with ADMS-Roads modelling, EIA-grade chapters &mdash; for planning applications across the UK. Every assessment is led personally by a Chartered Environmentalist. Quotes are fixed at instruction, fees are transparent, and timescales are honest from the outset. For a wider view of the services we offer see <a href="services.html">our services page</a>, or get in touch via the form below.</p>
+
+          <h2>Conclusion</h2>
+          <p>An air quality assessment for planning is a structured piece of analytical work that answers one specific question: what does this development do to local air quality at the receptors, and is that change material? The screening stage often answers the question in itself for smaller schemes; the detailed stage uses dispersion modelling, baseline data and the IAQM/EPUK significance framework to produce a defensible answer for larger or more sensitive schemes. The deliverable is a substantial report, the lead time is measured in weeks, and the fee is proportionate to the complexity of the scheme. Understanding the shape of the work in advance helps you commission the right scope, at the right time, with realistic expectations of cost and delivery.</p>
+
+          <p style="margin-top: 2rem;"><a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote &rarr;</a></p>
+        </div>
+
+        <div class="related-posts">
+          <p class="related-posts__title">More from the Blog</p>
+          <a href="blog.html" class="related-posts__link">View all articles<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Need Expert Environmental Advice?</h2>
+      <p class="cta-banner__text">Our chartered professionals are here to help with your air quality, dust or odour assessment needs.</p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--white btn--lg">Get a Free Quote</a>
+        <a href="tel:+442080503003" class="btn btn--secondary">020 8050 3003</a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark"><img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48"></div>
+            <div class="header__logo-text"><span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span><span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span></div>
+          </a>
+          <p class="footer__brand-text">Chartered air quality assessment professionals providing specialist environmental consultancy services across the United Kingdom. Led by <a href="about.html" style="color:inherit;text-decoration:underline;">Malcolm Pounder CEnv MIAQM MIEnvSc</a>.</p>
+        </div>
+        <div><h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li><li><a href="services-dust.html">Dust Monitoring</a></li><li><a href="services-odour.html">Odour Assessment</a></li><li><a href="services-noise.html">Noise Assessment</a></li><li><a href="services-lighting.html">Lighting Assessment</a></li><li><a href="services-workplace.html">Workplace Services</a></li><li><a href="dispersion-modelling.html">Dispersion Modelling</a></li><li><a href="dust-impact-assessment.html">Dust Impact Assessment</a></li><li><a href="cemp-air-quality.html">CEMP Air Quality</a></li><li><a href="restaurant-odour-assessment.html">Restaurant Odour</a></li>
+          </ul></div>
+        <div><h3 class="footer__heading">Company</h3>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="glossary.html">Glossary</a></li><li><a href="contact.html">Contact</a></li><li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul></div>
+        <div><h3 class="footer__heading">Contact</h3>
+          <div class="footer__contact-item"><a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a></div>
+          <div class="footer__contact-item"><a href="tel:+442080503003">020 8050 3003</a></div>
+          <div class="footer__contact-item"><div>United Kingdom</div></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations"><span>CEnv</span><span>MIAQM</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta-bar" aria-label="Quick contact">
+    <a href="get-a-quote.html" class="mobile-cta-bar__primary">Get a Free Quote</a>
+    <a href="https://wa.me/WHATSAPP_NUMBER_PLACEHOLDER?text=Hi%20Malcolm%2C%20I%27d%20like%20a%20quote%20for%20" class="mobile-cta-bar__whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <button class="scroll-top" aria-label="Scroll to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></button>
+  <script src="js/main.js"></script>
+</body>
+</html>

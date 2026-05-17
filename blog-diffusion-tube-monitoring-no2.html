@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A practical UK guide to diffusion tube monitoring for nitrogen dioxide (NO2): when you need it, how the tubes work, where to site them, exposure period, bias adjustment, laboratory analysis, QA/QC, and how the data are used to verify dispersion models. By Malcolm Pounder CEnv MIAQM MIEnvSc.">
+  <meta property="og:title" content="Diffusion Tube Monitoring for NO2: A Practical UK Guide | Air Dust Odour">
+  <meta property="og:description" content="Everything a developer, local authority or AQ practitioner needs to know about NO2 diffusion tube monitoring — siting, exposure, bias adjustment, UKAS analysis and common errors.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/blog-diffusion-tube-monitoring-no2.html">
+  <link rel="canonical" href="https://www.airdustodour.co.uk/blog-diffusion-tube-monitoring-no2.html">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Diffusion Tube Monitoring for NO2: A Practical UK Guide | Air Dust Odour</title>
+  <!-- Article schema with author Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Diffusion Tube Monitoring for NO2: A Practical UK Guide",
+    "description": "A practical UK guide to diffusion tube monitoring for nitrogen dioxide (NO2): when you need it, how the tubes work, where to site them, exposure period, bias adjustment, laboratory analysis, QA/QC, and how the data are used to verify dispersion models.",
+    "image": "https://www.airdustodour.co.uk/images/office-sign.webp",
+    "datePublished": "2026-04-25",
+    "dateModified": "2026-05-17",
+    "mainEntityOfPage": "https://www.airdustodour.co.uk/blog-diffusion-tube-monitoring-no2.html",
+    "keywords": "diffusion tube, NO2, nitrogen dioxide, passive monitoring, bias adjustment, UKAS laboratory, AURN, air quality monitoring, model verification",
+    "author": {
+      "@type": "Person",
+      "@id": "https://www.airdustodour.co.uk/about.html#malcolm-pounder",
+      "name": "Malcolm Pounder",
+      "honorificSuffix": "CEnv MIAQM MIEnvSc",
+      "jobTitle": "Founder & Chartered Environmentalist",
+      "url": "https://www.airdustodour.co.uk/about.html",
+      "sameAs": ["https://www.linkedin.com/in/malcolm-pounder-a1a23842/"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Air Dust Odour",
+      "logo": {"@type": "ImageObject", "url": "https://www.airdustodour.co.uk/images/logo-dark.png"}
+    }
+  }
+  </script>
+  <!-- FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long do you leave NO2 diffusion tubes in place?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The conventional exposure period is one calendar month. Defra's diffusion tube guidance recommends monthly exposures over a continuous twelve-month period to produce an annual mean concentration that can be compared with the air quality objective. Shorter campaigns of three to six months are acceptable for indicative monitoring where the data are seasonally adjusted, though the resulting annual estimate carries greater uncertainty than a full year of data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a bias adjustment factor and why does it matter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Diffusion tubes systematically over-read or under-read nitrogen dioxide compared with the reference chemiluminescence method depending on the tube preparation method, the laboratory and the exposure conditions. A bias adjustment factor — derived by co-locating tubes with a reference automatic monitor at AURN or local authority sites — corrects the tube data to the reference standard. Without bias adjustment, tube data should not be compared directly with the air quality objective."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do diffusion tubes need to be analysed by a UKAS-accredited laboratory?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For planning-grade and regulatory use, yes. The analysis should be undertaken by a laboratory holding UKAS accreditation for the relevant analytical method (typically Triethanolamine in 50/50 acetone/water absorption and UV-visible spectrophotometric analysis) and participating in the WASP (Workplace Analysis Scheme for Proficiency) inter-laboratory comparison run by HSL. Local authority Annual Status Reports submitted to Defra are required to use UKAS-accredited analysis."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "CLARITY_PROJECT_ID_PLACEHOLDER");
+  </script>
+  <style>
+    .article-column { max-width: 760px; margin: 0 auto; }
+    .article-header { margin-bottom: var(--space-xl); padding-bottom: var(--space-lg); border-bottom: 1px solid var(--clr-border, #e5e7eb); }
+    .article-header__meta { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin-bottom: var(--space-md); font-size: var(--fs-sm, 0.875rem); color: var(--clr-text-light, #6b7280); }
+    .article-header__date, .article-header__author { color: var(--clr-text-light, #6b7280); }
+    .article-header__author { font-weight: 600; }
+    .article-body h2 { margin-top: var(--space-xl); margin-bottom: var(--space-sm); font-size: 1.5rem; color: var(--clr-navy, #0d1b2e); }
+    .article-body h3 { margin-top: var(--space-lg); margin-bottom: var(--space-xs); font-size: 1.2rem; color: var(--clr-navy, #0d1b2e); }
+    .article-body p { margin-bottom: var(--space-md); line-height: 1.75; color: var(--clr-text, #374151); }
+    .article-body ul { margin-bottom: var(--space-md); padding-left: 1.5rem; }
+    .article-body ul li { margin-bottom: 0.5rem; line-height: 1.7; color: var(--clr-text, #374151); }
+    .article-body strong { color: var(--clr-navy, #0d1b2e); }
+    .article-body a { color: var(--clr-primary, #2563eb); text-decoration: underline; }
+    .pull-callout { margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: #f3f6fb; border-left: 4px solid var(--clr-primary, #2563eb); border-radius: 6px; }
+    .pull-callout p { margin: 0; color: var(--clr-navy, #0d1b2e); }
+    .related-posts { margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--clr-border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .related-posts__title { font-weight: 600; color: var(--clr-navy, #0d1b2e); }
+    .related-posts__link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: var(--fs-sm, 0.875rem); font-weight: 600; color: var(--clr-primary, #2563eb); text-decoration: none; }
+    .related-posts__link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark"><img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48"></div>
+        <div class="header__logo-text"><span class="header__logo-name">Air Dust Odour</span><span class="header__logo-tagline">The Air, Dust and Odour Specialists</span></div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="services.html" class="header__nav-link">Services</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="blog.html" class="header__nav-link active">Blog</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+          <li><a href="case-studies.html" class="header__nav-link">Case Studies</a></li>
+        </ul>
+        <div class="header__cta"><a href="get-a-quote.html" class="btn btn--primary btn--sm">Get a Free Quote</a></div>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <a href="blog.html">Blog</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <span>NO<sub>2</sub> diffusion tube monitoring</span>
+      </nav>
+      <h1 class="page-hero__title">Diffusion Tube Monitoring for NO<sub>2</sub>: A Practical UK Guide</h1>
+      <p class="page-hero__subtitle">When you need diffusion tubes, where to put them, how long for, what bias adjustment means in practice, and how to spot a competent monitoring programme from a sloppy one.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-column fade-in">
+        <div class="article-header">
+          <div class="article-header__meta">
+            <span class="blog-card__category blog-card__category--air">Air Quality</span>
+            <span class="article-header__date">April 2026</span>
+            <span class="article-header__author">By Malcolm Pounder CEnv MIAQM MIEnvSc</span>
+          </div>
+        </div>
+        <div class="article-body">
+
+          <h2>Why NO<sub>2</sub> and Why Tubes?</h2>
+          <p>Nitrogen dioxide (NO<sub>2</sub>) is the air pollutant most often driving planning-level air quality decisions in the UK. Its principal source is road transport &mdash; the combustion products of diesel and petrol engines &mdash; and the annual mean concentration of NO<sub>2</sub> at the property fa&ccedil;ade is the metric most commonly compared with the air quality objective (40 &micro;g/m&sup3;). For schemes near busy roads, in Air Quality Management Areas (AQMAs), or proposing sensitive new receptors, understanding the actual ambient NO<sub>2</sub> concentration at the relevant location is foundational to any air quality assessment.</p>
+          <p>Continuous chemiluminescence monitors give the most accurate NO<sub>2</sub> data but are expensive, power-hungry and require dedicated cabinetry. For most planning-level purposes the diffusion tube &mdash; a small, passive sampler the size of a pen lid &mdash; is the appropriate tool. Tubes are cheap (a few pounds each), simple to deploy (cable tie to a downpipe or lamp post at fa&ccedil;ade height), require no power and no on-site infrastructure, and when used correctly produce annual mean concentrations of adequate accuracy for the planning use case.</p>
+
+          <div class="pull-callout">
+            <p>A correctly deployed twelve-month diffusion tube campaign with bias adjustment produces an NO<sub>2</sub> annual mean fit for planning-level use. Cutting corners on any of those three &mdash; deployment, period, or bias adjustment &mdash; produces data that won&rsquo;t survive scrutiny.</p>
+          </div>
+
+          <h2>How a Diffusion Tube Works</h2>
+          <p>A diffusion tube is an acrylic tube, around 70 mm long, with a stainless steel mesh at one end coated in an absorbing reagent (typically triethanolamine in 50/50 acetone/water). When deployed in ambient air, NO<sub>2</sub> molecules diffuse along the tube from the open end to the absorbing mesh, where they react and are captured. After a known exposure period (conventionally one calendar month), the tube is recovered, capped and returned to the laboratory. The captured nitrate is desorbed, reacted with a Saltzman reagent, and the resulting absorbance measured by UV-visible spectrophotometry. The mass of NO<sub>2</sub> captured, divided by the exposure period and the tube&rsquo;s effective diffusion rate, gives the time-averaged ambient concentration over the exposure period.</p>
+          <p>The method is straightforward in principle. Where things go wrong &mdash; and they do, regularly &mdash; is in deployment, exposure consistency and the bias adjustment.</p>
+
+          <h2>Where to Site the Tubes</h2>
+          <p>Tube siting follows <a href="https://laqm.defra.gov.uk/" rel="noopener">Defra&rsquo;s LAQM Technical Guidance</a> and the related Defra diffusion tube guidance. Key principles:</p>
+          <ul>
+            <li><strong>Fa&ccedil;ade height for residential exposure</strong>: typically 1.5 to 2 m above ground, mounted on the property fa&ccedil;ade facing the relevant source. Where the property fa&ccedil;ade is not accessible, a representative location at the kerbside or roadside lamp post is used.</li>
+            <li><strong>Clear of building intakes, ventilation openings and other influences</strong>: tubes should be at least one metre from any active extract, intake or other localised emission source.</li>
+            <li><strong>Representative of the receptor</strong>: the tube should be located where a person would actually be exposed &mdash; not at the back of the building, not in a sheltered courtyard, not screened behind dense vegetation.</li>
+            <li><strong>Secure and tamper-resistant</strong>: tubes are small and disappear easily. Cable-tie attachment to a structural element at a height where casual interference is unlikely. Spare tubes at each location guard against losses.</li>
+            <li><strong>Co-located reference tubes</strong>: at least one location in each campaign should have triplicate tubes deployed alongside an automatic NO<sub>2</sub> monitor, to derive the bias adjustment factor for the campaign.</li>
+          </ul>
+
+          <h2>Exposure Period</h2>
+          <p>Defra&rsquo;s diffusion tube guidance recommends monthly exposures over a continuous twelve-month period. Each tube is in place for approximately one calendar month, the exposure dates are recorded precisely, and the tubes are sent for laboratory analysis after each monthly change-out. The annual mean is calculated from the twelve monthly values.</p>
+          <p>Shorter campaigns &mdash; three to six months &mdash; are sometimes used for indicative monitoring where a full year is not practical. The shorter data are scaled to an annual mean using a published seasonal adjustment factor derived from nearby AURN sites. The resulting annual estimate carries greater uncertainty than full-year data, and reviewing officers will normally place less weight on it. For planning-grade compliance with the air quality objective, a full year is the convention.</p>
+
+          <h2>Bias Adjustment</h2>
+          <p>Diffusion tubes do not perfectly match the reference chemiluminescence method. Depending on the laboratory preparation method, the analytical batch, and the exposure conditions (temperature, wind, humidity), tubes typically over-read NO<sub>2</sub> &mdash; sometimes by 20% or more. Without correction, raw tube data should not be compared with the air quality objective.</p>
+          <p>The bias adjustment factor is derived by co-locating triplicate tubes alongside a reference automatic monitor (typically at an AURN site or a local authority continuous monitor) for the same exposure period as the wider campaign. The ratio of the reference monthly mean to the co-located tube monthly mean, calculated across multiple months and averaged, is the bias adjustment factor. The raw tube data from the rest of the campaign are multiplied by this factor (technically divided by 1+bias) to produce the adjusted concentration.</p>
+          <p>Where local co-location is not practical, a national bias adjustment dataset is published by Defra each year, derived from the bias studies undertaken by local authorities. The national bias for the laboratory used can be applied to the campaign as a fallback, though local co-location is preferred where the campaign is intended for regulatory or planning-grade use.</p>
+
+          <h2>Laboratory Analysis and QA/QC</h2>
+          <p>Diffusion tube analysis for planning-grade use should be undertaken by a laboratory holding UKAS accreditation for the relevant method, and participating in the inter-laboratory comparison schemes &mdash; the Workplace Analysis Scheme for Proficiency (WASP) run by the Health and Safety Laboratory, and Defra&rsquo;s field intercomparison exercises.</p>
+          <p>A defensible monitoring report includes:</p>
+          <ul>
+            <li>Tube preparation laboratory, accreditation status, batch identifier and preparation date</li>
+            <li>Monthly deployment and recovery dates for each tube at each location</li>
+            <li>Laboratory raw concentrations, units, detection limits and any flags for damaged or compromised tubes</li>
+            <li>The bias adjustment factor used, with derivation (local co-location data or national bias reference)</li>
+            <li>The data-capture rate at each location, with any missing months explained</li>
+            <li>The seasonal adjustment factor if used (short campaigns only)</li>
+            <li>The annual mean concentration at each location with confidence bounds</li>
+          </ul>
+
+          <h2>Using Diffusion Tube Data to Verify a Dispersion Model</h2>
+          <p>For air quality assessments involving ADMS-Roads or ADMS-Urban dispersion modelling, diffusion tube data are routinely used to verify the model. The procedure, set out in Defra&rsquo;s LAQM Technical Guidance, involves comparing the modelled NO<sub>x</sub> concentration at the tube location with the measured (bias-adjusted) value, and deriving an adjustment factor that is applied to the modelled output. The verification adjusts for systematic differences between modelled and measured concentrations &mdash; typically arising from emission factor uncertainty, traffic flow uncertainty or local background contribution &mdash; and produces a final modelled annual mean that is anchored to the locally-measured ambient air quality.</p>
+          <p>A model that has been verified against a robust local tube dataset is materially more defensible at planning committee than one that relies on un-verified emission factors and DEFRA background estimates alone.</p>
+
+          <h2>Common Errors</h2>
+          <p>Recurring problems in diffusion tube campaigns:</p>
+          <ul>
+            <li>Tubes left in place for non-conventional periods &mdash; six weeks then four weeks then two weeks &mdash; complicating the annual mean calculation</li>
+            <li>No bias adjustment applied, or a generic factor of 1.0 used without justification</li>
+            <li>Tubes sited in screened locations &mdash; behind hedges, in courtyards, at the back of buildings &mdash; that don&rsquo;t represent the actual exposure of the receptor</li>
+            <li>Short campaigns reported as if they were annual data, without seasonal adjustment or uncertainty narrative</li>
+            <li>Co-location tubes not deployed, with the bias factor either omitted or inherited from a different campaign at a different site</li>
+            <li>Laboratory used without UKAS accreditation for the analytical method</li>
+            <li>Missing months not explained, with the annual mean calculated from incomplete data without acknowledgement</li>
+          </ul>
+
+          <h2>When Diffusion Tubes Aren&rsquo;t the Right Tool</h2>
+          <p>Diffusion tubes give annual mean concentrations. They cannot measure short-term concentrations, peak hourly values, or the temporal variation of NO<sub>2</sub> through the day. Where the assessment needs hourly NO<sub>2</sub> data &mdash; for example, for some industrial source assessments or where the one-hour NO<sub>2</sub> objective (200 &micro;g/m&sup3; not to be exceeded more than 18 times per year) is the binding criterion &mdash; a continuous chemiluminescence monitor is the appropriate tool. Diffusion tubes also have limited utility for PM<sub>10</sub>, PM<sub>2.5</sub> and other pollutants for which the diffusion-tube technique is either unavailable or not yet validated for planning use.</p>
+
+          <h2>Air Dust Odour</h2>
+          <p>Air Dust Odour designs and operates NO<sub>2</sub> diffusion tube monitoring campaigns for planning baseline establishment, dispersion model verification, post-construction compliance demonstration and local-authority Annual Status Report support. Tubes are supplied and analysed by UKAS-accredited laboratories, bias-adjusted using local co-location or current Defra national bias data, and the reporting meets the standards expected by reviewing officers and consultees. See <a href="services-air.html">air quality services</a> for the wider monitoring offering.</p>
+
+          <h2>Conclusion</h2>
+          <p>Diffusion tube monitoring for NO<sub>2</sub> is a mature, well-documented technique that gives reliable, planning-grade annual mean data when deployed correctly &mdash; and unreliable data when deployment, exposure period or bias adjustment are short-changed. The fundamentals are not technically demanding: fa&ccedil;ade-height siting at representative locations, monthly exposures over a continuous year, UKAS-accredited analysis, and explicit bias adjustment with documented derivation. Where these basics are in place the resulting data carry weight with local authorities and consultees alike; where they are not, the campaign is at risk of being set aside by reviewers regardless of the cost of running it.</p>
+
+          <p style="margin-top: 2rem;"><a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote &rarr;</a></p>
+        </div>
+
+        <div class="related-posts">
+          <p class="related-posts__title">More from the Blog</p>
+          <a href="blog.html" class="related-posts__link">View all articles<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Need Expert Environmental Advice?</h2>
+      <p class="cta-banner__text">Our chartered professionals are here to help with your air quality, dust or odour assessment needs.</p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--white btn--lg">Get a Free Quote</a>
+        <a href="tel:+442080503003" class="btn btn--secondary">020 8050 3003</a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark"><img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48"></div>
+            <div class="header__logo-text"><span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span><span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span></div>
+          </a>
+          <p class="footer__brand-text">Chartered air quality assessment professionals providing specialist environmental consultancy services across the United Kingdom. Led by <a href="about.html" style="color:inherit;text-decoration:underline;">Malcolm Pounder CEnv MIAQM MIEnvSc</a>.</p>
+        </div>
+        <div><h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li><li><a href="services-dust.html">Dust Monitoring</a></li><li><a href="services-odour.html">Odour Assessment</a></li><li><a href="services-noise.html">Noise Assessment</a></li><li><a href="services-lighting.html">Lighting Assessment</a></li><li><a href="services-workplace.html">Workplace Services</a></li><li><a href="dispersion-modelling.html">Dispersion Modelling</a></li><li><a href="dust-impact-assessment.html">Dust Impact Assessment</a></li><li><a href="cemp-air-quality.html">CEMP Air Quality</a></li><li><a href="restaurant-odour-assessment.html">Restaurant Odour</a></li>
+          </ul></div>
+        <div><h3 class="footer__heading">Company</h3>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="glossary.html">Glossary</a></li><li><a href="contact.html">Contact</a></li><li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul></div>
+        <div><h3 class="footer__heading">Contact</h3>
+          <div class="footer__contact-item"><a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a></div>
+          <div class="footer__contact-item"><a href="tel:+442080503003">020 8050 3003</a></div>
+          <div class="footer__contact-item"><div>United Kingdom</div></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations"><span>CEnv</span><span>MIAQM</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta-bar" aria-label="Quick contact">
+    <a href="get-a-quote.html" class="mobile-cta-bar__primary">Get a Free Quote</a>
+    <a href="https://wa.me/WHATSAPP_NUMBER_PLACEHOLDER?text=Hi%20Malcolm%2C%20I%27d%20like%20a%20quote%20for%20" class="mobile-cta-bar__whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <button class="scroll-top" aria-label="Scroll to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></button>
+  <script src="js/main.js"></script>
+</body>
+</html>
