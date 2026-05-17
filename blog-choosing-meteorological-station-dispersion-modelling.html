@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to choose a representative meteorological station for UK air quality dispersion modelling — beyond simple geographic proximity. By Malcolm Pounder CEnv MIAQM.">
+  <meta property="og:title" content="Choosing a Representative Meteorological Station for UK Dispersion Modelling | Air Dust Odour">
+  <meta property="og:description" content="Why the nearest met station is often the wrong choice — and what to consider when selecting meteorological data for ADMS-Roads, ADMS-Urban or AERMOD dispersion modelling in the UK.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/blog-choosing-meteorological-station-dispersion-modelling.html">
+  <link rel="canonical" href="https://www.airdustodour.co.uk/blog-choosing-meteorological-station-dispersion-modelling.html">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Choosing a Representative Meteorological Station for UK Dispersion Modelling | Air Dust Odour</title>
+  <!-- Article schema with author Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Choosing a Representative Meteorological Station for UK Dispersion Modelling",
+    "description": "Why the nearest met station is often the wrong choice — and what to consider when selecting meteorological data for ADMS-Roads, ADMS-Urban or AERMOD dispersion modelling in the UK.",
+    "image": "https://www.airdustodour.co.uk/images/office-sign.webp",
+    "datePublished": "2026-05-17",
+    "dateModified": "2026-05-17",
+    "mainEntityOfPage": "https://www.airdustodour.co.uk/blog-choosing-meteorological-station-dispersion-modelling.html",
+    "keywords": "meteorological station, met data, dispersion modelling, ADMS-Roads, ADMS-Urban, AERMOD, air quality assessment, windrose, UK airfields",
+    "author": {
+      "@type": "Person",
+      "@id": "https://www.airdustodour.co.uk/about.html#malcolm-pounder",
+      "name": "Malcolm Pounder",
+      "honorificSuffix": "CEnv MIAQM MIEnvSc",
+      "jobTitle": "Founder & Chartered Environmentalist",
+      "url": "https://www.airdustodour.co.uk/about.html",
+      "sameAs": ["https://www.linkedin.com/in/malcolm-pounder-a1a23842/"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Air Dust Odour",
+      "logo": {"@type": "ImageObject", "url": "https://www.airdustodour.co.uk/images/logo-dark.png"}
+    }
+  }
+  </script>
+  <!-- FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why isn't the nearest meteorological station always the best choice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Geographic proximity is only one of several factors that determine whether one location's met data is representative of another. Two stations 20 km apart can have very different wind regimes if one sits in a sheltered valley and the other on an exposed coast. Conversely, a station 60 km away on similar terrain at a similar elevation, with a similar fetch to the prevailing wind, may give a much better estimate of conditions at the modelling site than a nominally closer station behind a ridge."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What factors should I consider when selecting a meteorological station?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A defensible station selection considers at least: distance from the modelling site, similarity of terrain and surface roughness, similarity of elevation, exposure to the prevailing wind, distance to and orientation of the coast, station observation type (synoptic versus automated), and the length and completeness of the available record. For sensitive assessments, considering more than one station and presenting the choice transparently to the local authority is good practice."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where do UK meteorological data for air quality modelling come from?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Met Office's MIDAS archive (via the CEDA Archive) is the most common source of historical hourly meteorological data for the UK. Met Office MOEDAS and commercial dispersion-modelling data services repackage MIDAS data into the formats required by ADMS and AERMOD. Some sites also use NWP-derived data such as MET-NWP files where surface stations are sparse — for example, in upland or coastal locations."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "CLARITY_PROJECT_ID_PLACEHOLDER");
+  </script>
+  <style>
+    .article-column { max-width: 760px; margin: 0 auto; }
+    .article-header { margin-bottom: var(--space-xl); padding-bottom: var(--space-lg); border-bottom: 1px solid var(--clr-border, #e5e7eb); }
+    .article-header__meta { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin-bottom: var(--space-md); font-size: var(--fs-sm, 0.875rem); color: var(--clr-text-light, #6b7280); }
+    .article-header__date, .article-header__author { color: var(--clr-text-light, #6b7280); }
+    .article-header__author { font-weight: 600; }
+    .article-body h2 { margin-top: var(--space-xl); margin-bottom: var(--space-sm); font-size: 1.5rem; color: var(--clr-navy, #0d1b2e); }
+    .article-body h3 { margin-top: var(--space-lg); margin-bottom: var(--space-xs); font-size: 1.2rem; color: var(--clr-navy, #0d1b2e); }
+    .article-body p { margin-bottom: var(--space-md); line-height: 1.75; color: var(--clr-text, #374151); }
+    .article-body ul { margin-bottom: var(--space-md); padding-left: 1.5rem; }
+    .article-body ul li { margin-bottom: 0.5rem; line-height: 1.7; color: var(--clr-text, #374151); }
+    .article-body strong { color: var(--clr-navy, #0d1b2e); }
+    .article-body a { color: var(--clr-primary, #2563eb); text-decoration: underline; }
+    .pull-callout { margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: #f3f6fb; border-left: 4px solid var(--clr-primary, #2563eb); border-radius: 6px; }
+    .pull-callout p { margin: 0; color: var(--clr-navy, #0d1b2e); }
+    .related-posts { margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--clr-border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .related-posts__title { font-weight: 600; color: var(--clr-navy, #0d1b2e); }
+    .related-posts__link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: var(--fs-sm, 0.875rem); font-weight: 600; color: var(--clr-primary, #2563eb); text-decoration: none; }
+    .related-posts__link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="services.html" class="header__nav-link">Services</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="blog.html" class="header__nav-link active">Blog</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+          <li><a href="case-studies.html" class="header__nav-link">Case Studies</a></li>
+        </ul>
+        <div class="header__cta">
+          <a href="get-a-quote.html" class="btn btn--primary btn--sm">Get a Free Quote</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <a href="blog.html">Blog</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <span>Meteorological station selection</span>
+      </nav>
+      <h1 class="page-hero__title">Choosing a Representative Meteorological Station for UK Dispersion Modelling</h1>
+      <p class="page-hero__subtitle">
+        Why the nearest met station is often the wrong choice &mdash; and what a defensible selection looks like for ADMS-Roads, ADMS-Urban and AERMOD assessments.
+      </p>
+    </div>
+  </section>
+
+  <!-- Article -->
+  <section class="section">
+    <div class="container">
+      <div class="article-column fade-in">
+
+        <!-- Article Header -->
+        <div class="article-header">
+          <div class="article-header__meta">
+            <span class="blog-card__category blog-card__category--air">Air Quality</span>
+            <span class="article-header__date">May 2026</span>
+            <span class="article-header__author">By Malcolm Pounder CEnv MIAQM MIEnvSc</span>
+          </div>
+        </div>
+
+        <!-- Article Body -->
+        <div class="article-body">
+
+          <h2>Introduction</h2>
+          <p>Few decisions on an air quality assessment affect the modelled result as much as the choice of meteorological dataset. Wind speed, wind direction, atmospheric stability and boundary-layer depth all drive the dispersion of pollutants from a road, a stack or a kitchen extract. Get those wrong and the predicted ground-level concentrations can be off by enough to flip a planning recommendation from approval to refusal &mdash; or, just as bad, to wave through a development that should have triggered mitigation.</p>
+          <p>And yet the most common approach in practice is also the most defensible-sounding and the most wrong: pick the nearest meteorological station and use whatever data come out. This article sets out why &ldquo;nearest&rdquo; is rarely a good enough answer, what a representative station actually looks like, and how to structure the choice so that it stands up to local-authority scrutiny.</p>
+
+          <div class="pull-callout">
+            <p>The nearest met station is rarely the most representative. Distance is one criterion among many &mdash; not the only one.</p>
+          </div>
+
+          <h2>Why Met Data Matters in Air Quality Assessments</h2>
+          <p>Dispersion models such as ADMS-Roads, ADMS-Urban and AERMOD use hourly meteorological data to drive their dispersion algorithms. The model needs to know, for each hour of the year, the wind speed, wind direction, temperature, cloud cover, precipitation and other variables that determine how a plume behaves once it leaves the source.</p>
+          <p>From those hourly inputs the model derives the atmospheric stability class (or in the case of ADMS, the boundary-layer parameters directly), which governs how readily a plume mixes vertically and horizontally. A change of stability class can change the predicted ground-level concentration by a factor of two or more for the same source. The choice of input data is therefore not a peripheral decision; it is the foundation on which every result rests.</p>
+
+          <h2>The &ldquo;Nearest Station&rdquo; Mistake</h2>
+          <p>The intuition that the nearest met station must be the most representative is rooted in a reasonable starting assumption: weather is, broadly, a regional phenomenon. Over very flat, very homogeneous terrain that assumption holds tolerably well. Over much of the UK it does not.</p>
+          <p>Consider three real situations any UK practitioner will recognise:</p>
+          <ul>
+            <li><strong>The coastal-to-inland transition.</strong> A coastal airfield will record a wind regime dominated by sea breezes and a constrained range of wind directions tied to the orientation of the coastline. Inland, only 30&ndash;40 km away, the wind rose can be very different.</li>
+            <li><strong>The upland-to-lowland transition.</strong> A station at 200 m above sea level on the flanks of the Pennines will record higher mean wind speeds, different stability distributions and a different prevailing direction than a site 25 km away in a sheltered river valley.</li>
+            <li><strong>The urban heat island.</strong> Met stations in major cities record reduced overnight stability and elevated minimum temperatures relative to rural stations only a short distance away. Using rural data to model an urban site (or vice versa) will systematically bias the predicted concentrations.</li>
+          </ul>
+          <p>In each of these cases the nearest station may be the worst choice. A station further away, but on terrain that resembles the modelling site, will produce more reliable results &mdash; and is more defensible if challenged.</p>
+
+          <h2>What Makes One Station Representative of Another Location?</h2>
+          <p>A representative station is one whose meteorological conditions can reasonably be assumed to resemble those at the modelling site, across the variables that matter for dispersion. In practice that judgement rests on several independent criteria, each of which can move the answer in or out of acceptability:</p>
+          <ul>
+            <li><strong>Distance.</strong> Closer is generally better, all else being equal &mdash; but rarely the deciding factor on its own.</li>
+            <li><strong>Terrain and elevation.</strong> A modelling site at 50 m above sea level is poorly represented by a station at 250 m, and vice versa. Surface roughness (urban, suburban, rural, open water) should also match if possible.</li>
+            <li><strong>Coastal influence.</strong> Sites within around 5 km of the coast experience meteorology dominated by land&ndash;sea temperature differences. Coastal-to-coastal or inland-to-inland comparisons are usually preferable to mixing the two.</li>
+            <li><strong>Exposure to the prevailing wind.</strong> A station sheltered behind a ridge in the prevailing wind direction will under-represent typical wind speeds. The fetch upwind of both station and modelling site matters.</li>
+            <li><strong>Station observation type.</strong> Synoptic stations with trained observers historically produce higher-quality cloud-cover and precipitation observations than fully automated stations. Modern automated stations are perfectly serviceable for most dispersion work but the distinction is worth keeping in mind for sensitive assessments.</li>
+            <li><strong>Record length and completeness.</strong> A short or gap-filled record reduces statistical reliability. Five years of complete hourly data is the conventional minimum; some authorities and some applications expect longer.</li>
+          </ul>
+
+          <h2>A Practical Selection Procedure</h2>
+          <p>The most defensible approach is to make the selection visible. Rather than naming one station in passing and moving on, the assessment should record:</p>
+          <ul>
+            <li>The candidate stations considered (typically the three to five most plausible options within a reasonable radius)</li>
+            <li>The basis on which each was retained or excluded &mdash; usually a short table covering the criteria above</li>
+            <li>The years of data used and the source (Met Office MIDAS archive via the CEDA Archive is the standard reference)</li>
+            <li>Where appropriate, a sensitivity test using a second station to demonstrate that the result is not unduly dependent on the choice</li>
+          </ul>
+          <p>This level of documentation rarely adds more than half a page to the assessment but transforms how it is received. A planning officer reading a met-data section that names one station with no justification has to take the choice on trust. A section that walks through the alternatives, classifies them on multiple axes and explains the decision is materially harder to challenge.</p>
+
+          <h2>UK Meteorological Data Sources</h2>
+          <p>For a UK assessment, the practical options are:</p>
+          <ul>
+            <li><strong>Met Office MIDAS archive (CEDA).</strong> Hourly surface observations from the historic UK surface network. The reference source for academic and consultancy dispersion modelling. Free for academic use; commercial use is licensed.</li>
+            <li><strong>Met Office MOEDAS and commercial repackagers.</strong> The same underlying data prepared in ADMS-ready or AERMOD-ready formats, with quality control and gap-filling applied.</li>
+            <li><strong>Numerical weather prediction (NWP) data.</strong> For sites with no nearby surface station, gridded NWP data can be used to derive a synthetic met dataset. NWP data avoids the representativeness problem geographically &mdash; the cell can be centred on the modelling site &mdash; but loses the local roughness signal that a real surface station captures.</li>
+          </ul>
+
+          <h2>Common Errors Reviewers Spot</h2>
+          <p>From reviewing other consultancies' assessments on behalf of clients, the recurring problems are predictable:</p>
+          <ul>
+            <li>One station named with no justification, often the nearest by straight-line distance</li>
+            <li>Coastal data used for inland sites or vice versa, with no acknowledgement</li>
+            <li>Three years of data used where five is the convention &mdash; sometimes the only three years for which the consultant happens to have a licence</li>
+            <li>A station with a long-term mean wind speed obviously incompatible with the modelling site (e.g. exposed coastal station used for a sheltered urban courtyard)</li>
+            <li>No windrose presented at all, leaving the reviewer with no way to sanity-check the data</li>
+          </ul>
+          <p>Each of these is fixable with a small amount of additional work at the scoping stage. None of them is fixable cheaply once the model has been run and the report drafted.</p>
+
+          <h2>How Air Dust Odour Approaches Met Station Selection</h2>
+          <p>At Air Dust Odour we maintain an internal reference library of windroses and summary statistics for the principal UK airfield meteorological stations. Each station is classified against a small number of independent axes &mdash; distance, terrain, elevation, coastal influence, prevailing-wind fetch, observation type &mdash; and selection for any given assessment runs through a structured procedure rather than a default to the nearest record. The result is a met-data section that names a specific station, explains why, and tabulates the alternatives that were considered and rejected. Reviewing officers consistently respond well to this format.</p>
+          <p>For more detail on how we structure air quality assessments end-to-end, see our pages on <a href="services-air.html">air quality assessments</a> and <a href="dispersion-modelling.html">dispersion modelling</a>, or get in touch via the form below.</p>
+
+          <h2>Conclusion</h2>
+          <p>Meteorological station selection is one of the few decisions on an air quality assessment that can change the answer materially without changing anything about the source or the receptors. Reaching for the nearest station is rarely wrong on its face but often wrong in fact. A defensible selection considers distance, terrain, elevation, coastal influence, exposure and observation type; presents the choice transparently; and where the answer is finely balanced, demonstrates robustness with a second-station sensitivity test. The additional effort is modest. The reduction in risk to the planning recommendation is not.</p>
+
+          <p style="margin-top: 2rem;">
+            <a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote &rarr;</a>
+          </p>
+
+        </div>
+        <!-- /Article Body -->
+
+        <!-- Related Posts -->
+        <div class="related-posts">
+          <p class="related-posts__title">More from the Blog</p>
+          <a href="blog.html" class="related-posts__link">
+            View all articles
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Related glossary terms -->
+  <section class="section section--grey fade-in" style="padding-top:2rem;padding-bottom:2rem;">
+    <div class="container">
+      <div style="text-align:center;max-width:760px;margin:0 auto;">
+        <span class="section-label">Related Terms</span>
+        <h2 style="font-size:1.4rem;margin-bottom:0.5rem;">Terms you'll see on this page</h2>
+        <p style="color:var(--clr-text-light, #6b7280);font-size:0.95rem;line-height:1.6;margin-bottom:1.5rem;">Plain-English definitions in our <a href="glossary.html" style="color:var(--clr-primary, #2563eb);text-decoration:underline;">air quality glossary</a>.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
+          <a href="glossary.html" style="display:inline-flex;align-items:center;padding:6px 12px;background:#eff6ff;color:var(--clr-primary, #2563eb);border:1px solid #bfdbfe;border-radius:999px;font-size:0.825rem;font-weight:500;text-decoration:none;">ADMS-Roads</a>
+          <a href="glossary.html" style="display:inline-flex;align-items:center;padding:6px 12px;background:#eff6ff;color:var(--clr-primary, #2563eb);border:1px solid #bfdbfe;border-radius:999px;font-size:0.825rem;font-weight:500;text-decoration:none;">AERMOD</a>
+          <a href="glossary.html" style="display:inline-flex;align-items:center;padding:6px 12px;background:#eff6ff;color:var(--clr-primary, #2563eb);border:1px solid #bfdbfe;border-radius:999px;font-size:0.825rem;font-weight:500;text-decoration:none;">Dispersion Modelling</a>
+          <a href="glossary.html" style="display:inline-flex;align-items:center;padding:6px 12px;background:#eff6ff;color:var(--clr-primary, #2563eb);border:1px solid #bfdbfe;border-radius:999px;font-size:0.825rem;font-weight:500;text-decoration:none;">Windrose</a>
+          <a href="glossary.html" style="display:inline-flex;align-items:center;padding:6px 12px;background:#eff6ff;color:var(--clr-primary, #2563eb);border:1px solid #bfdbfe;border-radius:999px;font-size:0.825rem;font-weight:500;text-decoration:none;">Boundary Layer</a>
+          <a href="glossary.html" style="display:inline-flex;align-items:center;padding:6px 12px;background:#eff6ff;color:var(--clr-primary, #2563eb);border:1px solid #bfdbfe;border-radius:999px;font-size:0.825rem;font-weight:500;text-decoration:none;">Atmospheric Stability</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Need Expert Environmental Advice?</h2>
+      <p class="cta-banner__text">
+        Our chartered professionals are here to help with your air quality, dust or odour assessment needs.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--white btn--lg">
+          Get a Free Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+442080503003" class="btn btn--secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          020 8050 3003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered air quality assessment professionals providing specialist environmental consultancy services across the United Kingdom. Led by <a href="about.html" style="color:inherit;text-decoration:underline;">Malcolm Pounder CEnv MIAQM MIEnvSc</a>.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust Monitoring</a></li>
+            <li><a href="services-odour.html">Odour Assessment</a></li>
+            <li><a href="services-noise.html">Noise Assessment</a></li>
+            <li><a href="services-lighting.html">Lighting Assessment</a></li>
+            <li><a href="services-workplace.html">Workplace Services</a></li>
+            <li><a href="dispersion-modelling.html">Dispersion Modelling</a></li>
+            <li><a href="dust-impact-assessment.html">Dust Impact Assessment</a></li>
+            <li><a href="cemp-air-quality.html">CEMP Air Quality</a></li>
+            <li><a href="restaurant-odour-assessment.html">Restaurant Odour</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Company</h3>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> CEnv</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg> MIAQM</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile CTA bar -->
+  <div class="mobile-cta-bar" aria-label="Quick contact">
+    <a href="get-a-quote.html" class="mobile-cta-bar__primary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" style="vertical-align:-3px;margin-right:6px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Get a Free Quote
+    </a>
+    <a href="https://wa.me/WHATSAPP_NUMBER_PLACEHOLDER?text=Hi%20Malcolm%2C%20I%27d%20like%20a%20quote%20for%20" class="mobile-cta-bar__whatsapp" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="vertical-align:-3px;margin-right:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.464 3.488"/></svg>WhatsApp
+    </a>
+  </div>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
