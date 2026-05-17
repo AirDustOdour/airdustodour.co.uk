@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A practical guide to Air Quality Neutral assessments under London Plan Policy SI 1 — the building emissions test, the transport emissions test, benchmarks, common pitfalls, and how AQ Neutral differs from a standard AQA. By Malcolm Pounder CEnv MIAQM MIEnvSc.">
+  <meta property="og:title" content="Air Quality Neutral Assessments Under London Plan Policy SI 1 | Air Dust Odour">
+  <meta property="og:description" content="What an Air Quality Neutral assessment is, when London developers need one, how the two-stage test works, and where most submissions go wrong.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://www.airdustodour.co.uk/images/office-sign.webp">
+  <meta property="og:url" content="https://www.airdustodour.co.uk/blog-air-quality-neutral-london-plan-si1.html">
+  <link rel="canonical" href="https://www.airdustodour.co.uk/blog-air-quality-neutral-london-plan-si1.html">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Air Quality Neutral Assessments Under London Plan Policy SI 1 | Air Dust Odour</title>
+  <!-- Article schema with author Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Air Quality Neutral Assessments Under London Plan Policy SI 1",
+    "description": "A practical guide to Air Quality Neutral assessments under London Plan Policy SI 1 — the building emissions test, the transport emissions test, benchmarks, common pitfalls, and how AQ Neutral differs from a standard AQA.",
+    "image": "https://www.airdustodour.co.uk/images/office-sign.webp",
+    "datePublished": "2026-04-20",
+    "dateModified": "2026-05-17",
+    "mainEntityOfPage": "https://www.airdustodour.co.uk/blog-air-quality-neutral-london-plan-si1.html",
+    "keywords": "Air Quality Neutral, London Plan, Policy SI 1, AQ Neutral, AQ Positive, LAEI, building emissions benchmark, transport emissions benchmark, GLA",
+    "author": {
+      "@type": "Person",
+      "@id": "https://www.airdustodour.co.uk/about.html#malcolm-pounder",
+      "name": "Malcolm Pounder",
+      "honorificSuffix": "CEnv MIAQM MIEnvSc",
+      "jobTitle": "Founder & Chartered Environmentalist",
+      "url": "https://www.airdustodour.co.uk/about.html",
+      "sameAs": ["https://www.linkedin.com/in/malcolm-pounder-a1a23842/"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Air Dust Odour",
+      "logo": {"@type": "ImageObject", "url": "https://www.airdustodour.co.uk/images/logo-dark.png"}
+    }
+  }
+  </script>
+  <!-- FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does Air Quality Neutral mean under the London Plan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Air Quality Neutral is a London-specific planning requirement set out in London Plan Policy SI 1. It requires that a major development's emissions from both buildings and transport do not exceed published benchmarks, and where benchmarks are exceeded that the residual emissions are offset. The aim is to ensure new development in London does not worsen the city's air quality."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does my London development need an Air Quality Neutral assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Policy SI 1 applies to major developments in London — typically defined as residential schemes of ten or more units, or non-residential schemes above 1,000 square metres. Smaller schemes are normally exempt, though the local borough's policies should always be checked, as some boroughs apply tighter thresholds in supplementary planning documents."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Air Quality Neutral differ from a standard air quality assessment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A standard air quality assessment (AQA) considers the change in ambient pollutant concentrations at sensitive receptors. An Air Quality Neutral assessment is a benchmark-based emissions exercise: it compares the building's emissions per square metre, and the development's transport emissions per square metre, against published GLA benchmarks. The two assessments are complementary — a London major development typically needs both."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4B4T4HJ9Q');
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "CLARITY_PROJECT_ID_PLACEHOLDER");
+  </script>
+  <style>
+    .article-column { max-width: 760px; margin: 0 auto; }
+    .article-header { margin-bottom: var(--space-xl); padding-bottom: var(--space-lg); border-bottom: 1px solid var(--clr-border, #e5e7eb); }
+    .article-header__meta { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin-bottom: var(--space-md); font-size: var(--fs-sm, 0.875rem); color: var(--clr-text-light, #6b7280); }
+    .article-header__date, .article-header__author { color: var(--clr-text-light, #6b7280); }
+    .article-header__author { font-weight: 600; }
+    .article-body h2 { margin-top: var(--space-xl); margin-bottom: var(--space-sm); font-size: 1.5rem; color: var(--clr-navy, #0d1b2e); }
+    .article-body h3 { margin-top: var(--space-lg); margin-bottom: var(--space-xs); font-size: 1.2rem; color: var(--clr-navy, #0d1b2e); }
+    .article-body p { margin-bottom: var(--space-md); line-height: 1.75; color: var(--clr-text, #374151); }
+    .article-body ul { margin-bottom: var(--space-md); padding-left: 1.5rem; }
+    .article-body ul li { margin-bottom: 0.5rem; line-height: 1.7; color: var(--clr-text, #374151); }
+    .article-body strong { color: var(--clr-navy, #0d1b2e); }
+    .article-body a { color: var(--clr-primary, #2563eb); text-decoration: underline; }
+    .pull-callout { margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: #f3f6fb; border-left: 4px solid var(--clr-primary, #2563eb); border-radius: 6px; }
+    .pull-callout p { margin: 0; color: var(--clr-navy, #0d1b2e); }
+    .related-posts { margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--clr-border, #e5e7eb); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .related-posts__title { font-weight: 600; color: var(--clr-navy, #0d1b2e); }
+    .related-posts__link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: var(--fs-sm, 0.875rem); font-weight: 600; color: var(--clr-primary, #2563eb); text-decoration: none; }
+    .related-posts__link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-mark">
+          <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+        </div>
+        <div class="header__logo-text">
+          <span class="header__logo-name">Air Dust Odour</span>
+          <span class="header__logo-tagline">The Air, Dust and Odour Specialists</span>
+        </div>
+      </a>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="services.html" class="header__nav-link">Services</a></li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li><a href="blog.html" class="header__nav-link active">Blog</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+          <li><a href="case-studies.html" class="header__nav-link">Case Studies</a></li>
+        </ul>
+        <div class="header__cta">
+          <a href="get-a-quote.html" class="btn btn--primary btn--sm">Get a Free Quote</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <a href="blog.html">Blog</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <span>Air Quality Neutral under London Plan SI 1</span>
+      </nav>
+      <h1 class="page-hero__title">Air Quality Neutral Assessments Under London Plan Policy SI 1</h1>
+      <p class="page-hero__subtitle">
+        A practical guide to the building emissions test, the transport emissions test, GLA benchmarks, and how AQ Neutral differs from a standard air quality assessment.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="article-column fade-in">
+
+        <div class="article-header">
+          <div class="article-header__meta">
+            <span class="blog-card__category blog-card__category--air">Air Quality</span>
+            <span class="article-header__date">April 2026</span>
+            <span class="article-header__author">By Malcolm Pounder CEnv MIAQM MIEnvSc</span>
+          </div>
+        </div>
+
+        <div class="article-body">
+
+          <h2>Introduction</h2>
+          <p>Major development in London faces a planning policy regime that has no direct equivalent in the rest of England. Policy SI 1 of the London Plan introduces a benchmark-based emissions test &mdash; <strong>Air Quality Neutral</strong> &mdash; that operates in parallel with, not instead of, the conventional air quality assessment based on dispersion modelling and receptor impact. The two are routinely confused, and as a result a significant proportion of AQ Neutral submissions to London boroughs are either incomplete, misapplied, or treat the assessment as a tick-box rather than a quantitative test.</p>
+          <p>This article sets out what AQ Neutral is, what it isn&rsquo;t, when it applies, how the two-stage test works in practice, and the most common ways developers and their consultants come unstuck.</p>
+
+          <div class="pull-callout">
+            <p>Air Quality Neutral is a London-specific emissions benchmark test. It is not the same as &mdash; and does not replace &mdash; a conventional air quality assessment.</p>
+          </div>
+
+          <h2>The Policy Context</h2>
+          <p>The London Plan 2021, adopted by the Greater London Authority (GLA), contains Policy SI 1 (&ldquo;Improving air quality&rdquo;). The policy requires major developments to:</p>
+          <ul>
+            <li><strong>Demonstrate that they are at least Air Quality Neutral</strong>, with reference to benchmarks for emissions from buildings and from associated transport</li>
+            <li><strong>Demonstrate that they are at least Air Quality Positive</strong> in the case of larger schemes, opportunity areas and area-wide regeneration, by going beyond the neutral benchmark</li>
+            <li>Not introduce sensitive receptors into locations of poor air quality without appropriate design responses</li>
+            <li>Contribute to delivering the Mayor&rsquo;s Air Quality Strategy</li>
+          </ul>
+          <p>Supporting GLA guidance &mdash; most recently the <em>Air Quality Neutral Planning Guidance</em> Local Plan Guidance (LPG) &mdash; sets out the benchmark methodology, the input data required, and the format the assessment should take. Borough-level supplementary planning documents may add further requirements.</p>
+
+          <h2>When AQ Neutral Applies</h2>
+          <p>Policy SI 1 applies to <strong>major developments</strong> in London, defined for these purposes as residential schemes of ten or more units, or non-residential schemes with a gross floorspace of 1,000 m&sup2; or more. Smaller schemes are normally exempt at the London Plan level, although individual boroughs may apply lower thresholds through their local plans or SPDs.</p>
+          <p>Where the development is a referable application &mdash; that is, large enough to require the Mayor&rsquo;s direct involvement &mdash; the AQ Neutral assessment is reviewed by GLA officers as part of stage one and stage two consultation. Where the application sits below the referral threshold, the borough planning officer is normally the sole reviewer.</p>
+
+          <h2>The Two-Stage Test</h2>
+          <p>An Air Quality Neutral assessment has two independent stages. A scheme must pass both.</p>
+
+          <h3>Stage 1: Building Emissions Benchmark</h3>
+          <p>The building emissions test estimates the kilograms of nitrogen oxides (NO<sub>x</sub>) per year per square metre of floorspace that the development is expected to emit from on-site energy generation &mdash; principally combustion of gas in boilers, but also any combined heat and power (CHP) plant, standby generators tested under load, and similar fixed sources.</p>
+          <p>The estimated emissions are compared against the GLA-published benchmark for the relevant land use class. If the estimated emissions exceed the benchmark, the excess must be offset &mdash; typically by financial contribution to the borough&rsquo;s air quality fund, calculated using the GLA&rsquo;s published rate per kilogram NO<sub>x</sub> per year.</p>
+          <p>In practice the building emissions stage is usually passed comfortably by all-electric schemes, by schemes connected to a district heat network with a clean primary fuel, and by schemes that adopt low-NO<sub>x</sub> boiler specifications. It is most likely to fail for schemes that retain gas boilers, particularly larger commercial schemes with substantial space-heating loads, and for schemes with significant CHP.</p>
+
+          <h3>Stage 2: Transport Emissions Benchmark</h3>
+          <p>The transport emissions test estimates the kilograms of NO<sub>x</sub> per year per square metre of floorspace that arise from vehicle movements generated by the development &mdash; commuting trips for residential, customer and staff trips for retail and commercial, and service vehicle movements for all land uses.</p>
+          <p>The trip generation is normally derived from TRICS or the equivalent transport assessment work for the application, and converted to NO<sub>x</sub> emissions using emission factors consistent with the London Atmospheric Emissions Inventory (LAEI). The result is compared against the published benchmark for the land use class.</p>
+          <p>Transport emissions failure is more common than building emissions failure in our experience. The drivers tend to be car-dominated locations (low PTAL ratings), high-trip-generating land uses (retail particularly), and schemes with under-provided active travel infrastructure. Failure typically requires an offset payment, but in some cases the borough will look for design responses &mdash; better cycle parking, more car club bays, electric vehicle charging at a higher provision rate &mdash; before accepting financial contribution.</p>
+
+          <h2>AQ Neutral versus AQ Positive</h2>
+          <p>Air Quality Positive is a higher bar than Air Quality Neutral, applied to larger schemes and to opportunity-area master planning. Rather than meeting a benchmark, an AQ Positive scheme is expected to actively improve air quality compared with the baseline. The supporting guidance lists a set of design measures that can be drawn on &mdash; tree planting, green walls, urban shielding, low-NO<sub>x</sub> specifications, district heating, last-mile freight consolidation &mdash; and the assessment narrates and quantifies how the scheme delivers against them.</p>
+          <p>For most individual major applications, AQ Neutral is the relevant test. For Opportunity Area Planning Frameworks, large estate regeneration and strategic master plans, AQ Positive is the standard.</p>
+
+          <h2>Common Mistakes</h2>
+          <p>From reviewing other practices&rsquo; work on behalf of developers, the recurring problems are:</p>
+          <ul>
+            <li>Treating AQ Neutral as a narrative exercise &mdash; words rather than benchmarked emissions calculations</li>
+            <li>Using out-of-date GLA benchmarks &mdash; the values are periodically refreshed and the current guidance should always be cross-checked at the date of submission</li>
+            <li>Omitting CHP or standby generator emissions from the building stage on the grounds that they are &ldquo;only standby&rdquo; &mdash; testing-under-load hours are emissions and need to be included</li>
+            <li>Drawing trip generation from a transport assessment that has been optimised for a different planning purpose &mdash; numbers should be internally consistent across the application</li>
+            <li>Submitting AQ Neutral in place of a conventional AQA, or vice versa &mdash; the two are complementary; most major schemes need both</li>
+            <li>Forgetting that AQ Neutral is a London-specific requirement and not applying it to schemes in adjacent local authorities outside the GLA boundary</li>
+          </ul>
+
+          <h2>How AQ Neutral Relates to a Standard AQA</h2>
+          <p>A standard air quality assessment evaluates the change in ambient concentrations of NO<sub>2</sub>, PM<sub>10</sub> and PM<sub>2.5</sub> at sensitive receptors arising from the development &mdash; using dispersion modelling for traffic-generated emissions, and DEFRA background data. Its output is a change in micrograms per cubic metre at named receptors, judged against the national air quality objectives and IAQM significance criteria.</p>
+          <p>An AQ Neutral assessment, by contrast, is a benchmark-based emissions inventory: it produces kilograms of NO<sub>x</sub> per year per square metre and compares against a published threshold.</p>
+          <p>The two answer different questions. The AQA answers &ldquo;what does this development do to local air quality at the receptors?&rdquo;. AQ Neutral answers &ldquo;is the emission rate of this development within the GLA benchmark for its land use?&rdquo;. A London major development typically needs both, and a competent submission addresses each clearly and separately.</p>
+
+          <h2>Air Dust Odour</h2>
+          <p>Air Dust Odour prepares Air Quality Neutral assessments for London developers under the current GLA Local Plan Guidance, alongside standard air quality assessments and dispersion modelling for the same applications. Every project is led personally by a Chartered Environmentalist. Get in touch via the form below or see <a href="services-air.html">air quality services</a> for more detail on the offering.</p>
+
+          <h2>Conclusion</h2>
+          <p>Air Quality Neutral is a benchmark-based emissions test specific to London that operates in parallel with the conventional air quality assessment, not in place of it. Both stages of the test &mdash; building emissions and transport emissions &mdash; need to be addressed with quantitative inputs, current GLA benchmarks, and offset arrangements where appropriate. Getting AQ Neutral wrong delays a London application; getting it right is straightforward with current guidance and structured calculation.</p>
+
+          <p style="margin-top: 2rem;">
+            <a href="get-a-quote.html" class="btn btn--primary">Get a Free Quote &rarr;</a>
+          </p>
+
+        </div>
+
+        <div class="related-posts">
+          <p class="related-posts__title">More from the Blog</p>
+          <a href="blog.html" class="related-posts__link">
+            View all articles
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__title">Need Expert Environmental Advice?</h2>
+      <p class="cta-banner__text">
+        Our chartered professionals are here to help with your air quality, dust or odour assessment needs.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="get-a-quote.html" class="btn btn--white btn--lg">Get a Free Quote</a>
+        <a href="tel:+442080503003" class="btn btn--secondary">020 8050 3003</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" style="margin-bottom: var(--space-sm);">
+            <div class="header__logo-mark">
+              <img src="images/logo-dark.png" alt="Air Dust Odour" width="48" height="48">
+            </div>
+            <div class="header__logo-text">
+              <span class="header__logo-name" style="color:var(--clr-white)">Air Dust Odour</span>
+              <span class="header__logo-tagline" style="color:rgba(255,255,255,0.5)">The Air, Dust and Odour Specialists</span>
+            </div>
+          </a>
+          <p class="footer__brand-text">Chartered air quality assessment professionals providing specialist environmental consultancy services across the United Kingdom. Led by <a href="about.html" style="color:inherit;text-decoration:underline;">Malcolm Pounder CEnv MIAQM MIEnvSc</a>.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <ul class="footer__links">
+            <li><a href="services-air.html">Air Quality</a></li>
+            <li><a href="services-dust.html">Dust Monitoring</a></li>
+            <li><a href="services-odour.html">Odour Assessment</a></li>
+            <li><a href="services-noise.html">Noise Assessment</a></li>
+            <li><a href="services-lighting.html">Lighting Assessment</a></li>
+            <li><a href="services-workplace.html">Workplace Services</a></li>
+            <li><a href="dispersion-modelling.html">Dispersion Modelling</a></li>
+            <li><a href="dust-impact-assessment.html">Dust Impact Assessment</a></li>
+            <li><a href="cemp-air-quality.html">CEMP Air Quality</a></li>
+            <li><a href="restaurant-odour-assessment.html">Restaurant Odour</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Company</h3>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="get-a-quote.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <div class="footer__contact-item">
+            <a href="mailto:info@airdustodour.co.uk">info@airdustodour.co.uk</a>
+          </div>
+          <div class="footer__contact-item">
+            <a href="tel:+442080503003">020 8050 3003</a>
+          </div>
+          <div class="footer__contact-item">
+            <div>United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Air Dust Odour. All rights reserved.</p>
+        <div class="footer__accreditations">
+          <span>CEnv</span>
+          <span>MIAQM</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta-bar" aria-label="Quick contact">
+    <a href="get-a-quote.html" class="mobile-cta-bar__primary">Get a Free Quote</a>
+    <a href="https://wa.me/WHATSAPP_NUMBER_PLACEHOLDER?text=Hi%20Malcolm%2C%20I%27d%20like%20a%20quote%20for%20" class="mobile-cta-bar__whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
