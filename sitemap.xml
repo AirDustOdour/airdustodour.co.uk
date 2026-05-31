@@ -1483,4 +1483,76 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Workplace exposure monitoring (topical service pages) -->
+  <url>
+    <loc>https://www.airdustodour.co.uk/workplace-exposure-monitoring.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/wood-dust-monitoring.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/flour-dust-monitoring.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/grain-dust-monitoring.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/inhalable-dust-monitoring.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/respirable-dust-monitoring.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/cement-dust-monitoring.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.airdustodour.co.uk/workplace-exposure-monitoring-cost-uk.html</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Workplace dust monitoring (regional landing pages — industrial heartlands Phase 1) -->
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-sunderland.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-newcastle.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-gateshead.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-middlesbrough.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-sheffield.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-rotherham.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-leeds.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-bradford.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-hull.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-manchester.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-bolton.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-birmingham.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-coventry.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-wolverhampton.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-stoke-on-trent.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-cardiff.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-swansea.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-glasgow.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-aberdeen.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.airdustodour.co.uk/workplace-dust-monitoring-belfast.html</loc><lastmod>2026-05-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
 </urlset>
