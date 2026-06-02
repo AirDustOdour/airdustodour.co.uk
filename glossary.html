@@ -32,10 +32,13 @@
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4B4T4HJ9Q"></script>
   <script>
+    // Internal traffic exclusion. Visit /?ga_dev=1 once on any device to opt out
+    // of GA4 tracking from that browser; /?ga_dev=0 to opt back in.
+    (function(){var p=new URLSearchParams(location.search);if(p.get('ga_dev')==='1'){document.cookie='ado_internal=1;path=/;max-age=315360000;SameSite=Lax';}else if(p.get('ga_dev')==='0'){document.cookie='ado_internal=;path=/;max-age=0;SameSite=Lax';}})();
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-P4B4T4HJ9Q');
+    gtag('config', 'G-P4B4T4HJ9Q', document.cookie.indexOf('ado_internal=1')!==-1?{traffic_type:'internal'}:{});
   </script>
   <style>
     /* Services dropdown */
