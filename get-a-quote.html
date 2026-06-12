@@ -351,5 +351,23 @@
   </button>
 
   <script src="js/main.js"></script>
+  <script>
+    // GA4 Key Event: fire generate_lead when the quote form is submitted.
+    // Uses transport_type 'beacon' because Formspree redirects to its own
+    // thank-you page immediately, so the page unloads before a normal
+    // gtag call would finish.
+    (function(){
+      var form = document.querySelector('form[action*="formspree.io"]');
+      if (!form) return;
+      form.addEventListener('submit', function(){
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', {
+            form_id: 'quote_form',
+            transport_type: 'beacon'
+          });
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
