@@ -1780,7 +1780,7 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
 .service-page__faq-item {
   background: var(--clr-white);
   border: 1px solid var(--clr-border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-md);
   overflow: hidden;
   transition: box-shadow 0.2s ease;
 }
@@ -2612,4 +2612,685 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
   body { padding-bottom: 64px; }
   /* Lift scroll-top above the CTA bar when both are visible */
   .scroll-top { bottom: 80px !important; }
+}
+
+/* ---------- Older location template ----------
+   78 air-quality-assessment-* pages use site-header / site-footer markup.
+   These rules mirror the main template so those pages render the same. */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--clr-border);
+  z-index: 1000;
+}
+
+.site-header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  height: 100%;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.site-logo img {
+  height: 64px;
+  width: auto;
+}
+
+.site-nav > ul {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.site-nav > ul > li {
+  position: relative;
+}
+
+.site-nav > ul > li > a:not(.btn) {
+  display: inline-block;
+  padding: var(--space-sm) 0;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--clr-dark-grey);
+}
+
+.site-nav > ul > li > a:not(.btn):hover {
+  color: var(--clr-primary);
+}
+
+.has-dropdown > a::after {
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: 2px;
+  border: 4px solid transparent;
+  border-top-color: currentColor;
+  border-bottom: 0;
+}
+
+/* Main-header variant on 44 location pages: li.header__nav-item--dropdown > ul.header__dropdown */
+.header__nav-item--dropdown {
+  position: relative;
+}
+
+.header__nav-item--dropdown::after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  margin-top: -2px;
+  border: 4px solid transparent;
+  border-top-color: var(--clr-dark-grey);
+  border-bottom: 0;
+  pointer-events: none;
+}
+
+.dropdown,
+.header__dropdown {
+  position: absolute;
+  top: 100%;
+  left: -1rem;
+  min-width: 240px;
+  margin-top: var(--space-sm);
+  padding: var(--space-sm) 0;
+  background: var(--clr-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: opacity var(--transition-fast), transform var(--transition-fast), visibility var(--transition-fast);
+}
+
+/* Bridge the gap so the menu stays open while the pointer moves onto it */
+.dropdown::before,
+.header__dropdown::before {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--space-sm));
+  left: 0;
+  right: 0;
+  height: var(--space-sm);
+}
+
+.has-dropdown:hover > .dropdown,
+.has-dropdown:focus-within > .dropdown,
+.header__nav-item--dropdown:hover > .header__dropdown,
+.header__nav-item--dropdown:focus-within > .header__dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.dropdown a,
+.header__dropdown a {
+  display: block;
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--fs-sm);
+  color: var(--clr-dark-grey);
+}
+
+.dropdown a:hover,
+.header__dropdown a:hover {
+  background: var(--clr-off-white);
+  color: var(--clr-primary);
+}
+
+/* Same values as btn--primary btn--sm, which the main header pairs it with */
+.btn--nav {
+  padding: 0.625rem 1.25rem;
+  font-size: var(--fs-sm);
+  background: var(--clr-primary);
+  color: var(--clr-white);
+  border-color: var(--clr-primary);
+}
+
+.btn--nav:hover {
+  background: var(--clr-primary-light);
+  border-color: var(--clr-primary-light);
+}
+
+/* Hero: the older template uses a bare h1 and nav.breadcrumb */
+.page-hero--location h1 {
+  color: var(--clr-white);
+  font-size: var(--fs-4xl);
+  margin-bottom: var(--space-md);
+}
+
+.page-hero .breadcrumb ol,
+.page-hero ol.breadcrumb,
+.page-hero__breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  list-style: none;
+  font-size: var(--fs-sm);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.page-hero__breadcrumb ol {
+  margin-bottom: 0;
+}
+
+.page-hero__breadcrumb li {
+  list-style: none;
+}
+
+.page-hero .breadcrumb li + li::before,
+.page-hero__breadcrumb li + li::before {
+  content: "/";
+  margin-right: var(--space-sm);
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.page-hero .breadcrumb a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.page-hero .breadcrumb a:hover {
+  color: var(--clr-accent);
+}
+
+/* Sections (the main template applies these class names to inner grids, so reset them here) */
+section.service-page__intro,
+section.service-page__offerings,
+section.service-page__standards,
+section.faq-section {
+  display: block;
+  padding: var(--space-4xl) 0;
+}
+
+section.service-page__offerings,
+section.faq-section {
+  background: var(--clr-off-white);
+}
+
+section.service-page__offerings h2,
+section.service-page__standards h2,
+section.faq-section h2 {
+  font-size: var(--fs-2xl);
+  margin-bottom: var(--space-xl);
+}
+
+section.faq-section h2 {
+  text-align: center;
+}
+
+.service-page__intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.service-page__intro-aside {
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-lg));
+}
+
+.quick-contact,
+.service-page__quick-contact {
+  background: var(--clr-primary-subtle);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+}
+
+.quick-contact h3,
+.service-page__quick-contact h3 {
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.quick-contact p,
+.service-page__quick-contact p {
+  font-size: var(--fs-sm);
+  color: var(--clr-text-light);
+  line-height: 1.6;
+  margin-bottom: var(--space-lg);
+}
+
+.quick-contact .btn,
+.service-page__quick-contact .btn,
+.btn--block {
+  width: 100%;
+  justify-content: center;
+}
+
+.quick-contact .quick-contact__phone {
+  display: block;
+  margin: var(--space-lg) 0 0;
+  text-align: center;
+}
+
+.quick-contact__phone a,
+a.quick-contact__phone,
+.quick-contact__tel a {
+  font-weight: var(--fw-semibold);
+  color: var(--clr-primary);
+  white-space: nowrap;
+}
+
+.quick-contact .quick-contact__divider + .quick-contact__phone {
+  margin-top: var(--space-xs);
+}
+
+.quick-contact__divider {
+  margin-top: var(--space-lg);
+  text-align: center;
+  font-size: var(--fs-xs);
+  color: var(--clr-text-light);
+}
+
+.quick-contact__tel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  color: var(--clr-accent);
+}
+
+.offerings-grid,
+.offering-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-lg);
+}
+
+.offering-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--clr-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.offering-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.offering-card h3 {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-sm);
+}
+
+.offering-card p {
+  flex: 1;
+  font-size: var(--fs-sm);
+  color: var(--clr-text-light);
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+}
+
+.offering-card a {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-accent);
+}
+
+.offering-card a:hover {
+  color: var(--clr-accent-hover);
+}
+
+.area-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-sm) var(--space-md);
+}
+
+.area-list li {
+  position: relative;
+  padding: var(--space-sm) var(--space-md) var(--space-sm) calc(var(--space-md) + 14px);
+  background: var(--clr-off-white);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-sm);
+}
+
+.area-list li::before {
+  content: "";
+  position: absolute;
+  left: var(--space-md);
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  border-radius: 50%;
+  background: var(--clr-accent);
+}
+
+/* Variant with a tick icon, a bold name and a short description */
+.area-list .area-list__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+}
+
+.area-list .area-list__item::before {
+  display: none;
+}
+
+.area-list__item svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--clr-accent);
+}
+
+.area-list__item strong {
+  display: block;
+  color: var(--clr-primary);
+  margin-bottom: 2px;
+}
+
+.area-list__item span {
+  display: block;
+  color: var(--clr-text-light);
+  line-height: 1.6;
+}
+
+/* FAQ: dl.faq-list > div.faq-item > dt > details > summary + p */
+.faq-item summary {
+  padding: var(--space-md) var(--space-lg);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-base);
+  color: var(--clr-primary);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--clr-accent);
+  flex-shrink: 0;
+}
+
+.faq-item details[open] summary::after {
+  content: "\2212";
+}
+
+.faq-item details p {
+  padding: 0 var(--space-lg) var(--space-md);
+  font-weight: var(--fw-regular);
+  color: var(--clr-text);
+  line-height: 1.7;
+}
+
+/* CTA banner without the __inner / __title / __text classes */
+.cta-banner > .container:not(.cta-banner__inner) {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.cta-banner > .container:not(.cta-banner__inner) > h2 {
+  font-size: var(--fs-3xl);
+  color: var(--clr-white);
+  margin-bottom: var(--space-lg);
+}
+
+.cta-banner > .container:not(.cta-banner__inner) > p {
+  font-size: var(--fs-md);
+  color: rgba(255, 255, 255, 0.7);
+  max-width: var(--max-width-narrow);
+  margin: 0 auto var(--space-2xl);
+  line-height: 1.6;
+}
+
+/* Buttons on the dark banner: the primary one goes white, as on the main template */
+.cta-banner .btn--primary {
+  background: var(--clr-white);
+  color: var(--clr-primary);
+  border-color: var(--clr-white);
+}
+
+.cta-banner .btn--primary:hover {
+  background: var(--clr-off-white);
+  border-color: var(--clr-off-white);
+}
+
+/* The outline Call button sits on the dark banner, so it needs light text */
+.cta-banner .btn--outline {
+  color: var(--clr-white);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.cta-banner .btn--outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.75);
+}
+
+.site-footer {
+  background: var(--clr-primary-dark);
+  color: rgba(255, 255, 255, 0.7);
+  padding: var(--space-4xl) 0 0;
+}
+
+.footer-grid,
+.site-footer__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: var(--space-3xl);
+}
+
+.footer-col--brand img,
+.site-footer__brand img {
+  filter: invert(1);
+}
+
+.site-footer__brand img {
+  height: 80px;
+  width: auto;
+}
+
+.footer-col--brand p,
+.site-footer__brand p {
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: var(--space-md);
+  max-width: 300px;
+}
+
+.site-footer strong {
+  color: var(--clr-white);
+}
+
+.site-footer h4 {
+  color: var(--clr-white);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-lg);
+}
+
+.site-footer li {
+  margin-bottom: var(--space-sm);
+  font-size: var(--fs-sm);
+}
+
+.site-footer a {
+  font-size: var(--fs-sm);
+  color: rgba(255, 255, 255, 0.75);
+  transition: color var(--transition-fast);
+}
+
+.site-footer a:hover {
+  color: var(--clr-accent);
+}
+
+.footer-bottom {
+  padding: var(--space-xl) 0;
+  margin-top: var(--space-3xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom p {
+  font-size: var(--fs-xs);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* About page: chartered status and memberships */
+.accreditations {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+
+.accreditation {
+  background: var(--clr-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-align: center;
+}
+
+.accreditation__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 96px;
+  padding: var(--space-sm) var(--space-md);
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius-full);
+  background: var(--clr-accent-light);
+  color: var(--clr-accent-hover);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.04em;
+}
+
+.accreditation__name {
+  font-size: var(--fs-base);
+  margin-bottom: var(--space-sm);
+}
+
+.accreditation__desc {
+  font-size: var(--fs-sm);
+  color: var(--clr-text-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .footer-grid,
+  .site-footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .footer-col--brand,
+  .site-footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Keep only Get a Quote in the header; the sticky bar carries Quote + Call */
+  .site-nav > ul > li:not(:last-child) {
+    display: none;
+  }
+
+  .site-logo img {
+    height: 48px;
+  }
+
+  .site-nav .btn--nav {
+    padding: 0.5rem 0.875rem;
+  }
+
+  .header__nav-item--dropdown::after {
+    display: none;
+  }
+
+  /* Inside the slide-out menu the services list sits open under its parent link */
+  .header__dropdown {
+    position: static;
+    min-width: 0;
+    margin: 0;
+    padding: 0 0 var(--space-sm) var(--space-md);
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .header__dropdown::before {
+    display: none;
+  }
+
+  .header__dropdown a {
+    padding: var(--space-sm) 0;
+  }
+
+  .page-hero--location h1 {
+    font-size: var(--fs-2xl);
+  }
+
+  section.service-page__intro,
+  section.service-page__offerings,
+  section.service-page__standards,
+  section.faq-section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .service-page__intro-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .service-page__intro-aside {
+    position: static;
+  }
+
+  .cta-banner > .container:not(.cta-banner__inner) > h2 {
+    font-size: var(--fs-2xl);
+  }
+}
+
+@media (max-width: 640px) {
+  .accreditations {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid,
+  .site-footer__grid {
+    grid-template-columns: 1fr;
+  }
 }
