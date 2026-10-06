@@ -71,7 +71,7 @@
       </nav>
       <h1 class="page-hero__title">Get in Touch</h1>
       <p class="page-hero__subtitle">
-        Have a question about our services or need advice on your project? Our team is here to help.
+        Have a question about our services or need advice on your project? We are here to help.
       </p>
     </div>
   </section>
@@ -140,7 +140,10 @@
         </div>
 
         <!-- Contact Form -->
-        <form class="form" action="https://formspree.io/f/xdawqklw" method="POST">
+        <form class="form" action="https://formspree.io/f/xdawqklw" method="POST" data-form-id="contact_form">
+          <!-- Formspree: email subject line, and a spam honeypot that must stay empty -->
+          <input type="hidden" name="_subject" value="New contact enquiry from airdustodour.co.uk">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
           <h3 style="margin-bottom: var(--space-lg);">Send Us a Message</h3>
 
           <div class="form__row">
@@ -191,7 +194,7 @@
       <div class="map-placeholder fade-in">
         <div style="text-align:center;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:40px;height:40px;margin-bottom:0.5rem;opacity:0.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <p style="font-size: var(--fs-sm);">Map integration coming soon &mdash; UK-wide coverage</p>
+          <p style="font-size: var(--fs-sm);">Map integration coming soon. UK-wide coverage.</p>
         </div>
       </div>
     </div>

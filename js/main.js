@@ -93,33 +93,58 @@
   }
 
   /* ---------- Fade-in Observer ---------- */
+  // A .fade-in block is revealed as soon as any part of it is on screen
+  // (threshold 0). A ratio threshold such as 0.1 can never be reached by a
+  // block taller than about ten screens, which left long articles and the
+  // glossary stuck at opacity 0.
   function initFadeInObserver() {
     var fadeElements = document.querySelectorAll('.fade-in');
     if (!fadeElements.length) return;
 
-    if (!('IntersectionObserver' in window)) {
-      // Fallback: just show everything
-      fadeElements.forEach(function (el) {
+    function revealAll() {
+      document.querySelectorAll('.fade-in:not(.visible)').forEach(function (el) {
         el.classList.add('visible');
       });
+    }
+
+    // Never print blank sections
+    window.addEventListener('beforeprint', revealAll);
+
+    if (!('IntersectionObserver' in window)) {
+      // Fallback: just show everything
+      revealAll();
       return;
     }
 
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting || entry.intersectionRatio > 0) {
           entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
     }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0
     });
 
     fadeElements.forEach(function (el) {
       observer.observe(el);
     });
+
+    // Safety net: 2 seconds after the page has fully loaded, show anything
+    // the observer has not revealed, so no content can stay hidden.
+    function scheduleSafetyNet() {
+      window.setTimeout(function () {
+        observer.disconnect();
+        revealAll();
+      }, 2000);
+    }
+
+    if (document.readyState === 'complete') {
+      scheduleSafetyNet();
+    } else {
+      window.addEventListener('load', scheduleSafetyNet);
+    }
   }
 
   /* ---------- Smooth Scroll for Anchors ---------- */
@@ -148,6 +173,9 @@
         var requiredFields = form.querySelectorAll('[required]');
 
         requiredFields.forEach(function (field) {
+          // Formspree control fields (_gotcha honeypot, _subject) are never validated
+          if (field.name && field.name.charAt(0) === '_') return;
+
           removeError(field);
 
           if (!field.value.trim()) {
@@ -169,6 +197,8 @@
           if (firstError) {
             firstError.querySelector('input, textarea, select').focus();
           }
+        } else {
+          trackLead(form);
         }
       });
 
@@ -179,6 +209,21 @@
         });
       });
     });
+  }
+
+  /* ---------- GA4 Lead Event ---------- */
+  // Fires the generate_lead key event only once validation has passed, so
+  // rejected submissions are not counted. Each lead form carries a
+  // data-form-id attribute (quote_form on get-a-quote.html, contact_form on
+  // contact.html). A filled-in honeypot means a bot, so it is not counted.
+  function trackLead(form) {
+    var formId = form.getAttribute('data-form-id');
+    if (!formId || typeof gtag !== 'function') return;
+
+    var honeypot = form.querySelector('input[name="_gotcha"]');
+    if (honeypot && honeypot.value) return;
+
+    gtag('event', 'generate_lead', { form_id: formId });
   }
 
   function showError(field, message) {

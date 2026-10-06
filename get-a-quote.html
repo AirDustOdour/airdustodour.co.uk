@@ -111,7 +111,10 @@
   <!-- Quote Form -->
   <section class="section">
     <div class="container container--narrow fade-in">
-      <form class="form" action="https://formspree.io/f/xdawqklw" method="POST">
+      <form class="form" action="https://formspree.io/f/xdawqklw" method="POST" data-form-id="quote_form">
+        <!-- Formspree: email subject line, and a spam honeypot that must stay empty -->
+        <input type="hidden" name="_subject" value="New quote request from airdustodour.co.uk">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
         <h2 style="margin-bottom: var(--space-sm); text-align: center;">Request Your Quote</h2>
         <p style="text-align: center; color: var(--clr-text-light); margin-bottom: var(--space-2xl); font-size: var(--fs-sm);">
           Fill in the details below and we will be in touch within 24 hours with your tailored quote.
@@ -344,23 +347,5 @@
   </button>
 
   <script src="js/main.js"></script>
-  <script>
-    // GA4 Key Event: fire generate_lead when the quote form is submitted.
-    // Uses transport_type 'beacon' because Formspree redirects to its own
-    // thank-you page immediately, so the page unloads before a normal
-    // gtag call would finish.
-    (function(){
-      var form = document.querySelector('form[action*="formspree.io"]');
-      if (!form) return;
-      form.addEventListener('submit', function(){
-        if (typeof gtag === 'function') {
-          gtag('event', 'generate_lead', {
-            form_id: 'quote_form',
-            transport_type: 'beacon'
-          });
-        }
-      });
-    })();
-  </script>
 </body>
 </html>
