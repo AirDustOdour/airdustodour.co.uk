@@ -2602,6 +2602,11 @@ h3 { font-size: var(--fs-xl); font-weight: var(--fw-semibold); }
     color: #ffffff !important;
   }
   .mobile-cta-bar__whatsapp:hover { filter: brightness(1.05); }
+  .mobile-cta-bar__call {
+    background: #111827;
+    color: #ffffff !important;
+  }
+  .mobile-cta-bar__call:hover { filter: brightness(1.2); }
 
   /* Reserve space at bottom of body so content isn't hidden behind the bar */
   body { padding-bottom: 64px; }
